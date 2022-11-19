@@ -49,6 +49,22 @@ public class ElementUtil
 		return elementTextList;
 	}
 	
+	public List<String> getElementsText(List<WebElement> allElements)
+	{
+		//List<WebElement> allElements =  getElements(byLocator);
+		List<String> elementTextList = new ArrayList<String>();
+		
+		for (WebElement eWebElement : allElements)
+		{
+			if(!eWebElement.getText().isBlank())
+			{
+				elementTextList.add(eWebElement.getText());
+			}
+		}
+		
+		return elementTextList;
+	}
+	
 	public void SelectWebelementFromList(List<WebElement> webElements, String elementText)
 	{
 		for (WebElement eWebElement : webElements)
@@ -88,7 +104,6 @@ public class ElementUtil
 	public void doSendKeys(By byLocator, String value)
 	{
 		clearWebField(getElement(byLocator));
-		System.out.println(getElement(byLocator).getText());
 		getElement(byLocator).sendKeys(value);
 	}
 	

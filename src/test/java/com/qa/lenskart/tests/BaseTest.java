@@ -16,11 +16,13 @@ public class BaseTest
 	WebDriver driver;
 	Properties properties;
 	LandingPage landingPage;
+	HomePage homePage;
 
 	
 	@BeforeTest
 	public void setUp()
 	{
+		System.out.println("I'm called");
 		driverFactory = new DriverFactory();
 		properties = driverFactory.initProperties();
 		driver = driverFactory.initWebDriver(properties);

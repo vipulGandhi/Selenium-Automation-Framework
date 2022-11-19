@@ -26,6 +26,8 @@ public class LandingPageTest extends BaseTest
 	@Test(priority = 4)
 	public void signInTest()
 	{
-		landingPage.doSignIn(properties.getProperty("email"), properties.getProperty("password"));
+	 	homePage = landingPage.doSignIn(properties.getProperty("email"), properties.getProperty("password"));
+	 	Assert.assertEquals(homePage.getUserName(), properties.getProperty("username"));
+		
 	}
 }

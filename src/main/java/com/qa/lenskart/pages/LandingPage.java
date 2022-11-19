@@ -1,14 +1,14 @@
 package com.qa.lenskart.pages;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import com.qa.lenskart.utils.AlertUtils;
 import com.qa.lenskart.utils.Constants;
 import com.qa.lenskart.utils.ElementUtil;
 import com.qa.lenskart.utils.JavascriptUtil;
 import com.qa.lenskart.utils.WaitUtils;
+
+import net.bytebuddy.asm.Advice.This;
 
 public class LandingPage
 {
@@ -27,6 +27,7 @@ public class LandingPage
 	public LandingPage(WebDriver driver)
 	{
 		this.driver = driver;
+		System.out.println(this.driver);
 		elementUtil = new ElementUtil(driver);
 		waitUtils = new WaitUtils(driver);
 		javascriptUtil = new JavascriptUtil(driver);
@@ -47,19 +48,24 @@ public class LandingPage
 		return elementUtil.isElementDisplayed(logoBy);
 	}
 	
-	public void doSignIn(String email, String password)
+	public HomePage doSignIn(String email, String password)
 	{
 		if(elementUtil.isElementDisplayed(pushNotificationDismissBy))
 		{
 			elementUtil.doClick(pushNotificationDismissBy);
 		}
+
 		elementUtil.doClick(waitUtils.ifElementVisibleAndClickable(signInLinkBy, Constants.DEFAULT_TIME_OUT));
+
 		elementUtil.doSendKeys(waitUtils.ifElementVisibleAndClickable(emailBy, Constants.DEFAULT_TIME_OUT), email);
+
 		elementUtil.doClick(proceedButtonBy);
+
 		elementUtil.doSendKeys(waitUtils.ifElementVisibleAndClickable(passwordBy, Constants.DEFAULT_TIME_OUT), password);
 		elementUtil.doClick(proceedButtonBy);
+
 		javascriptUtil.waitForPageLoaded();
 		
+		return new HomePage(driver);
 	}
-	
 }
