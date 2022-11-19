@@ -41,7 +41,6 @@ public class HomePage
 	public List<String> getLoginPanelItems()
 	{
 		actionsUtil.doMoveToElement(userNameBy);
-		System.out.println(elementUtil.getElementsText(waitUtils.isVisibilityOfElementsLocated(loginPanelItemsBy, Constants.DEFAULT_TIME_OUT)));
 		return elementUtil.getElementsText(waitUtils.isVisibilityOfElementsLocated(loginPanelItemsBy, Constants.DEFAULT_TIME_OUT));
 	}
 	

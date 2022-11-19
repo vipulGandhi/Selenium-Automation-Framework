@@ -27,7 +27,6 @@ public class LandingPage
 	public LandingPage(WebDriver driver)
 	{
 		this.driver = driver;
-		System.out.println(this.driver);
 		elementUtil = new ElementUtil(driver);
 		waitUtils = new WaitUtils(driver);
 		javascriptUtil = new JavascriptUtil(driver);
