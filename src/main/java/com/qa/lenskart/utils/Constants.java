@@ -10,10 +10,9 @@ public class Constants
 	// Global
 	public static final int DEFAULT_TIME_OUT = 5;
 	
-	// Login Page
-	public static final String lOGIN_PAGE_TITLE_FRACTION = "Quora - A place to share knowledge";  
-	public static final String lOGIN_PAGE_URL_FRACTION = "quora.com";  
-	public static final String lOGIN_PAGE_HEADING = "A place to share knowledge and better understand the world";  
+	// Landing Page
+	public static final String lANDING_PAGE_TITLE_FRACTION = "Lenskart.com";  
+	public static final String lANDING_PAGE_URL_FRACTION = "lenskart.com";  
 	
 	//--------------------------------------------------------------------------------------
 	// Home Page
