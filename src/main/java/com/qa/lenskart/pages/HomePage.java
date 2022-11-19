@@ -56,6 +56,7 @@ public class HomePage
 		{
 			elementUtil.doSendKeys(searchBy, productName);
 			elementUtil.pressEnter(searchBy);
+			javascriptUtil.waitForPageLoaded();
 			return new ContactLensesPage(driver);
 		}
 		return null;
