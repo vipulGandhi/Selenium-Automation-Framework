@@ -55,9 +55,10 @@ public class LandingPage
 		}
 		elementUtil.doClick(waitUtils.ifElementVisibleAndClickable(signInLinkBy, Constants.DEFAULT_TIME_OUT));
 		elementUtil.doSendKeys(waitUtils.ifElementVisibleAndClickable(emailBy, Constants.DEFAULT_TIME_OUT), email);
-		elementUtil.doClick(waitUtils.ifElementVisibleAndClickable(proceedButtonBy, Constants.DEFAULT_TIME_OUT));
+		elementUtil.doClick(proceedButtonBy);
 		elementUtil.doSendKeys(waitUtils.ifElementVisibleAndClickable(passwordBy, Constants.DEFAULT_TIME_OUT), password);
-		elementUtil.doClick(waitUtils.ifElementVisibleAndClickable(proceedButtonBy, Constants.DEFAULT_TIME_OUT));
+		elementUtil.doClick(proceedButtonBy);
+		javascriptUtil.waitForPageLoaded();
 		
 	}
 	
