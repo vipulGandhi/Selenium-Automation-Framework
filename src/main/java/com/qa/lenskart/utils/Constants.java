@@ -16,19 +16,18 @@ public class Constants
 	
 	//--------------------------------------------------------------------------------------
 	// Home Page
-	public static final String HOME_PAGE_TITLE = "Quora"; 
-	
-	public static List<String> quoraSpaces()
+	public static List<String> loginPanelItems()
 	{
-		List<String> quoraSpacesStrings = new ArrayList<String>();
+		List<String> loginPanelItemsString = new ArrayList<String>();
 		
-		quoraSpacesStrings.add("Science");
-		quoraSpacesStrings.add("Food");
-		quoraSpacesStrings.add("Health");
-		quoraSpacesStrings.add("Movies");
-		quoraSpacesStrings.add("Technology");
+		loginPanelItemsString.add("My Orders");
+		loginPanelItemsString.add("My Prescription");
+		loginPanelItemsString.add("My Store Credit");
+		loginPanelItemsString.add("My Dittos");
+		loginPanelItemsString.add("Account Information");
+		loginPanelItemsString.add("Logout");
 		
-		return quoraSpacesStrings;
+		return loginPanelItemsString;
 	}
 	
 	//--------------------------------------------------------------------------------------

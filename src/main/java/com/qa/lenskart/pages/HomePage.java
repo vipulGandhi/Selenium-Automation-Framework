@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 import com.qa.lenskart.utils.ActionsUtil;
 import com.qa.lenskart.utils.Constants;
@@ -51,13 +50,15 @@ public class HomePage
 		return elementUtil.isElementDisplayed(searchBy);
 	}
 	
-	public void doSearch(String productName)
+	public ContactLensesPage doSearch(String productName)
 	{
 		if(isSearchExist())
 		{
 			elementUtil.doSendKeys(searchBy, productName);
 			elementUtil.pressEnter(searchBy);
+			return new ContactLensesPage(driver);
 		}
+		return null;
 	}
 	
 	public void doLogout()

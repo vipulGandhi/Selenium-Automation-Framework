@@ -22,7 +22,6 @@ public class BaseTest
 	@BeforeTest
 	public void setUp()
 	{
-		System.out.println("I'm called");
 		driverFactory = new DriverFactory();
 		properties = driverFactory.initProperties();
 		driver = driverFactory.initWebDriver(properties);
