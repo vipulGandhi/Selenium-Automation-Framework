@@ -92,7 +92,7 @@ public class ElementUtil
 		}
 	}
 	
-	 public void clearWebField(WebElement webElement)
+	 public void clearTextField(WebElement webElement)
 	 {
 		 // webElement.clear();
 		 while(!webElement.getAttribute("value").equals(""))
@@ -103,13 +103,13 @@ public class ElementUtil
 	
 	public void doSendKeys(By byLocator, String value)
 	{
-		clearWebField(getElement(byLocator));
+		clearTextField(getElement(byLocator));
 		getElement(byLocator).sendKeys(value);
 	}
 	
 	public void doSendKeys(WebElement webElement, String value)
 	{
-		clearWebField(webElement);
+		clearTextField(webElement);
 		webElement.sendKeys(value);
 	}
 	

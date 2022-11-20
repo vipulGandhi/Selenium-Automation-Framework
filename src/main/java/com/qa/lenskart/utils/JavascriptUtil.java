@@ -1,5 +1,6 @@
 package com.qa.lenskart.utils;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,6 +8,7 @@ import org.openqa.selenium.WebElement;
 public class JavascriptUtil
 {
 	private WebDriver driver;
+	private ElementUtil elementUtil;
 	
 	
 	public JavascriptUtil(WebDriver driver)
@@ -122,6 +124,20 @@ public class JavascriptUtil
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		jsExecutor.executeScript("arguments[0].scrollIntoView(true);", webElement);
 	}
+	
+	// e-commerce like applications
+		// On the search page, all the products are listed which match the search query
+		// As we scroll down, more products gets displayed at the runtime
+	public void scrollToWebElement(By byLocator, String numberOfPixelsToScrollTo)
+	{
+		//JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		//jsExecutor.executeScript("arguments[0].scrollIntoView(true);", webElement);
+		while (driver.findElements(byLocator).size() <=0)
+		{
+			scrollByPixel(numberOfPixelsToScrollTo);
+		}
+	}
+	
 	
 	// Scroll Down: Enter any positive number as the argument
 	// Scroll Up: Enter any negative number as the argument
