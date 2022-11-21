@@ -69,8 +69,6 @@ public class HomePageTest extends BaseTest
 	{
 		searchPage = homePage.doSearch(productParentSearch);
 		productInfoPage = searchPage.selectProduct(productSearch);
-		Assert.assertTrue(productInfoPage.getPageHeading().contains(productBrandName));
+		Assert.assertTrue(productInfoPage.getProductBrandName().contains(productBrandName));
 	}
-	
-	
 }

@@ -11,7 +11,6 @@ import org.openqa.selenium.WebDriver;
 
 import com.qa.lenskart.utils.Constants;
 import com.qa.lenskart.utils.ElementUtil;
-import com.qa.lenskart.utils.JavascriptUtil;
 import com.qa.lenskart.utils.PageUtils;
 import com.qa.lenskart.utils.WaitUtils;
 
@@ -22,6 +21,7 @@ public class ProductInfoPage
 	private WaitUtils waitUtils;
 	
 	private String pageHeading;
+	private int totalProduceImages;
 	private HashMap<String, String> productTechnicalInfoHashMap;
 	
 	By pageHeadingBy = By.xpath("//div[contains(@class,'product-brands')]");
@@ -36,7 +36,7 @@ public class ProductInfoPage
 		waitUtils = new WaitUtils(driver);
 	}
 	
-	public String getPageHeading()
+	public String getProductBrandName()
 	{
 		pageHeading = elementUtil.getElementText(pageHeadingBy);
 		pageUtils.switchToParentWindow();
@@ -45,17 +45,36 @@ public class ProductInfoPage
 	
 	public int productImagesCount()
 	{
-		return elementUtil.getElementsCount(waitUtils.isVisibilityOfElementsLocated(productImageCountBy, Constants.DEFAULT_TIME_OUT));
+		totalProduceImages = elementUtil.getElementsCount(waitUtils.isVisibilityOfElementsLocated(productImageCountBy, Constants.DEFAULT_TIME_OUT));
+		pageUtils.switchToParentWindow();
+		return totalProduceImages;
 	}
 	
 	public HashMap<String, String> getProductTechnicalInfo()
 	{
+		
+		String keyString = null;
+		String valueString = null;
+		
 		elementUtil.doClick(technicalInfoButtonBy);
+		
+		productTechnicalInfoHashMap.put("Product Name", getProductBrandName());
+		
 		List<String> productTechnicalMetadataList = 
 				elementUtil.getElementsText(waitUtils.isVisibilityOfElementsLocated(productTechnicalInfoMetadataBy, Constants.DEFAULT_TIME_OUT));
 		for (int i = 0; i < productTechnicalMetadataList.size(); i++)
 		{
-			
+			if(i%2 == 0)
+			{
+				keyString = productTechnicalMetadataList.get(i);
+			}
+			else
+			{
+				valueString = productTechnicalMetadataList.get(i);
+			}
+			productTechnicalInfoHashMap.put(keyString, valueString);
 		}
+		
+		return productTechnicalInfoHashMap;
 	}
 }
