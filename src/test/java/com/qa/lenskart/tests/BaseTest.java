@@ -18,19 +18,15 @@ public class BaseTest
 	LandingPage landingPage;
 	HomePage homePage;
 	SearchPage searchPage;
+	ProductInfoPage productInfoPage;
 	
 	@BeforeTest
 	public void setUp()
 	{
-		System.out.println("1");
 		driverFactory = new DriverFactory();
-		System.out.println("1");
 		properties = driverFactory.initProperties();
-		System.out.println("1");
 		driver = driverFactory.initWebDriver(properties);
-		System.out.println("1");
 		landingPage = new LandingPage(driver);
-		System.out.println("1");
 	}
 	
 	@AfterTest

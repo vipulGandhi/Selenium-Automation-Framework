@@ -14,6 +14,7 @@ public class JavascriptUtil
 	public JavascriptUtil(WebDriver driver)
 	{
 		this.driver = driver;
+		elementUtil = new ElementUtil(driver);
 	}
 	
 	public WebElement executeJavaScript(String javaScriptString)
@@ -125,18 +126,20 @@ public class JavascriptUtil
 		jsExecutor.executeScript("arguments[0].scrollIntoView(true);", webElement);
 	}
 	
-	// e-commerce like applications
-		// On the search page, all the products are listed which match the search query
-		// As we scroll down, more products gets displayed at the runtime
-	public void scrollToWebElement(By byLocator, String numberOfPixelsToScrollTo)
-	{
-		//JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-		//jsExecutor.executeScript("arguments[0].scrollIntoView(true);", webElement);
-		while (driver.findElements(byLocator).size() <=0)
-		{
-			scrollByPixel(numberOfPixelsToScrollTo);
-		}
-	}
+//	// e-commerce like applications
+//		// On the search page, all the products are listed which match the search query
+//		// As we scroll down, more products gets displayed(added to the DOM) at the runtime
+//	public void scrollToWebElement(By byLocator, int totalProductAvalilable, int totalProductDisplayed, String numberOfPixelsToScrollTo)
+//	{
+//		// Let the element be avilable in DOM
+//		while (elementUtil.getElements(byLocator).size() <=0 && totalProductDisplayed < totalProductAvalilable)
+//		{
+//			scrollByPixel(numberOfPixelsToScrollTo);
+//		}
+//		
+//		// If the element reached the DOM but is not visible on screen, scroll till the element is visible
+//		//scrollToWebElement(elementUtil.getElement(byLocator));
+//	}
 	
 	
 	// Scroll Down: Enter any positive number as the argument

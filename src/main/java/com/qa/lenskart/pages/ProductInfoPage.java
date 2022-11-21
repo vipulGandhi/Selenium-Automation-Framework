@@ -8,25 +8,29 @@ import org.openqa.selenium.WebDriver;
 
 import com.qa.lenskart.utils.ElementUtil;
 import com.qa.lenskart.utils.JavascriptUtil;
+import com.qa.lenskart.utils.PageUtils;
 import com.qa.lenskart.utils.WaitUtils;
 
-/**
- * @author vipulgandhi
- *
- */
 public class ProductInfoPage
 {
-	private WebDriver driver;
 	private ElementUtil elementUtil;
-	private WaitUtils waitUtils;
-	private JavascriptUtil javascriptUtil;
+	private PageUtils pageUtils;
 	
+	private String pageHeading;
+	
+	By pageHeadingBy = By.xpath("//div[contains(@class,'product-brands')]");
 	
 	public ProductInfoPage(WebDriver driver)
 	{
-		this.driver = driver;
 		elementUtil = new ElementUtil(driver);
-		waitUtils = new WaitUtils(driver);
-		javascriptUtil = new JavascriptUtil(driver);
+		pageUtils = new PageUtils(driver);
+	}
+	
+	public String getPageHeading()
+	{
+		pageHeading = elementUtil.getElementText(pageHeadingBy);
+		pageUtils.switchToParentWindow();
+		return pageHeading;
+		
 	}
 }

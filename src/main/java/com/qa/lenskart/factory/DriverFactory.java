@@ -22,9 +22,7 @@ public class DriverFactory
 		
 		String browserName = properties.getProperty("browser").trim().toLowerCase();
 		String pageURLString = properties.getProperty("url");
-		
-		System.out.println("Browser name is " + browserName);
-		
+				
 		// Initialize the driver
 		if(browserName.equals("chrome"))
 		{

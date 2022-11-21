@@ -33,7 +33,7 @@ public class HomePageTest extends BaseTest
 	{
 		Object[][] searchObjects = new Object[3][1];
 		
-		searchObjects[0][0] = "Contact Lenses";
+		searchObjects[0][0] = "Contact Lens";
 		searchObjects[1][0] = "Eyeglasses";
 		searchObjects[2][0] = "Sunglasses";
 		
@@ -45,5 +45,32 @@ public class HomePageTest extends BaseTest
 	{
 		searchPage = homePage.doSearch(mySearchItems);
 		Assert.assertTrue(searchPage.getHeading(mySearchItems).trim().toLowerCase().equals(mySearchItems.trim().toLowerCase()));
+		Assert.assertTrue(searchPage.getTotalProductsAvailableCount() > 0);
 	}
+	
+	@DataProvider
+	public Object[][] productSelectionData()
+	{
+		Object[][] searchObjects = new Object[2][3];
+		
+		searchObjects[0][0] = "Contact Lens";
+		searchObjects[0][1] = "Aqualens";
+		searchObjects[0][2] = "Aqualens";
+		
+		searchObjects[1][0] = "Eyeglasses";
+		searchObjects[1][1] = "Vincent Chase";
+		searchObjects[1][2] = "Vincent Chase";
+
+		return searchObjects;		
+	}
+	
+	@Test(priority = 4, dataProvider= "productSelectionData")
+	public void selectProductTest(String productParentSearch, String productBrandName, String productSearch)
+	{
+		searchPage = homePage.doSearch(productParentSearch);
+		productInfoPage = searchPage.selectProduct(productSearch);
+		Assert.assertTrue(productInfoPage.getPageHeading().contains(productBrandName));
+	}
+	
+	
 }

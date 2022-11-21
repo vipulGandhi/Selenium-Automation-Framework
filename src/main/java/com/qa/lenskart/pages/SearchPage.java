@@ -2,6 +2,7 @@ package com.qa.lenskart.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import com.qa.lenskart.utils.ActionsUtil;
 import com.qa.lenskart.utils.Constants;
@@ -28,16 +29,15 @@ public class SearchPage
 		pageUtils = new PageUtils(driver);
 	}
 
-	//private By pageHeadingBy = By.xpath("//h1[text()='Contact Lens']");
 	private By searchResultCountBy = By.xpath("//div[@class='show_count']");
-	private By productToSelect = By.xpath("//div[text()='Lenskart PLUS']");
+	private By productToSelect = By.xpath("//div[text()='Aqualens']");
 	
 	
 	public String getHeading(String pageHeading)
 	{
+		// Why this By locator is present in a method body
+			// The value of By locator is not constant. It is getting updated with the method parameters
 		By pageHeadingBy = By.xpath("//h1[text()='"+pageHeading+"']");
-		
-		System.out.println("Heading: " + elementUtil.getElementText(waitUtils.isPresenceOfElementLocated(pageHeadingBy, Constants.DEFAULT_TIME_OUT)));
 		return elementUtil.getElementText(waitUtils.isVisibilityOfElementLocated(pageHeadingBy, Constants.DEFAULT_TIME_OUT));
 	}
 	
@@ -48,27 +48,14 @@ public class SearchPage
 		return Integer.parseInt(resultString.split(" ")[3]);
 	}
 	
-	private int getTotalProductsDisplayedCount()
-	{
-		String resultString = 
-				elementUtil.getElementText((waitUtils.isPresenceOfElementLocated(searchResultCountBy, Constants.DEFAULT_TIME_OUT)));
-		return Integer.parseInt(resultString.split(" ")[1]);
-	}
-	
 	public ProductInfoPage selectProduct(String productName)
 	{
-		while (elementUtil.getElements(productToSelect).size() <=0 && getTotalProductsDisplayedCount() < getTotalProductsAvailableCount())
-		{
-			javascriptUtil.scrollByPixel("1");
-			
-			if(elementUtil.getElements(productToSelect).size() == 1)
-			{
-				System.out.println("Product Found");
-				elementUtil.doClick(productToSelect);
-				pageUtils.switchToChildWindow();
-				break;
-			}
-		}
+		By productToSelect = By.xpath("//div[text()='"+productName+"']");
+		
+		elementUtil.doClick(waitUtils.ifElementVisibleAndClickable(productToSelect, Constants.DEFAULT_TIME_OUT));
+		pageUtils.switchToChildWindow();
+		javascriptUtil.waitForPageLoaded();
+
 		return new ProductInfoPage(driver);
 	}
 }

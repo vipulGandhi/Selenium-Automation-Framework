@@ -34,7 +34,7 @@ public class PageUtils
 		childWindowHandleString = allWindowHandleIdsList.get(1);
 	}
 	
-	private int getOpenWindowsCount()
+	private  int getOpenWindowsCount()
 	{
 		return allWindowHandleIdsList.size();
 	}
@@ -53,14 +53,8 @@ public class PageUtils
 	
 	public void switchToParentWindow()
 	{
-		if(mainWindowHandleString != null && parentWindowHandleString != null)
-		{
-			if(!(mainWindowHandleString.equals(parentWindowHandleString)))
-			{
-				getAllWindowHandles();
-				driver.close();
-				driver.switchTo().window(childWindowHandleString);
-			}
-		}
+		getAllWindowHandles();
+		driver.close();
+		driver.switchTo().window(parentWindowHandleString);
 	}
 }

@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import net.bytebuddy.asm.Advice.Return;
+
 //Manually import static packages
 //Contains static methods
 import static org.openqa.selenium.support.locators.RelativeLocator.*;
@@ -160,7 +162,11 @@ public class ElementUtil
 	
 	public boolean isElementDisplayed(By byLocator)
 	{
-		return getElement(byLocator).isDisplayed();
+		if(getElements(byLocator).size() > 0)
+		{
+			return getElement(byLocator).isDisplayed();
+		}
+		return false;
 	}
 	
 	public boolean isElementDisplayed(String locatorType, String locatorValue)
