@@ -1,66 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-21T08:33:44 IST" name="Default suite" finished-at="2022-11-21T08:34:04 IST" duration-ms="19811">
+  <suite started-at="2022-11-21T11:08:28 IST" name="Default suite" finished-at="2022-11-21T11:08:35 IST" duration-ms="7643">
     <groups>
     </groups>
-    <test started-at="2022-11-21T08:33:44 IST" name="Default test" finished-at="2022-11-21T08:34:04 IST" duration-ms="19811">
-      <class name="com.qa.lenskart.tests.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.lenskart.tests.HomePageTest@13e344d]" started-at="2022-11-21T08:33:44 IST" name="setUp" finished-at="2022-11-21T08:33:57 IST" duration-ms="12612" status="PASS">
+    <test started-at="2022-11-21T11:08:28 IST" name="Default test" finished-at="2022-11-21T11:08:35 IST" duration-ms="7643">
+      <class name="com.qa.lenskart.tests.SearchPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.lenskart.tests.SearchPageTest@51c668e3]" started-at="2022-11-21T11:08:28 IST" name="setUp" finished-at="2022-11-21T11:08:33 IST" duration-ms="5499" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="test()[pri:0, instance:com.qa.lenskart.tests.HomePageTest@13e344d]" started-at="2022-11-21T08:33:57 IST" name="test" finished-at="2022-11-21T08:33:58 IST" duration-ms="1535" status="PASS">
+        <test-method is-config="true" signature="test()[pri:0, instance:com.qa.lenskart.tests.SearchPageTest@51c668e3]" started-at="2022-11-21T11:08:33 IST" name="test" finished-at="2022-11-21T11:08:35 IST" duration-ms="1594" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="userNameTest()[pri:1, instance:com.qa.lenskart.tests.HomePageTest@13e344d]" started-at="2022-11-21T08:33:58 IST" name="userNameTest" finished-at="2022-11-21T08:33:59 IST" duration-ms="548" status="PASS">
+        <test-method signature="userNameTest()[pri:1, instance:com.qa.lenskart.tests.SearchPageTest@51c668e3]" started-at="2022-11-21T11:08:35 IST" name="userNameTest" finished-at="2022-11-21T11:08:35 IST" duration-ms="531" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userNameTest -->
-        <test-method signature="loginPanelItemsTest()[pri:2, instance:com.qa.lenskart.tests.HomePageTest@13e344d]" started-at="2022-11-21T08:33:59 IST" name="loginPanelItemsTest" finished-at="2022-11-21T08:33:59 IST" duration-ms="220" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPanelItemsTest -->
-        <test-method signature="searchTest(java.lang.String)[pri:3, instance:com.qa.lenskart.tests.HomePageTest@13e344d]" started-at="2022-11-21T08:33:59 IST" name="searchTest" data-provider="serchItems" finished-at="2022-11-21T08:34:01 IST" duration-ms="1658" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Contact Lenses]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchTest -->
-        <test-method signature="searchTest(java.lang.String)[pri:3, instance:com.qa.lenskart.tests.HomePageTest@13e344d]" started-at="2022-11-21T08:34:01 IST" name="searchTest" data-provider="serchItems" finished-at="2022-11-21T08:34:02 IST" duration-ms="1842" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Eyeglasses]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchTest -->
-        <test-method signature="searchTest(java.lang.String)[pri:3, instance:com.qa.lenskart.tests.HomePageTest@13e344d]" started-at="2022-11-21T08:34:02 IST" name="searchTest" data-provider="serchItems" finished-at="2022-11-21T08:34:04 IST" duration-ms="1261" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sunglasses]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.lenskart.tests.HomePageTest@13e344d]" started-at="2022-11-21T08:34:04 IST" name="tearDown" finished-at="2022-11-21T08:34:04 IST" duration-ms="113" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.lenskart.tests.SearchPageTest@51c668e3]" started-at="2022-11-21T11:08:35 IST" name="tearDown" finished-at="2022-11-21T11:08:35 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.lenskart.tests.HomePageTest -->
+      </class> <!-- com.qa.lenskart.tests.SearchPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -31,7 +31,7 @@ public class Constants
 	}
 	
 	//--------------------------------------------------------------------------------------
-	// ContactLens Result Page
+	// ContactLens Search Result Page
 	public static final String CONTACT_LENS_PAGE_HEADING = "CONTACT LENS"; 
 	public static final int CONTACT_LENS_TOTAL_ITEMS_ON_PAGE = 310; 
 	public static final String CONTACT_LENS_PAGE_ITEM_TO_SELECT = "lenskart-lens-spray-and-aqua-drop-combo.html"; 

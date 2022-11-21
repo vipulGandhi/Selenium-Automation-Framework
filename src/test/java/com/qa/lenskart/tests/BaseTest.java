@@ -22,15 +22,20 @@ public class BaseTest
 	@BeforeTest
 	public void setUp()
 	{
+		System.out.println("1");
 		driverFactory = new DriverFactory();
+		System.out.println("1");
 		properties = driverFactory.initProperties();
+		System.out.println("1");
 		driver = driverFactory.initWebDriver(properties);
+		System.out.println("1");
 		landingPage = new LandingPage(driver);
+		System.out.println("1");
 	}
 	
 	@AfterTest
 	public void tearDown()
 	{
-		driver.quit();
+	//	driver.quit();
 	}
 }
