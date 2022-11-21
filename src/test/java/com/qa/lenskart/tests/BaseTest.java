@@ -17,7 +17,7 @@ public class BaseTest
 	Properties properties;
 	LandingPage landingPage;
 	HomePage homePage;
-	ContactLensesPage contactLensesPage;
+	SearchPage searchPage;
 	
 	@BeforeTest
 	public void setUp()

@@ -10,7 +10,7 @@ import com.qa.lenskart.utils.JavascriptUtil;
 import com.qa.lenskart.utils.PageUtils;
 import com.qa.lenskart.utils.WaitUtils;
 
-public class ContactLensesPage
+public class SearchPage
 {
 	
 	private WebDriver driver;
@@ -19,7 +19,7 @@ public class ContactLensesPage
 	private JavascriptUtil javascriptUtil;
 	private PageUtils pageUtils;
 
-	public ContactLensesPage(WebDriver driver)
+	public SearchPage(WebDriver driver)
 	{
 		this.driver = driver;
 		elementUtil = new ElementUtil(driver);

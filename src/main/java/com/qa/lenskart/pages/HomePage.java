@@ -49,14 +49,14 @@ public class HomePage
 		return elementUtil.isElementDisplayed(searchBy);
 	}
 	
-	public ContactLensesPage doSearch(String productName)
+	public SearchPage doSearch(String productName)
 	{
 		if(isSearchExist())
 		{
 			elementUtil.doSendKeys(searchBy, productName);
 			elementUtil.pressEnter(searchBy);
 			javascriptUtil.waitForPageLoaded();
-			return new ContactLensesPage(driver);
+			return new SearchPage(driver);
 		}
 		return null;
 	}

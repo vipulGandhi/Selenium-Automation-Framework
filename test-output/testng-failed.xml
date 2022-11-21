@@ -7,8 +7,10 @@
         <methods>
           <include name="test"/>
           <include name="tearDown"/>
+          <include name="loginPanelItemsTest"/>
           <include name="setUp"/>
-          <include name="searchTest" invocation-numbers="0 1 2"/>
+          <include name="userNameTest"/>
+          <include name="searchTest"/>
         </methods>
       </class> <!-- com.qa.lenskart.tests.HomePageTest -->
     </classes>

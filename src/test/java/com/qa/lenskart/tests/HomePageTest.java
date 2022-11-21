@@ -43,7 +43,7 @@ public class HomePageTest extends BaseTest
 	@Test(priority = 3, dataProvider= "serchItems")
 	public void searchTest(String mySearchItems)
 	{
-		contactLensesPage = homePage.doSearch(mySearchItems);
-		Assert.assertTrue(contactLensesPage.getHeading(mySearchItems).trim().toLowerCase().equals(mySearchItems.trim().toLowerCase()));
+		searchPage = homePage.doSearch(mySearchItems);
+		Assert.assertTrue(searchPage.getHeading(mySearchItems).trim().toLowerCase().equals(mySearchItems.trim().toLowerCase()));
 	}
 }
