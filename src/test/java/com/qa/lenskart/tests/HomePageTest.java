@@ -2,7 +2,6 @@ package com.qa.lenskart.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -44,6 +43,7 @@ public class HomePageTest extends BaseTest
 	@Test(priority = 3, dataProvider= "serchItems")
 	public void searchTest(String mySearchItems)
 	{
-		homePage.doSearch(mySearchItems);
+		contactLensesPage = homePage.doSearch(mySearchItems);
+		Assert.assertTrue(contactLensesPage.getHeading(mySearchItems).trim().toLowerCase().equals(mySearchItems.trim().toLowerCase()));
 	}
 }

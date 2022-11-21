@@ -8,7 +8,7 @@
           <include name="test"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="searchTest"/>
+          <include name="searchTest" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- com.qa.lenskart.tests.HomePageTest -->
     </classes>

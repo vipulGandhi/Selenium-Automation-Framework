@@ -171,7 +171,7 @@ public class JavascriptUtil
 		  //Initially bellow given if condition will check ready state of page.
 		  if (js.executeScript("return document.readyState").toString().equals("complete"))
 		  { 
-			  System.out.println("Page Is loaded.");
+			  System.out.println(js.executeScript("return document.title") + ": is loaded.");
 			  return; 
 		  } 
 		  
@@ -189,9 +189,14 @@ public class JavascriptUtil
 			  } 
 			  //To check page ready state.
 			  if (js.executeScript("return document.readyState").toString().equals("complete"))
-			  { 
+			  {  
 				  break; 
-			  }   
+			  }  
+			  
+			  else
+			  {
+				  System.out.println("Page is loading");
+			  }
 		  }
 	}
 		
