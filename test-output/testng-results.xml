@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-22T14:27:24 IST" name="Default suite" finished-at="2022-11-22T14:27:40 IST" duration-ms="16238">
+  <suite started-at="2022-11-22T21:30:21 IST" name="Default suite" finished-at="2022-11-22T21:31:03 IST" duration-ms="42183">
     <groups>
     </groups>
-    <test started-at="2022-11-22T14:27:24 IST" name="Default test" finished-at="2022-11-22T14:27:40 IST" duration-ms="16238">
+    <test started-at="2022-11-22T21:30:21 IST" name="Default test" finished-at="2022-11-22T21:31:03 IST" duration-ms="42183">
       <class name="com.qa.lenskart.tests.ProductInfoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.lenskart.tests.ProductInfoTest@6221a451]" started-at="2022-11-22T14:27:24 IST" name="setUp" finished-at="2022-11-22T14:27:30 IST" duration-ms="5556" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.lenskart.tests.ProductInfoTest@6221a451]" started-at="2022-11-22T21:30:21 IST" name="setUp" finished-at="2022-11-22T21:30:40 IST" duration-ms="19123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="test()[pri:0, instance:com.qa.lenskart.tests.ProductInfoTest@6221a451]" started-at="2022-11-22T14:27:30 IST" name="test" finished-at="2022-11-22T14:27:31 IST" duration-ms="1497" status="PASS">
+        <test-method is-config="true" signature="test()[pri:0, instance:com.qa.lenskart.tests.ProductInfoTest@6221a451]" started-at="2022-11-22T21:30:40 IST" name="test" finished-at="2022-11-22T21:30:42 IST" duration-ms="1477" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="productBrandNameTest()[pri:1, instance:com.qa.lenskart.tests.ProductInfoTest@6221a451]" started-at="2022-11-22T14:27:31 IST" name="productBrandNameTest" finished-at="2022-11-22T14:27:33 IST" duration-ms="2329" status="PASS">
+        <test-method signature="productBrandNameTest()[pri:1, instance:com.qa.lenskart.tests.ProductInfoTest@6221a451]" started-at="2022-11-22T21:30:42 IST" name="productBrandNameTest" finished-at="2022-11-22T21:30:50 IST" duration-ms="8487" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productBrandNameTest -->
-        <test-method signature="productimageCount()[pri:2, instance:com.qa.lenskart.tests.ProductInfoTest@6221a451]" started-at="2022-11-22T14:27:33 IST" name="productimageCount" finished-at="2022-11-22T14:27:37 IST" duration-ms="3378" status="PASS">
+        <test-method signature="productimageCount()[pri:2, instance:com.qa.lenskart.tests.ProductInfoTest@6221a451]" started-at="2022-11-22T21:30:50 IST" name="productimageCount" finished-at="2022-11-22T21:30:56 IST" duration-ms="6044" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productimageCount -->
-        <test-method signature="getProductTechnicalInfo()[pri:3, instance:com.qa.lenskart.tests.ProductInfoTest@6221a451]" started-at="2022-11-22T14:27:37 IST" name="getProductTechnicalInfo" finished-at="2022-11-22T14:27:40 IST" duration-ms="3280" status="PASS">
+        <test-method signature="getProductTechnicalInfo()[pri:3, instance:com.qa.lenskart.tests.ProductInfoTest@6221a451]" started-at="2022-11-22T21:30:56 IST" name="getProductTechnicalInfo" finished-at="2022-11-22T21:31:03 IST" duration-ms="6909" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getProductTechnicalInfo -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.lenskart.tests.ProductInfoTest@6221a451]" started-at="2022-11-22T14:27:40 IST" name="tearDown" finished-at="2022-11-22T14:27:40 IST" duration-ms="162" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.lenskart.tests.ProductInfoTest@6221a451]" started-at="2022-11-22T21:31:03 IST" name="tearDown" finished-at="2022-11-22T21:31:03 IST" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
