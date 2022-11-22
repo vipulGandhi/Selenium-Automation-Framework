@@ -21,8 +21,9 @@ public class LandingPage
 	private By signInLinkBy = By.xpath("//span[text()='Sign In']");
 	private By pushNotificationDismissBy = By.xpath("//button[text()='No thanks']");
 	private By emailBy = By.xpath("//input[@name='emailOrPhone']");
-	private By passwordBy = By.xpath("//input[@name='password']");
-	private By proceedButtonBy = By.xpath("//button[text()='Proceed']");
+	//private By emailProceedBy = By.xpath("//div[@class='auth-modal-login-container ']//span[text()='Sign In']");
+	private By passwordBy = By.xpath("//input[@title='password']");
+	private By proceedButtonBy = By.xpath("//div[@class='auth-modal-login-container ']//span[text()='Sign In']");
 	
 	public LandingPage(WebDriver driver)
 	{

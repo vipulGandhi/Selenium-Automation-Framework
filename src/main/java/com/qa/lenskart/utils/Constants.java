@@ -8,7 +8,7 @@ public class Constants
 	
 	//--------------------------------------------------------------------------------------
 	// Global
-	public static final int DEFAULT_TIME_OUT = 120;
+	public static final int DEFAULT_TIME_OUT = 300;
 	public static final String SCROLL_SPEED = "2";
 	
 	// Landing Page

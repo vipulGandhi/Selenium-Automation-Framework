@@ -1,6 +1,6 @@
-package com.qa.lenskart.tests;
+// One method should have one hard assertions and multiple soft assertions
 
-import java.util.NoSuchElementException;
+package com.qa.lenskart.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

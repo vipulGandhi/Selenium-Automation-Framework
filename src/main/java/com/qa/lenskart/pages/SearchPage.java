@@ -30,7 +30,6 @@ public class SearchPage
 	}
 
 	private By searchResultCountBy = By.xpath("//div[@class='show_count']");
-	private By productToSelect = By.xpath("//div[text()='Aqualens']");
 	
 	
 	public String getHeading(String pageHeading)
@@ -49,18 +48,11 @@ public class SearchPage
 	}
 	
 	public ProductInfoPage selectProduct(String productName)
-	{
-		javascriptUtil.refreshPage();
-		
-		System.out.println("In method");
+	{		
 		By productToSelect = By.xpath("//div[text()='"+productName+"']");
-		System.out.println("Locator found");
 		elementUtil.doClick(waitUtils.ifElementVisibleAndClickable(productToSelect, Constants.DEFAULT_TIME_OUT));
-		System.out.println("Clicked on element");
 		pageUtils.switchToChildWindow();
-		System.out.println("Window switched");
 		javascriptUtil.waitForPageLoaded();
-		System.out.println("Child page loaded");
 
 		return new ProductInfoPage(driver);
 	}

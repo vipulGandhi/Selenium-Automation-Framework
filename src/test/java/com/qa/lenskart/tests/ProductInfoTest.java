@@ -23,8 +23,16 @@ public class ProductInfoTest extends BaseTest
 	@Test(priority = 2)
 	public void productimageCount()
 	{
+		searchPage = homePage.doSearch("Eyeglasses");
+		productInfoPage = searchPage.selectProduct("Vincent Chase");
+		Assert.assertTrue(productInfoPage.productImagesCount() > 0);
+	}
+	
+	@Test(priority = 3)
+	public void getProductTechnicalInfo()
+	{
 		searchPage = homePage.doSearch("Contact lens");
 		productInfoPage = searchPage.selectProduct("Aqualens");
-		//Assert.assertTrue(productInfoPage.productImagesCount() > 0);
+		System.out.println(productInfoPage.getProductTechnicalInfo());
 	}
 }

@@ -4,7 +4,9 @@
 package com.qa.lenskart.pages;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.TreeMap;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -22,7 +24,8 @@ public class ProductInfoPage
 	
 	private String pageHeading;
 	private int totalProduceImages;
-	private HashMap<String, String> productTechnicalInfoHashMap;
+	private HashMap<String,String> productTechnicalInfoHashMap;
+	
 	
 	By pageHeadingBy = By.xpath("//div[contains(@class,'product-brands')]");
 	By productImageCountBy = By.xpath("//div[@class='product-images-list']//li");
@@ -56,6 +59,15 @@ public class ProductInfoPage
 		String keyString = null;
 		String valueString = null;
 		
+		// Hash map does not maintain the order
+		//HashMap<String,String> productTechnicalInfoHashMap =new HashMap<String,String>();
+		
+		// Linked HashMap maintains the order in whicj the values are stored
+		productTechnicalInfoHashMap =new LinkedHashMap<String,String>();
+		
+		// Tree Map maintains the order (Sort the keys(and their values) in the ascending order. 1st for Capital letters then for small letters)
+		//TreeMap<String, String> productTechnicalInfoHashMap =new TreeMap<String,String>();
+		
 		elementUtil.doClick(technicalInfoButtonBy);
 		
 		productTechnicalInfoHashMap.put("Product Name", getProductBrandName());
@@ -75,6 +87,7 @@ public class ProductInfoPage
 			productTechnicalInfoHashMap.put(keyString, valueString);
 		}
 		
+		pageUtils.switchToParentWindow();
 		return productTechnicalInfoHashMap;
 	}
 }
