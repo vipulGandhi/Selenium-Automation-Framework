@@ -6,6 +6,7 @@ package com.qa.lenskart.pages;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.TreeMap;
 
 import org.openqa.selenium.By;
@@ -24,7 +25,7 @@ public class ProductInfoPage
 	
 	private String pageHeading;
 	private int totalProduceImages;
-	private HashMap<String,String> productTechnicalInfoHashMap;
+	private Map<String,String> productTechnicalInfoMap;
 	
 	
 	By pageHeadingBy = By.xpath("//div[contains(@class,'product-brands')]");
@@ -53,24 +54,24 @@ public class ProductInfoPage
 		return totalProduceImages;
 	}
 	
-	public HashMap<String, String> getProductTechnicalInfo()
+	public Map<String, String> getProductTechnicalInfo()
 	{
 		
 		String keyString = null;
 		String valueString = null;
 		
 		// Hash map does not maintain the order
-		//HashMap<String,String> productTechnicalInfoHashMap =new HashMap<String,String>();
+		//productTechnicalInfoHashMap =new HashMap<String,String>();
 		
-		// Linked HashMap maintains the order in whicj the values are stored
-		productTechnicalInfoHashMap =new LinkedHashMap<String,String>();
+		// Linked HashMap maintains the order in which the values are stored
+		productTechnicalInfoMap =new LinkedHashMap<String,String>();
 		
 		// Tree Map maintains the order (Sort the keys(and their values) in the ascending order. 1st for Capital letters then for small letters)
-		//TreeMap<String, String> productTechnicalInfoHashMap =new TreeMap<String,String>();
+		//productTechnicalInfoHashMap =new TreeMap<String,String>();
 		
 		elementUtil.doClick(technicalInfoButtonBy);
 		
-		productTechnicalInfoHashMap.put("Product Name", getProductBrandName());
+		//productTechnicalInfoHashMap.put("Product Name", getProductBrandName());
 		
 		List<String> productTechnicalMetadataList = 
 				elementUtil.getElementsText(waitUtils.isVisibilityOfElementsLocated(productTechnicalInfoMetadataBy, Constants.DEFAULT_TIME_OUT));
@@ -84,10 +85,10 @@ public class ProductInfoPage
 			{
 				valueString = productTechnicalMetadataList.get(i);
 			}
-			productTechnicalInfoHashMap.put(keyString, valueString);
+			productTechnicalInfoMap.put(keyString, valueString);
 		}
 		
 		pageUtils.switchToParentWindow();
-		return productTechnicalInfoHashMap;
+		return productTechnicalInfoMap;
 	}
 }

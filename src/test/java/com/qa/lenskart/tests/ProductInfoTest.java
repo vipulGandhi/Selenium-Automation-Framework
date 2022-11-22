@@ -1,5 +1,7 @@
 package com.qa.lenskart.tests;
 
+import java.util.Map;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -33,6 +35,8 @@ public class ProductInfoTest extends BaseTest
 	{
 		searchPage = homePage.doSearch("Contact lens");
 		productInfoPage = searchPage.selectProduct("Aqualens");
-		System.out.println(productInfoPage.getProductTechnicalInfo());
+		Map<String, String> productTechnicalInfoMap = productInfoPage.getProductTechnicalInfo();
+		productTechnicalInfoMap.forEach((k,v) -> System.out.println(k + " " + v));
+		
 	}
 }
