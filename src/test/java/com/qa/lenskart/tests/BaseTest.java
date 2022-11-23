@@ -1,5 +1,7 @@
 package com.qa.lenskart.tests;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
@@ -24,6 +26,7 @@ public class BaseTest
 	SearchPage searchPage;
 	ProductInfoPage productInfoPage;
 	
+	@BeforeMethod
 	@BeforeTest
 	public void setUp()
 	{
@@ -34,6 +37,7 @@ public class BaseTest
 		landingPage = new LandingPage(driver);
 	}
 	
+	@AfterMethod
 	@AfterTest
 	public void tearDown()
 	{

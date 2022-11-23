@@ -15,6 +15,9 @@
 
 package com.qa.lenskart.tests;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import java.util.Map;
 
 import org.testng.Assert;
@@ -35,7 +38,7 @@ public class ProductInfoTest extends BaseTest
 	{
 		searchPage = homePage.doSearch("Contact lens");
 		productInfoPage = searchPage.selectProduct("Aqualens");
-		Assert.assertTrue(productInfoPage.getProductBrandName().contains("Aqualens"));
+		AssertJUnit.assertTrue(productInfoPage.getProductBrandName().contains("Aqualens"));
 	}
 	
 	@Test(priority = 2)
@@ -43,7 +46,7 @@ public class ProductInfoTest extends BaseTest
 	{
 		searchPage = homePage.doSearch("Eyeglasses");
 		productInfoPage = searchPage.selectProduct("Vincent Chase");
-		Assert.assertTrue(productInfoPage.productImagesCount() > 0);
+		AssertJUnit.assertTrue(productInfoPage.productImagesCount() > 0);
 	}
 	
 	@Test(priority = 3)
@@ -53,8 +56,8 @@ public class ProductInfoTest extends BaseTest
 		productInfoPage = searchPage.selectProduct("Aqualens");
 		Map<String, String> productTechnicalInfoMap = productInfoPage.getProductTechnicalInfo();
 		productTechnicalInfoMap.forEach((k,v) -> System.out.println(k + " : " + v));
-		softAssert.assertEquals(productTechnicalInfoMap.get("Product Id"), "135218");
-		softAssert.assertEquals(productTechnicalInfoMap.get("Model No."), "Aqualens Toric Monthly 24 Hours (3 Lens)");
+		AssertJUnit.assertEquals(productTechnicalInfoMap.get("Product Id"), "135218");
+		AssertJUnit.assertEquals(productTechnicalInfoMap.get("Model No."), "Aqualens Toric Monthly 24 Hours (3 Lens)");
 		softAssert.assertAll();
 		
 	}

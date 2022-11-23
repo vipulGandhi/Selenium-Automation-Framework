@@ -13,7 +13,7 @@ public class Constants
 	
 	//--------------------------------------------------------------------------------------
 	// Excel Sheet Names
-	public static final String SHEET_NAME_SEARCH_ITEMS = "SerchItems";  
+	public static final String SHEET_NAME_SEARCH_ITEMS = "SearchItems";  
 	
 	// Landing Page
 	public static final String lANDING_PAGE_TITLE_FRACTION = "Lenskart.com";  
