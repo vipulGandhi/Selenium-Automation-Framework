@@ -6,6 +6,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.qa.lenskart.utils.Constants;
+import com.qa.lenskart.utils.ExcelUtil;
 
 public class HomePageTest extends BaseTest
 {
@@ -16,28 +17,34 @@ public class HomePageTest extends BaseTest
 		homePage = landingPage.doSignIn(properties.getProperty("email"), properties.getProperty("password"));
 	}
 	
-	@Test(priority = 1)
+	//@Test(priority = 1)
 	public void userNameTest()
 	{
 		Assert.assertEquals(homePage.getUserName(), properties.getProperty("username"));
 	}
 	
-	@Test(priority = 2)
+	//@Test(priority = 2)
 	public void loginPanelItemsTest()
 	{
 		Assert.assertEquals(homePage.getLoginPanelItems(), Constants.loginPanelItems());
 	}
 	
+	//@DataProvider
+//	public Object[][] serchItems()
+//	{
+//		Object[][] searchObjects = new Object[3][1];
+//		
+//		searchObjects[0][0] = "Contact Lens";
+//		searchObjects[1][0] = "Eyeglasses";
+//		searchObjects[2][0] = "Sunglasses";
+//		
+//		return searchObjects;		
+//	}
+	
 	@DataProvider
 	public Object[][] serchItems()
 	{
-		Object[][] searchObjects = new Object[3][1];
-		
-		searchObjects[0][0] = "Contact Lens";
-		searchObjects[1][0] = "Eyeglasses";
-		searchObjects[2][0] = "Sunglasses";
-		
-		return searchObjects;		
+		return ExcelUtil.getTestData(Constants.SHEET_NAME_SEARCH_ITEMS);
 	}
 	
 	@Test(priority = 3, dataProvider= "serchItems")
@@ -64,7 +71,7 @@ public class HomePageTest extends BaseTest
 		return searchObjects;		
 	}
 	
-	@Test(priority = 4, dataProvider= "productSelectionData")
+	//@Test(priority = 4, dataProvider= "productSelectionData")
 	public void selectProductTest(String productParentSearch, String productBrandName, String productSearch)
 	{
 		searchPage = homePage.doSearch(productParentSearch);
