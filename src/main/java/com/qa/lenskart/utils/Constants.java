@@ -13,7 +13,8 @@ public class Constants
 	
 	// Landing Page
 	public static final String lANDING_PAGE_TITLE_FRACTION = "Lenskart.com";  
-	public static final String lANDING_PAGE_URL_FRACTION = "lenskart.com";  
+	public static final String lANDING_PAGE_URL_FRACTION = "lenskart.com";
+	public static final String EMAIL_ERROR_MESSAGE = "Account Does not exists..";  
 	
 	//--------------------------------------------------------------------------------------
 	// Home Page

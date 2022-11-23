@@ -16,23 +16,29 @@ public class DriverFactory
 {
 	public WebDriver driver;
 	public Properties properties;
+	public OptionsManager optionsManager;
+	public static String highlightElement;
 	
 	public WebDriver initWebDriver(Properties properties)
 	{
 		
 		String browserName = properties.getProperty("browser").trim().toLowerCase();
 		String pageURLString = properties.getProperty("url");
+		
+		highlightElement = properties.getProperty("highlightElement");
+		
+		optionsManager = new OptionsManager(properties);
 				
 		// Initialize the driver
 		if(browserName.equals("chrome"))
 		{
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(optionsManager.getChromeOptions());
 		}
 		else if(browserName.equals("firefox"))
 		{
 			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+			driver = new FirefoxDriver(optionsManager.getFirefoxoptions());
 		}
 		else if(browserName.equals("safari"))
 		{
@@ -53,7 +59,7 @@ public class DriverFactory
 		return driver;
 	}
 	
-	// Initialize the properties
+	// Initialize properties
 	public Properties initProperties()
 	{
 		properties = new Properties();

@@ -21,9 +21,10 @@ public class LandingPage
 	private By signInLinkBy = By.xpath("//span[text()='Sign In']");
 	private By pushNotificationDismissBy = By.xpath("//button[text()='No thanks']");
 	private By emailBy = By.xpath("//input[@name='emailOrPhone']");
-	//private By emailProceedBy = By.xpath("//div[@class='auth-modal-login-container ']//span[text()='Sign In']");
 	private By passwordBy = By.xpath("//input[@title='password']");
 	private By proceedButtonBy = By.xpath("//div[@class='auth-modal-login-container ']//span[text()='Sign In']");
+	private By invalidEmilMsgBy = By.xpath("//div[@class='custom-error-msg']");
+	private By invalidCredentialsMsgBy = By.xpath("//div[@class='sign-in-error-msg']");
 	
 	public LandingPage(WebDriver driver)
 	{
@@ -67,5 +68,26 @@ public class LandingPage
 		javascriptUtil.waitForPageLoaded();
 		
 		return new HomePage(driver);
+	}
+	
+	public boolean doSignInWithInvalidEmail(String email)
+	{
+		if(elementUtil.isElementDisplayed(pushNotificationDismissBy))
+		{
+			elementUtil.doClick(pushNotificationDismissBy);
+		}
+
+		elementUtil.doClick(waitUtils.ifElementVisibleAndClickable(signInLinkBy, Constants.DEFAULT_TIME_OUT));
+
+		elementUtil.doSendKeys(waitUtils.ifElementVisibleAndClickable(emailBy, Constants.DEFAULT_TIME_OUT), email);
+
+		elementUtil.doClick(proceedButtonBy);
+
+		String errorMsg = elementUtil.getElementText(waitUtils.isPresenceOfElementLocated(invalidEmilMsgBy, Constants.DEFAULT_TIME_OUT));
+		if(errorMsg.contains(Constants.EMAIL_ERROR_MESSAGE))
+		{
+			return true;
+		}
+		return false;
 	}
 }

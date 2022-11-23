@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.lenskart.tests.ProductInfoTest">
+      <class name="com.qa.lenskart.tests.LandingPageNegativeTest">
         <methods>
           <include name="tearDown"/>
-          <include name="getProductTechnicalInfo"/>
           <include name="setUp"/>
-          <include name="test"/>
+          <include name="loginNegativeTest" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- com.qa.lenskart.tests.ProductInfoTest -->
+      </class> <!-- com.qa.lenskart.tests.LandingPageNegativeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

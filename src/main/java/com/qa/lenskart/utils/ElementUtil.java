@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import com.qa.lenskart.factory.DriverFactory;
+
 import net.bytebuddy.asm.Advice.Return;
 
 //Manually import static packages
@@ -18,16 +20,24 @@ import static org.openqa.selenium.support.locators.RelativeLocator.*;
 public class ElementUtil
 {
 	private WebDriver driver;
+	private JavascriptUtil javascriptUtil;
 	
 	
 	public ElementUtil(WebDriver driver)
 	{
 		this.driver = driver;
+		javascriptUtil = new JavascriptUtil(driver);
 	}
 	
 	public WebElement getElement(By byLocator)
 	{
-		return driver.findElement(byLocator);
+		WebElement webElement = driver.findElement(byLocator);
+		
+		if(Boolean.parseBoolean(DriverFactory.highlightElement.trim().toLowerCase()))
+		{
+			javascriptUtil.flashWebElement(webElement);
+		}
+		return webElement;
 	}
 	
 	public List<WebElement> getElements(By byLocator)

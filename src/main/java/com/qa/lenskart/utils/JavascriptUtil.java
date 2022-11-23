@@ -1,6 +1,5 @@
 package com.qa.lenskart.utils;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,13 +7,11 @@ import org.openqa.selenium.WebElement;
 public class JavascriptUtil
 {
 	private WebDriver driver;
-	private ElementUtil elementUtil;
 	
 	
 	public JavascriptUtil(WebDriver driver)
 	{
 		this.driver = driver;
-		elementUtil = new ElementUtil(driver);
 	}
 	
 	public WebElement executeJavaScript(String javaScriptString)
@@ -70,9 +67,9 @@ public class JavascriptUtil
 	public void flashWebElement(WebElement webElement)
 	{
 		String bgcolor = webElement.getCssValue("backgroundColor");
-		for (int i = 0; i < 5; i++)
+		for (int i = 0; i < 2; i++)
 		{
-			changeColor("rgb(255,192,203)", webElement);
+			changeColor("rgb(105,105,105)", webElement);
 			changeColor(bgcolor, webElement);
 		}
 	}
@@ -83,7 +80,7 @@ public class JavascriptUtil
 		jsExecutor.executeScript("arguments[0].style.backgroundColor=' " + color + " ' ",webElement);
 		try
 		{
-			Thread.sleep(400);
+			Thread.sleep(100);
 		}
 		catch (InterruptedException e)
 		{
