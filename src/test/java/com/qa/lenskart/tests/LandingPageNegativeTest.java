@@ -2,6 +2,8 @@ package com.qa.lenskart.tests;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertTrue;
 
 import java.net.PasswordAuthentication;

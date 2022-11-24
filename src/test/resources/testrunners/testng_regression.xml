@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+
+<suite name="LensKart Test Suite">
+
   <test thread-count="5" name="Test">
+  
     <classes>
+    
+      <class name="com.qa.lenskart.tests.LandingPageTest"/>
       <class name="com.qa.lenskart.tests.LandingPageNegativeTest"/>
       <class name="com.qa.lenskart.tests.HomePageTest"/>
       <class name="com.qa.lenskart.tests.ProductInfoTest"/>
-      <class name="com.qa.lenskart.tests.LandingPageTest"/>
-      <class name="com.qa.lenskart.tests.BaseTest"/>
+
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test>
+</suite>
