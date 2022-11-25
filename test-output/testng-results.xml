@@ -1,37 +1,612 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="0" failed="0" skipped="12">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-24T19:34:48 IST" name="Default suite" finished-at="2022-11-24T19:35:00 IST" duration-ms="11702">
+  <suite started-at="2022-11-25T17:22:19 IST" name="LensKart Test Suite" finished-at="2022-11-25T17:22:19 IST" duration-ms="470">
     <groups>
     </groups>
-    <test started-at="2022-11-24T19:34:48 IST" name="Default test" finished-at="2022-11-24T19:35:00 IST" duration-ms="11702">
-      <class name="com.qa.lenskart.tests.LandingPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.lenskart.tests.LandingPageTest@60099951]" started-at="2022-11-24T19:34:48 IST" name="setUp" finished-at="2022-11-24T19:34:55 IST" duration-ms="7178" status="PASS">
+    <test started-at="2022-11-25T17:22:19 IST" name="LensKart Landing Page Negative Test" finished-at="2022-11-25T17:22:19 IST" duration-ms="38">
+      <class name="com.qa.lenskart.tests.LandingPageNegativeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.lenskart.tests.LandingPageNegativeTest@35dab4eb]" started-at="2022-11-25T17:22:19 IST" name="setUp" finished-at="2022-11-25T17:22:19 IST" duration-ms="5" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null
+at com.qa.lenskart.factory.DriverFactory.initProperties(DriverFactory.java:86)
+at com.qa.lenskart.tests.BaseTest.setUp(BaseTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="titleTest()[pri:1, instance:com.qa.lenskart.tests.LandingPageTest@60099951]" started-at="2022-11-24T19:34:55 IST" name="titleTest" finished-at="2022-11-24T19:34:55 IST" duration-ms="11" status="PASS">
+        <test-method signature="loginNegativeTest(java.lang.String)[pri:1, instance:com.qa.lenskart.tests.LandingPageNegativeTest@35dab4eb]" started-at="2022-11-25T17:22:19 IST" name="loginNegativeTest" data-provider="invalidEmailData" finished-at="2022-11-25T17:22:19 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrongusername@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null
+at com.qa.lenskart.factory.DriverFactory.initProperties(DriverFactory.java:86)
+at com.qa.lenskart.tests.BaseTest.setUp(BaseTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginNegativeTest -->
+        <test-method signature="loginNegativeTest(java.lang.String)[pri:1, instance:com.qa.lenskart.tests.LandingPageNegativeTest@35dab4eb]" started-at="2022-11-25T17:22:19 IST" name="loginNegativeTest" data-provider="invalidEmailData" finished-at="2022-11-25T17:22:19 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[badusername@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null
+at com.qa.lenskart.factory.DriverFactory.initProperties(DriverFactory.java:86)
+at com.qa.lenskart.tests.BaseTest.setUp(BaseTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginNegativeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.lenskart.tests.LandingPageNegativeTest@35dab4eb]" started-at="2022-11-25T17:22:19 IST" name="tearDown" finished-at="2022-11-25T17:22:19 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.lenskart.tests.LandingPageNegativeTest -->
+    </test> <!-- LensKart Landing Page Negative Test -->
+    <test started-at="2022-11-25T17:22:19 IST" name="LensKart product Info Test" finished-at="2022-11-25T17:22:19 IST" duration-ms="39">
+      <class name="com.qa.lenskart.tests.ProductInfoTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.lenskart.tests.ProductInfoTest@1a75e76a]" started-at="2022-11-25T17:22:19 IST" name="setUp" finished-at="2022-11-25T17:22:19 IST" duration-ms="5" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null
+at com.qa.lenskart.factory.DriverFactory.initProperties(DriverFactory.java:86)
+at com.qa.lenskart.tests.BaseTest.setUp(BaseTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="test()[pri:0, instance:com.qa.lenskart.tests.ProductInfoTest@1a75e76a]" started-at="2022-11-25T17:22:19 IST" name="test" finished-at="2022-11-25T17:22:19 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="productBrandNameTest()[pri:1, instance:com.qa.lenskart.tests.ProductInfoTest@1a75e76a]" started-at="2022-11-25T17:22:19 IST" name="productBrandNameTest" finished-at="2022-11-25T17:22:19 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null
+at com.qa.lenskart.factory.DriverFactory.initProperties(DriverFactory.java:86)
+at com.qa.lenskart.tests.BaseTest.setUp(BaseTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productBrandNameTest -->
+        <test-method signature="productimageCount()[pri:2, instance:com.qa.lenskart.tests.ProductInfoTest@1a75e76a]" started-at="2022-11-25T17:22:19 IST" name="productimageCount" finished-at="2022-11-25T17:22:19 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null
+at com.qa.lenskart.factory.DriverFactory.initProperties(DriverFactory.java:86)
+at com.qa.lenskart.tests.BaseTest.setUp(BaseTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productimageCount -->
+        <test-method signature="getProductTechnicalInfo()[pri:3, instance:com.qa.lenskart.tests.ProductInfoTest@1a75e76a]" started-at="2022-11-25T17:22:19 IST" name="getProductTechnicalInfo" finished-at="2022-11-25T17:22:19 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null
+at com.qa.lenskart.factory.DriverFactory.initProperties(DriverFactory.java:86)
+at com.qa.lenskart.tests.BaseTest.setUp(BaseTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductTechnicalInfo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.lenskart.tests.ProductInfoTest@1a75e76a]" started-at="2022-11-25T17:22:19 IST" name="tearDown" finished-at="2022-11-25T17:22:19 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.lenskart.tests.ProductInfoTest -->
+    </test> <!-- LensKart product Info Test -->
+    <test started-at="2022-11-25T17:22:19 IST" name="LensKart Landing Page Test" finished-at="2022-11-25T17:22:19 IST" duration-ms="42">
+      <class name="com.qa.lenskart.tests.LandingPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.lenskart.tests.LandingPageTest@60099951]" started-at="2022-11-25T17:22:19 IST" name="setUp" finished-at="2022-11-25T17:22:19 IST" duration-ms="5" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null
+at com.qa.lenskart.factory.DriverFactory.initProperties(DriverFactory.java:86)
+at com.qa.lenskart.tests.BaseTest.setUp(BaseTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="titleTest()[pri:1, instance:com.qa.lenskart.tests.LandingPageTest@60099951]" started-at="2022-11-25T17:22:19 IST" name="titleTest" finished-at="2022-11-25T17:22:19 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null
+at com.qa.lenskart.factory.DriverFactory.initProperties(DriverFactory.java:86)
+at com.qa.lenskart.tests.BaseTest.setUp(BaseTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleTest -->
-        <test-method signature="urlTest()[pri:2, instance:com.qa.lenskart.tests.LandingPageTest@60099951]" started-at="2022-11-24T19:34:55 IST" name="urlTest" finished-at="2022-11-24T19:34:55 IST" duration-ms="9" status="PASS">
+        <test-method signature="urlTest()[pri:2, instance:com.qa.lenskart.tests.LandingPageTest@60099951]" started-at="2022-11-25T17:22:19 IST" name="urlTest" finished-at="2022-11-25T17:22:19 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null
+at com.qa.lenskart.factory.DriverFactory.initProperties(DriverFactory.java:86)
+at com.qa.lenskart.tests.BaseTest.setUp(BaseTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlTest -->
-        <test-method signature="logoTest()[pri:3, instance:com.qa.lenskart.tests.LandingPageTest@60099951]" started-at="2022-11-24T19:34:55 IST" name="logoTest" finished-at="2022-11-24T19:34:56 IST" duration-ms="485" status="PASS">
+        <test-method signature="logoTest()[pri:3, instance:com.qa.lenskart.tests.LandingPageTest@60099951]" started-at="2022-11-25T17:22:19 IST" name="logoTest" finished-at="2022-11-25T17:22:19 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null
+at com.qa.lenskart.factory.DriverFactory.initProperties(DriverFactory.java:86)
+at com.qa.lenskart.tests.BaseTest.setUp(BaseTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoTest -->
-        <test-method signature="signInTest()[pri:4, instance:com.qa.lenskart.tests.LandingPageTest@60099951]" started-at="2022-11-24T19:34:56 IST" name="signInTest" finished-at="2022-11-24T19:34:59 IST" duration-ms="3882" status="PASS">
+        <test-method signature="signInTest()[pri:4, instance:com.qa.lenskart.tests.LandingPageTest@60099951]" started-at="2022-11-25T17:22:19 IST" name="signInTest" finished-at="2022-11-25T17:22:19 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null
+at com.qa.lenskart.factory.DriverFactory.initProperties(DriverFactory.java:86)
+at com.qa.lenskart.tests.BaseTest.setUp(BaseTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.lenskart.tests.LandingPageTest@60099951]" started-at="2022-11-24T19:34:59 IST" name="tearDown" finished-at="2022-11-24T19:35:00 IST" duration-ms="111" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.lenskart.tests.LandingPageTest@60099951]" started-at="2022-11-25T17:22:19 IST" name="tearDown" finished-at="2022-11-25T17:22:19 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.lenskart.tests.LandingPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- LensKart Landing Page Test -->
+    <test started-at="2022-11-25T17:22:19 IST" name="LensKart Home Page Test" finished-at="2022-11-25T17:22:19 IST" duration-ms="470">
+      <class name="com.qa.lenskart.tests.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.lenskart.tests.HomePageTest@7a35b0f5]" started-at="2022-11-25T17:22:19 IST" name="setUp" finished-at="2022-11-25T17:22:19 IST" duration-ms="5" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null
+at com.qa.lenskart.factory.DriverFactory.initProperties(DriverFactory.java:86)
+at com.qa.lenskart.tests.BaseTest.setUp(BaseTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="test()[pri:0, instance:com.qa.lenskart.tests.HomePageTest@7a35b0f5]" started-at="2022-11-25T17:22:19 IST" name="test" finished-at="2022-11-25T17:22:19 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="searchTest(java.lang.String)[pri:3, instance:com.qa.lenskart.tests.HomePageTest@7a35b0f5]" started-at="2022-11-25T17:22:19 IST" name="searchTest" data-provider="serchItems" finished-at="2022-11-25T17:22:19 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Contact Lens]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null
+at com.qa.lenskart.factory.DriverFactory.initProperties(DriverFactory.java:86)
+at com.qa.lenskart.tests.BaseTest.setUp(BaseTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method signature="searchTest(java.lang.String)[pri:3, instance:com.qa.lenskart.tests.HomePageTest@7a35b0f5]" started-at="2022-11-25T17:22:19 IST" name="searchTest" data-provider="serchItems" finished-at="2022-11-25T17:22:19 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sunglasses]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null
+at com.qa.lenskart.factory.DriverFactory.initProperties(DriverFactory.java:86)
+at com.qa.lenskart.tests.BaseTest.setUp(BaseTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method signature="searchTest(java.lang.String)[pri:3, instance:com.qa.lenskart.tests.HomePageTest@7a35b0f5]" started-at="2022-11-25T17:22:19 IST" name="searchTest" data-provider="serchItems" finished-at="2022-11-25T17:22:19 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Eyeglasses]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.trim()" because the return value of "java.lang.System.getProperty(String)" is null
+at com.qa.lenskart.factory.DriverFactory.initProperties(DriverFactory.java:86)
+at com.qa.lenskart.tests.BaseTest.setUp(BaseTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.lenskart.tests.HomePageTest@7a35b0f5]" started-at="2022-11-25T17:22:19 IST" name="tearDown" finished-at="2022-11-25T17:22:19 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.lenskart.tests.HomePageTest -->
+    </test> <!-- LensKart Home Page Test -->
+  </suite> <!-- LensKart Test Suite -->
 </testng-results>

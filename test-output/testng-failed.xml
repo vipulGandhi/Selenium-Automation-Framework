@@ -1,16 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [LensKart Test Suite]" guice-stage="DEVELOPMENT" verbose="4">
+  <test thread-count="5" parallel="tests" name="LensKart Landing Page Negative Test(failed)" verbose="4">
+    <classes>
+      <class name="com.qa.lenskart.tests.LandingPageNegativeTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="loginNegativeTest"/>
+        </methods>
+      </class> <!-- com.qa.lenskart.tests.LandingPageNegativeTest -->
+    </classes>
+  </test> <!-- LensKart Landing Page Negative Test(failed) -->
   <test thread-count="5" parallel="tests" name="LensKart product Info Test(failed)" verbose="4">
     <classes>
       <class name="com.qa.lenskart.tests.ProductInfoTest">
         <methods>
-          <include name="tearDown"/>
           <include name="getProductTechnicalInfo"/>
+          <include name="tearDown"/>
+          <include name="productimageCount"/>
           <include name="setUp"/>
           <include name="test"/>
+          <include name="productBrandNameTest"/>
         </methods>
       </class> <!-- com.qa.lenskart.tests.ProductInfoTest -->
     </classes>
   </test> <!-- LensKart product Info Test(failed) -->
+  <test thread-count="5" parallel="tests" name="LensKart Landing Page Test(failed)" verbose="4">
+    <classes>
+      <class name="com.qa.lenskart.tests.LandingPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="titleTest"/>
+          <include name="urlTest"/>
+          <include name="setUp"/>
+          <include name="logoTest"/>
+          <include name="signInTest"/>
+        </methods>
+      </class> <!-- com.qa.lenskart.tests.LandingPageTest -->
+    </classes>
+  </test> <!-- LensKart Landing Page Test(failed) -->
+  <test thread-count="5" parallel="tests" name="LensKart Home Page Test(failed)" verbose="4">
+    <classes>
+      <class name="com.qa.lenskart.tests.HomePageTest">
+        <methods>
+          <include name="test"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="searchTest"/>
+        </methods>
+      </class> <!-- com.qa.lenskart.tests.HomePageTest -->
+    </classes>
+  </test> <!-- LensKart Home Page Test(failed) -->
 </suite> <!-- Failed suite [LensKart Test Suite] -->
