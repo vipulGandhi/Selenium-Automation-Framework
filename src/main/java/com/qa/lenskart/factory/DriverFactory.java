@@ -83,7 +83,7 @@ public class DriverFactory
 		properties = new Properties();
 		FileInputStream fileInputStream = null;
 		
-		String environmentString = System.getProperty("environment"); // dev/ production/ qa/ staging/ uat
+		String environmentString = System.getProperty("environment").trim().toLowerCase(); // dev/ production/ qa/ staging/ uat
 		
 		if (environmentString.equals("dev") || environmentString.equals("production") || environmentString.equals("qa")
 				|| environmentString.equals("staging") || environmentString.equals("uat") || Strings.isNullOrEmpty(environmentString))
