@@ -80,46 +80,62 @@ public class DriverFactory
 	// Initialize properties
 	public Properties initProperties()
 	{
-		properties = new Properties();
+		properties = null;
 		FileInputStream fileInputStream = null;
-		
-		//String environmentString = System.getProperty("environment").trim().toLowerCase(); // dev/ production/ qa/ staging/ uat
-		String environmentString = "qa";
-		
-		if (environmentString.equals("dev") || environmentString.equals("production") || environmentString.equals("qa")
-				|| environmentString.equals("staging") || environmentString.equals("uat") || Strings.isNullOrEmpty(environmentString))
+
+		String environmentString = System.getProperty("environment");// mvn clean install -Denv="qa"
+
+		try
 		{
-			
-			if(Strings.isNullOrEmpty(environmentString))
+			if (environmentString == null)
 			{
-				environmentString = "production";
+				System.out.println("Running on production environment ....");
+				fileInputStream = new FileInputStream("./src/test/resources/configurations/production.config.properties");
 			}
-			
-			System.out.println("Running on " + environmentString + " environment ...");
-			try
+			else
 			{
-				fileInputStream = new FileInputStream("./src/test/resources/configurations/" + environmentString + ".config.properties");
+				System.out.println("Running on " + environmentString  + " environment");
+				switch (environmentString)
+				{
+				case "qa":
+					fileInputStream = new FileInputStream("./src/test/resources/configurations/qa.config.properties");
+					break;
+				case "dev":
+					fileInputStream = new FileInputStream("./src/test/resources/configurations/dev.config.properties");
+					break;
+				case "staging":
+					fileInputStream = new FileInputStream("./src/test/resources/configurations/staging.config.properties");
+					break;
+
+				default:
+					System.out.println("No ENV found.....");
+					throw new Exception("NOENVFOUNDEXCEPTION");
+
+				}
 			}
-			catch (FileNotFoundException e)
-			{
-				e.printStackTrace();
-			}
+
 		}
-		
-		else
+		catch (FileNotFoundException e)
 		{
-			System.out.println("Please enter the correct environment ...");
+			e.printStackTrace();
+		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
 		}
 
 		try
 		{
+			properties = new Properties();
 			properties.load(fileInputStream);
+
 		}
 		catch (IOException e)
 		{
 			e.printStackTrace();
 		}
-		
+
 		return properties;
+
 	}
 }

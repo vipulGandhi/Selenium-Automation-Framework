@@ -36,7 +36,7 @@ public class ProductInfoTest extends BaseTest
 		homePage = landingPage.doSignIn(properties.getProperty("email"), properties.getProperty("password"));
 	}
 	
-	@Test(priority = 1)
+	//@Test(priority = 1)
 	public void productBrandNameTest()
 	{
 		searchPage = homePage.doSearch("Contact lens");
@@ -52,7 +52,7 @@ public class ProductInfoTest extends BaseTest
 		AssertJUnit.assertTrue(productInfoPage.productImagesCount() > 0);
 	}
 	
-	@Test(priority = 3)
+	//@Test(priority = 3)
 	public void getProductTechnicalInfo()
 	{
 		searchPage = homePage.doSearch("Contact lens");

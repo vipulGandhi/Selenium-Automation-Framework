@@ -15,13 +15,18 @@
 	// 6. Open Terminal
 		// Go to the project path where pom.xml is present
 			// cd /Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework
-	// 7. Run command "mvn clean install -Denvironment="qa""
+	// 7. Run command mvn clean install -Denvironment="qa"
 		// -Denvironment="qa" = -Dkey="value"
 			// We have set the key-value pairs in DriverFactory class
 				// Key = "environment" [ System.getProperty("environment").trim().toLowerCase();]
 				// Value = All possible values "environment" could have
 					// "dev", "production", "qa", "staging", "uat"
-		// Maven will start running all the test cases 
+		// Maven will start running all the test cases
+	// 8. Run command mvn clean install
+		// This command will keep the environment value to null
+			// If environment value is null, the test cases will run in production environment
+				// Ref: DriverFactory class
+	// 9. 
 
 
 		
