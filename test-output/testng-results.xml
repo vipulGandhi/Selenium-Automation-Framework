@@ -1,28 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="0" failed="4" skipped="0">
+<testng-results ignored="0" total="11" passed="10" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-25T18:18:51 IST" name="Default suite" finished-at="2022-11-25T18:28:56 IST" duration-ms="605115">
+  <suite started-at="2022-11-25T21:40:22 IST" name="LensKart Test Suite" finished-at="2022-11-25T21:41:59 IST" duration-ms="96990">
     <groups>
     </groups>
-    <test started-at="2022-11-25T18:18:51 IST" name="Default test" finished-at="2022-11-25T18:28:56 IST" duration-ms="605115">
-      <class name="com.qa.lenskart.tests.LandingPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.lenskart.tests.LandingPageTest@60099951]" started-at="2022-11-25T18:18:51 IST" name="setUp" finished-at="2022-11-25T18:18:56 IST" duration-ms="4209" status="PASS">
+    <test started-at="2022-11-25T21:40:22 IST" name="LensKart Home Page Test" finished-at="2022-11-25T21:40:44 IST" duration-ms="22909">
+      <class name="com.qa.lenskart.tests.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.lenskart.tests.HomePageTest@71529963]" started-at="2022-11-25T21:40:22 IST" name="setUp" finished-at="2022-11-25T21:40:32 IST" duration-ms="9923" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="titleTest()[pri:1, instance:com.qa.lenskart.tests.LandingPageTest@60099951]" started-at="2022-11-25T18:18:56 IST" name="titleTest" finished-at="2022-11-25T18:23:56 IST" duration-ms="300340" status="FAIL">
+        <test-method is-config="true" signature="test()[pri:0, instance:com.qa.lenskart.tests.HomePageTest@71529963]" started-at="2022-11-25T21:40:32 IST" name="test" finished-at="2022-11-25T21:40:35 IST" duration-ms="3288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="userNameTest()[pri:1, instance:com.qa.lenskart.tests.HomePageTest@71529963]" started-at="2022-11-25T21:40:35 IST" name="userNameTest" finished-at="2022-11-25T21:40:35 IST" duration-ms="552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userNameTest -->
+        <test-method signature="searchTest(java.lang.String)[pri:3, instance:com.qa.lenskart.tests.HomePageTest@71529963]" started-at="2022-11-25T21:40:36 IST" name="searchTest" data-provider="serchItems" finished-at="2022-11-25T21:40:39 IST" duration-ms="3011" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Contact Lens]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method signature="searchTest(java.lang.String)[pri:3, instance:com.qa.lenskart.tests.HomePageTest@71529963]" started-at="2022-11-25T21:40:39 IST" name="searchTest" data-provider="serchItems" finished-at="2022-11-25T21:40:42 IST" duration-ms="3131" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Eyeglasses]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method signature="searchTest(java.lang.String)[pri:3, instance:com.qa.lenskart.tests.HomePageTest@71529963]" started-at="2022-11-25T21:40:42 IST" name="searchTest" data-provider="serchItems" finished-at="2022-11-25T21:40:44 IST" duration-ms="2598" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sunglasses]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.lenskart.tests.HomePageTest@71529963]" started-at="2022-11-25T21:40:44 IST" name="tearDown" finished-at="2022-11-25T21:40:44 IST" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.lenskart.tests.HomePageTest -->
+    </test> <!-- LensKart Home Page Test -->
+    <test started-at="2022-11-25T21:40:22 IST" name="LensKart Landing Page Negative Test" finished-at="2022-11-25T21:40:51 IST" duration-ms="29629">
+      <class name="com.qa.lenskart.tests.LandingPageNegativeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.lenskart.tests.LandingPageNegativeTest@517d4a0d]" started-at="2022-11-25T21:40:22 IST" name="setUp" finished-at="2022-11-25T21:40:47 IST" duration-ms="25360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginNegativeTest(java.lang.String)[pri:1, instance:com.qa.lenskart.tests.LandingPageNegativeTest@517d4a0d]" started-at="2022-11-25T21:40:47 IST" name="loginNegativeTest" data-provider="invalidEmailData" finished-at="2022-11-25T21:40:50 IST" duration-ms="2740" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrongusername@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginNegativeTest -->
+        <test-method signature="loginNegativeTest(java.lang.String)[pri:1, instance:com.qa.lenskart.tests.LandingPageNegativeTest@517d4a0d]" started-at="2022-11-25T21:40:50 IST" name="loginNegativeTest" data-provider="invalidEmailData" finished-at="2022-11-25T21:40:51 IST" duration-ms="1413" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[badusername@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginNegativeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.lenskart.tests.LandingPageNegativeTest@517d4a0d]" started-at="2022-11-25T21:40:51 IST" name="tearDown" finished-at="2022-11-25T21:40:51 IST" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.lenskart.tests.LandingPageNegativeTest -->
+    </test> <!-- LensKart Landing Page Negative Test -->
+    <test started-at="2022-11-25T21:40:22 IST" name="LensKart product Info Test" finished-at="2022-11-25T21:41:07 IST" duration-ms="45814">
+      <class name="com.qa.lenskart.tests.ProductInfoTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.lenskart.tests.ProductInfoTest@7e3181aa]" started-at="2022-11-25T21:40:22 IST" name="setUp" finished-at="2022-11-25T21:40:57 IST" duration-ms="35721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="test()[pri:0, instance:com.qa.lenskart.tests.ProductInfoTest@7e3181aa]" started-at="2022-11-25T21:40:57 IST" name="test" finished-at="2022-11-25T21:41:01 IST" duration-ms="3294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="productimageCount()[pri:2, instance:com.qa.lenskart.tests.ProductInfoTest@7e3181aa]" started-at="2022-11-25T21:41:01 IST" name="productimageCount" finished-at="2022-11-25T21:41:07 IST" duration-ms="6686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productimageCount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.lenskart.tests.ProductInfoTest@7e3181aa]" started-at="2022-11-25T21:41:07 IST" name="tearDown" finished-at="2022-11-25T21:41:07 IST" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.lenskart.tests.ProductInfoTest -->
+    </test> <!-- LensKart product Info Test -->
+    <test started-at="2022-11-25T21:40:22 IST" name="LensKart Landing Page Test" finished-at="2022-11-25T21:41:59 IST" duration-ms="96990">
+      <class name="com.qa.lenskart.tests.LandingPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.lenskart.tests.LandingPageTest@386f0da3]" started-at="2022-11-25T21:40:22 IST" name="setUp" finished-at="2022-11-25T21:40:53 IST" duration-ms="31580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="titleTest()[pri:1, instance:com.qa.lenskart.tests.LandingPageTest@386f0da3]" started-at="2022-11-25T21:40:53 IST" name="titleTest" finished-at="2022-11-25T21:41:53 IST" duration-ms="60088" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for title to contain "Lenskart.com". Current title: "" (tried for 300 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[Expected condition failed: waiting for title to contain "Lenskart1.com". Current title: "Lenskart.com® - Sunglasses, Contact Lens, Eyeglasses, Frames, Buy 1 Get 1 Offer for Gold Members" (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6.1', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/5l/cnx21f9j4yx...}, goog:chromeOptions: {debuggerAddress: localhost:62687}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62687/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1cf51e4d15f2b4b069cad9d0f25fb267]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain "Lenskart.com". Current title: "" (tried for 300 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain "Lenskart1.com". Current title: "Lenskart.com® - Sunglasses, Contact Lens, Eyeglasses, Frames, Buy 1 Get 1 Offer for Gold Members" (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6.1', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/5l/cnx21f9j4yx...}, goog:chromeOptions: {debuggerAddress: localhost:62687}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62687/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1cf51e4d15f2b4b069cad9d0f25fb267
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
 at com.qa.lenskart.utils.WaitUtils.ifTitleContainsText(WaitUtils.java:113)
 at com.qa.lenskart.pages.LandingPage.isTitlePresent(LandingPage.java:39)
-at com.qa.lenskart.tests.LandingPageTest.titleTest(LandingPageTest.java:17)
+at com.qa.lenskart.tests.LandingPageTest.titleTest(LandingPageTest.java:13)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -39,281 +156,35 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:806)
 at org.testng.TestRunner.run(TestRunner.java:601)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=107.0.5304.110)
-Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6.1', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [77dc2e68b4cab869164ab47f6638c537, getTitle {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/5l/cnx21f9j4yx...}, goog:chromeOptions: {debuggerAddress: localhost:52944}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52944/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 77dc2e68b4cab869164ab47f6638c537
-at jdk.internal.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$2.apply(ExpectedConditions.java:81)
-at org.openqa.selenium.support.ui.ExpectedConditions$2.apply(ExpectedConditions.java:76)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-... 31 more
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleTest -->
-        <test-method signature="urlTest()[pri:2, instance:com.qa.lenskart.tests.LandingPageTest@60099951]" started-at="2022-11-25T18:23:56 IST" name="urlTest" finished-at="2022-11-25T18:28:56 IST" duration-ms="300460" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for url to contain "lenskart.com". Current url: "" (tried for 300 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "lenskart.com". Current url: "" (tried for 300 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at com.qa.lenskart.utils.WaitUtils.ifUrlContainsText(WaitUtils.java:99)
-at com.qa.lenskart.pages.LandingPage.isUrlPresent(LandingPage.java:44)
-at com.qa.lenskart.tests.LandingPageTest.urlTest(LandingPageTest.java:23)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=107.0.5304.110)
-Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6.1', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [77dc2e68b4cab869164ab47f6638c537, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/5l/cnx21f9j4yx...}, goog:chromeOptions: {debuggerAddress: localhost:52944}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52944/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 77dc2e68b4cab869164ab47f6638c537
-at jdk.internal.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:322)
-at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:127)
-at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:122)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-... 31 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="urlTest()[pri:2, instance:com.qa.lenskart.tests.LandingPageTest@386f0da3]" started-at="2022-11-25T21:41:54 IST" name="urlTest" finished-at="2022-11-25T21:41:54 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlTest -->
-        <test-method signature="logoTest()[pri:3, instance:com.qa.lenskart.tests.LandingPageTest@60099951]" started-at="2022-11-25T18:28:56 IST" name="logoTest" finished-at="2022-11-25T18:28:56 IST" duration-ms="6" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=107.0.5304.110)
-Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6.1', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [77dc2e68b4cab869164ab47f6638c537, findElements {using=xpath, value=//div[@class='logo']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/5l/cnx21f9j4yx...}, goog:chromeOptions: {debuggerAddress: localhost:52944}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52944/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 77dc2e68b4cab869164ab47f6638c537]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=107.0.5304.110)
-Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6.1', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [77dc2e68b4cab869164ab47f6638c537, findElements {using=xpath, value=//div[@class='logo']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/5l/cnx21f9j4yx...}, goog:chromeOptions: {debuggerAddress: localhost:52944}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52944/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 77dc2e68b4cab869164ab47f6638c537
-at jdk.internal.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:380)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:372)
-at com.qa.lenskart.utils.ElementUtil.getElements(ElementUtil.java:45)
-at com.qa.lenskart.utils.ElementUtil.isElementDisplayed(ElementUtil.java:175)
-at com.qa.lenskart.pages.LandingPage.isLogoDisplayed(LandingPage.java:49)
-at com.qa.lenskart.tests.LandingPageTest.logoTest(LandingPageTest.java:29)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method signature="logoTest()[pri:3, instance:com.qa.lenskart.tests.LandingPageTest@386f0da3]" started-at="2022-11-25T21:41:54 IST" name="logoTest" finished-at="2022-11-25T21:41:55 IST" duration-ms="467" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoTest -->
-        <test-method signature="signInTest()[pri:4, instance:com.qa.lenskart.tests.LandingPageTest@60099951]" started-at="2022-11-25T18:28:56 IST" name="signInTest" finished-at="2022-11-25T18:28:56 IST" duration-ms="2" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=107.0.5304.110)
-Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6.1', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [77dc2e68b4cab869164ab47f6638c537, findElements {using=xpath, value=//button[text()='No thanks']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/5l/cnx21f9j4yx...}, goog:chromeOptions: {debuggerAddress: localhost:52944}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52944/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 77dc2e68b4cab869164ab47f6638c537]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=107.0.5304.110)
-Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6.1', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [77dc2e68b4cab869164ab47f6638c537, findElements {using=xpath, value=//button[text()='No thanks']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/5l/cnx21f9j4yx...}, goog:chromeOptions: {debuggerAddress: localhost:52944}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52944/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 77dc2e68b4cab869164ab47f6638c537
-at jdk.internal.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:380)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:372)
-at com.qa.lenskart.utils.ElementUtil.getElements(ElementUtil.java:45)
-at com.qa.lenskart.utils.ElementUtil.isElementDisplayed(ElementUtil.java:175)
-at com.qa.lenskart.pages.LandingPage.doSignIn(LandingPage.java:54)
-at com.qa.lenskart.tests.LandingPageTest.signInTest(LandingPageTest.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method signature="signInTest()[pri:4, instance:com.qa.lenskart.tests.LandingPageTest@386f0da3]" started-at="2022-11-25T21:41:55 IST" name="signInTest" finished-at="2022-11-25T21:41:58 IST" duration-ms="3874" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.lenskart.tests.LandingPageTest@60099951]" started-at="2022-11-25T18:28:56 IST" name="tearDown" finished-at="2022-11-25T18:28:56 IST" duration-ms="58" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.lenskart.tests.LandingPageTest@386f0da3]" started-at="2022-11-25T21:41:58 IST" name="tearDown" finished-at="2022-11-25T21:41:59 IST" duration-ms="104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.lenskart.tests.LandingPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- LensKart Landing Page Test -->
+  </suite> <!-- LensKart Test Suite -->
 </testng-results>

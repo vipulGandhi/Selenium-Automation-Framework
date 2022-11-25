@@ -3,6 +3,12 @@
 
 <suite name="LensKart Test Suite" verbose = "4" thread-count = "5" parallel = "tests">
 
+
+	<listeners>
+		<listener
+			class-name="com.qa.lenskart.listeners.ExtentReportListener"/>
+	</listeners>
+
 	<test name="LensKart Landing Page Test">
 		<classes>
 			<class name="com.qa.lenskart.tests.LandingPageTest"/>

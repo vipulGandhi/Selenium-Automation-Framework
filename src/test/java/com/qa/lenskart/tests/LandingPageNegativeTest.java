@@ -1,13 +1,6 @@
 package com.qa.lenskart.tests;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import static org.testng.Assert.assertTrue;
-
-import java.net.PasswordAuthentication;
-
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -29,6 +22,6 @@ public class LandingPageNegativeTest extends BaseTest
 	@Test(priority = 1, dataProvider = "invalidEmailData")
 	public void loginNegativeTest(String usernameString)
 	{
-		AssertJUnit.assertTrue(landingPage.doSignInWithInvalidEmail(usernameString));
+		Assert.assertTrue(landingPage.doSignInWithInvalidEmail(usernameString));
 	}
 }

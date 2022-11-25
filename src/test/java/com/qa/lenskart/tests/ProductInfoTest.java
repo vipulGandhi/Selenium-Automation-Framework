@@ -15,18 +15,11 @@
 
 package com.qa.lenskart.tests;
 
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
-import org.testng.AssertJUnit;
 import java.util.Map;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 public class ProductInfoTest extends BaseTest
 {
@@ -41,7 +34,7 @@ public class ProductInfoTest extends BaseTest
 	{
 		searchPage = homePage.doSearch("Contact lens");
 		productInfoPage = searchPage.selectProduct("Aqualens");
-		AssertJUnit.assertTrue(productInfoPage.getProductBrandName().contains("Aqualens"));
+		Assert.assertTrue(productInfoPage.getProductBrandName().contains("Aqualens"));
 	}
 	
 	@Test(priority = 2)
@@ -49,7 +42,7 @@ public class ProductInfoTest extends BaseTest
 	{
 		searchPage = homePage.doSearch("Eyeglasses");
 		productInfoPage = searchPage.selectProduct("Vincent Chase");
-		AssertJUnit.assertTrue(productInfoPage.productImagesCount() > 0);
+		Assert.assertTrue(productInfoPage.productImagesCount() > 0);
 	}
 	
 	//@Test(priority = 3)

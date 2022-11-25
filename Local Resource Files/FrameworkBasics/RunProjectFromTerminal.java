@@ -26,7 +26,10 @@
 		// This command will keep the environment value to null
 			// If environment value is null, the test cases will run in production environment
 				// Ref: DriverFactory class
-	// 9. 
+	// 9. Run command mvn clean install -Denvironment="qa" -Dexcel="qa"
+		// The test will run in qa environment
+		// The test will will take the data from "LensKartTestDataSheet_qa.xlsx" sheet
+			// Ref: ExcelUtil.java
 
 
 		

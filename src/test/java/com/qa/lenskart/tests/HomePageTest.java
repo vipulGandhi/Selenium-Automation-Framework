@@ -1,11 +1,5 @@
 package com.qa.lenskart.tests;
 
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
-import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -23,16 +17,16 @@ public class HomePageTest extends BaseTest
 		homePage = landingPage.doSignIn(properties.getProperty("email"), properties.getProperty("password"));
 	}
 	
-	//@Test(priority = 1)
+	@Test(priority = 1)
 	public void userNameTest()
 	{
-		AssertJUnit.assertEquals(homePage.getUserName(), properties.getProperty("username"));
+		Assert.assertEquals(homePage.getUserName(), properties.getProperty("username"));
 	}
 	
 	//@Test(priority = 2)
 	public void loginPanelItemsTest()
 	{
-		AssertJUnit.assertEquals(homePage.getLoginPanelItems(), Constants.loginPanelItems());
+		Assert.assertEquals(homePage.getLoginPanelItems(), Constants.loginPanelItems());
 	}
 	
 	//@DataProvider
@@ -57,8 +51,8 @@ public class HomePageTest extends BaseTest
 	public void searchTest(String mySearchItems)
 	{
 		searchPage = homePage.doSearch(mySearchItems);
-		AssertJUnit.assertTrue(searchPage.getHeading(mySearchItems).trim().toLowerCase().equals(mySearchItems.trim().toLowerCase()));
-		AssertJUnit.assertTrue(searchPage.getTotalProductsAvailableCount() > 0);
+		Assert.assertTrue(searchPage.getHeading(mySearchItems).trim().toLowerCase().equals(mySearchItems.trim().toLowerCase()));
+		Assert.assertTrue(searchPage.getTotalProductsAvailableCount() > 0);
 	}
 	
 	@DataProvider
@@ -82,6 +76,6 @@ public class HomePageTest extends BaseTest
 	{
 		searchPage = homePage.doSearch(productParentSearch);
 		productInfoPage = searchPage.selectProduct(productSearch);
-		AssertJUnit.assertTrue(productInfoPage.getProductBrandName().contains(productBrandName));
+		Assert.assertTrue(productInfoPage.getProductBrandName().contains(productBrandName));
 	}
 }
