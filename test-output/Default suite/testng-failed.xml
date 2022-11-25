@@ -3,14 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.lenskart.tests.HomePageTest">
+      <class name="com.qa.lenskart.tests.LandingPageTest">
         <methods>
-          <include name="test"/>
           <include name="tearDown"/>
+          <include name="titleTest"/>
+          <include name="urlTest"/>
           <include name="setUp"/>
-          <include name="searchTest"/>
+          <include name="logoTest"/>
+          <include name="signInTest"/>
         </methods>
-      </class> <!-- com.qa.lenskart.tests.HomePageTest -->
+      </class> <!-- com.qa.lenskart.tests.LandingPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

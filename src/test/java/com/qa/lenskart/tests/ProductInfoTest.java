@@ -59,8 +59,8 @@ public class ProductInfoTest extends BaseTest
 		productInfoPage = searchPage.selectProduct("Aqualens");
 		Map<String, String> productTechnicalInfoMap = productInfoPage.getProductTechnicalInfo();
 		productTechnicalInfoMap.forEach((k,v) -> System.out.println(k + " : " + v));
-		AssertJUnit.assertEquals(productTechnicalInfoMap.get("Product Id"), "135218");
-		AssertJUnit.assertEquals(productTechnicalInfoMap.get("Model No."), "Aqualens Toric Monthly 24 Hours (3 Lens)");
+		softAssert.assertEquals(productTechnicalInfoMap.get("Product Id"), "135218");
+		softAssert.assertEquals(productTechnicalInfoMap.get("Model No."), "Aqualens Toric Monthly 24 Hours (3 Lens)");
 		softAssert.assertAll();
 		
 	}
