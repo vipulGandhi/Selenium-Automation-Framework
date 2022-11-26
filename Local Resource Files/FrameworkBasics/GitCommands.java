@@ -21,6 +21,14 @@
 	// Git ignores the files present in .gitignore to upload them to the repository
 	// Go to project
 	// Right click -> Create a new file with name: .gitignore
+	// Add all the files to ignore
+// Come back to terminal
+	// Check status of local/ working copy (how many files are pending/ pushed/ committed)
+		// git status
+			// Number of files to commit will be reduced
+
+
+
 
 
 // Untracked files: Files which still needs to be committed
