@@ -8,6 +8,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.URL;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
@@ -159,4 +160,86 @@ public class DriverFactory
 		return path;
 	}
 	
+	public void getPageUrl(String url)
+	{
+		try
+		{
+			if(url == null)
+			{
+				throw new Exception("url is null ...");
+			}
+		}
+		catch (Exception e)
+		{
+		}
+
+		getDriver().get(url);
+	}
+	
+	public void getPageUrl(URL url)
+	{
+		try
+		{
+			if(url == null)
+			{
+				throw new Exception("url is null ...");
+			}
+		}
+		catch (Exception e)
+		{
+		}
+
+		getDriver().navigate().to(url);
+	}
+	
+	public void getPageUrl(String baseUrl, String endpoint)
+	{
+		try
+		{
+			if(baseUrl == null)
+			{
+				throw new Exception("baseUrl is null ...");
+			}
+		}
+		catch (Exception e)
+		{
+		}
+
+		getDriver().get(baseUrl + "/" + endpoint);
+	}
+	
+	public void getPageUrl(String baseUrl, String endpoint, String queryParameter)
+	{
+		try
+		{
+			if(baseUrl == null)
+			{
+				throw new Exception("baseUrl is null ...");
+			}
+		}
+		catch (Exception e)
+		{
+		}
+
+		getDriver().get(baseUrl + "/" + endpoint + "?" + queryParameter);
+	}
+	
+	// https://username:password@URL
+	public void getPageUrlWithBrowserAuthentication(String url, String username, String password)
+	{
+		try
+		{
+			if(url == null)
+			{
+				throw new Exception("url is null ...");
+			}
+		}
+		catch (Exception e)
+		{
+		}
+		
+		String urlAuthenticationString = "https://" + username + ":" + password + "@" + url.split("//")[1];
+
+		getDriver().get(urlAuthenticationString);
+	}
 }
