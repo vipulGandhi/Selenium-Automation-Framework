@@ -111,6 +111,9 @@
 		// On web repository, Click on "Pull Requests"
 			// Go to "Files Changed" to comment on the PR (if any)
 			// Go to "Conversation", Merge the pull request
+		// Go to the local main branch
+			// git checkout main
+				// The changes made in local branch_vipul_gandhi is not reflected in local main branch
 		
 
 
