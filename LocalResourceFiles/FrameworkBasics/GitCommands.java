@@ -75,6 +75,41 @@
 			// press "q" to come out
 
 // Git branching
+	// Open terminal
+		// Go to project's present working directory
+			// cd /Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework
+		// Get all the branches present in local
+			// git branch
+				// [Output] * main
+					// "*" means the branch local working copy is pointing to
+		// Get last commit on current branch
+			// git branch -vv
+		// From the master branch present in local, get a new/ feature branch in local
+			// git branch branch_vipul_gandhi
+				// git branch <branchname>
+		// Get all the branches present in local
+			// git branch
+		// Switch the branch to branch_vipul_gandhi branch
+			// git checkout branch_vipul_gandhi
+		// Get all the branches present in local
+			// git branch
+		// Make some changes in the project
+			// The changes will be reflected in branch_vipul_gandhi branch
+		// Check status of local/ working copy (how many files are pending/ pushed/ committed)
+			// git status
+		// Add all the untracked files to git stage
+			// git add <filename>
+				// Only add the updated/ created files
+		// Commit
+			// git commit -m "Commit"
+				// -m is the commit message
+		// Push
+			// git push origin master OR git push origin main
+				// master/ main is the name of root directory
+
+
+	
+
 	
 
 	
