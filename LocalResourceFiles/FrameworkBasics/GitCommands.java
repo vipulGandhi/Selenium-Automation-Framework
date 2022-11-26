@@ -104,8 +104,17 @@
 			// git commit -m "Commit"
 				// -m is the commit message
 		// Push
-			// git push origin master OR git push origin main
-				// master/ main is the name of root directory
+			// git push origin branch_vipul_gandhi
+				// Git will reate branch_vipul_gandhi branch on remote
+		// A PR(Pull Request) flag will be generated on repository web page
+			// Creare a PR for a merge from branch_vipul_gandhi -> main
+		// On web repository, Click on "Pull Requests"
+			// Go to "Files Changed" to comment on the PR (if any)
+			// Go to "Conversation", Merge the pull request
+		// Go to the local main branch
+			// git checkout main
+				// The changes made in local branch_vipul_gandhi is not reflected in local main branch
+		
 
 
 	
