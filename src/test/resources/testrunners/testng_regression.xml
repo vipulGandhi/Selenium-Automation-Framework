@@ -5,8 +5,12 @@
 
 
 	<listeners>
+	<listener
+			class-name="com.qa.lenskart.listeners.AnnotationTransformer"/>
 		<listener
 			class-name="com.qa.lenskart.listeners.ExtentReportListener"/>
+		<listener
+			class-name="com.qa.lenskart.listeners.AllureReportListener"/>
 	</listeners>
 
 	<test name="LensKart Landing Page Test">

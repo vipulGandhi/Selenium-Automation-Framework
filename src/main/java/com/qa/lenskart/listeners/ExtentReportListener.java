@@ -1,3 +1,9 @@
+// Cons
+	// For a large number of test cases it gives incorrect report
+		// Marks the failed/ skipped test cases as pass
+		// To verify:
+			// Uncomment a few @Test in HomePage.java
+
 package com.qa.lenskart.listeners;
 
 import java.io.IOException;

@@ -21,6 +21,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.qa.lenskart.utils.Errors;
+
 public class ProductInfoTest extends BaseTest
 {
 	@BeforeClass
@@ -29,7 +31,7 @@ public class ProductInfoTest extends BaseTest
 		homePage = landingPage.doSignIn(properties.getProperty("email"), properties.getProperty("password"));
 	}
 	
-	//@Test(priority = 1)
+	@Test(priority = 1, enabled = false)
 	public void productBrandNameTest()
 	{
 		searchPage = homePage.doSearch("Contact lens");
@@ -38,14 +40,17 @@ public class ProductInfoTest extends BaseTest
 	}
 	
 	@Test(priority = 2)
+	// Deliberately making this test fail
+	// The Assert error message will be displayed only when Assert error is thrown
+		// Not when Selenium exception is thrown (timeout exception etc.)
 	public void productimageCount()
 	{
 		searchPage = homePage.doSearch("Eyeglasses");
 		productInfoPage = searchPage.selectProduct("Vincent Chase");
-		Assert.assertTrue(productInfoPage.productImagesCount() > 0);
+		Assert.assertTrue(productInfoPage.productImagesCount() < 0, Errors.IMAGE_COUNT_ERROR_MESSAGE);
 	}
 	
-	//@Test(priority = 3)
+	@Test(priority = 3, enabled = false)
 	public void getProductTechnicalInfo()
 	{
 		searchPage = homePage.doSearch("Contact lens");

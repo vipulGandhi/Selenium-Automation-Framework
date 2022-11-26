@@ -14,9 +14,7 @@ public class LandingPageNegativeTest extends BaseTest
 		invalidCredentialsObject[0][0] = "wrongusername@gmail.com";
 		invalidCredentialsObject[1][0] = "badusername@gmail.com";
 		
-		return invalidCredentialsObject;
-		
-		
+		return invalidCredentialsObject;	
 	}
 	
 	@Test(priority = 1, dataProvider = "invalidEmailData")

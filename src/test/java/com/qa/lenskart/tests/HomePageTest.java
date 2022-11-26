@@ -23,7 +23,7 @@ public class HomePageTest extends BaseTest
 		Assert.assertEquals(homePage.getUserName(), properties.getProperty("username"));
 	}
 	
-	//@Test(priority = 2)
+	@Test(priority = 2, enabled = false)
 	public void loginPanelItemsTest()
 	{
 		Assert.assertEquals(homePage.getLoginPanelItems(), Constants.loginPanelItems());
@@ -71,7 +71,7 @@ public class HomePageTest extends BaseTest
 		return searchObjects;		
 	}
 	
-	//@Test(priority = 4, dataProvider= "productSelectionData")
+	@Test(priority = 4, dataProvider= "productSelectionData", enabled = false)
 	public void selectProductTest(String productParentSearch, String productBrandName, String productSearch)
 	{
 		searchPage = homePage.doSearch(productParentSearch);
