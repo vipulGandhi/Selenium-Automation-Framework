@@ -28,7 +28,7 @@
 			// Number of files to commit will be reduced
 	// Add all the untracked files to git stage
 		// git add .
-			// Create a snapshot of the working copy, add it to git stage
+			// Create a snapshot of the working copy(complete project), add it to git stage
 	// Check status of local/ working copy (how many files are pending/ pushed/ committed)
 		// git status
 			// All files are ready to be committed now
@@ -46,6 +46,28 @@
 			// Click on Avatar -> Click settings -> Click Developer Settings
 			// Generate a new classic token [Select all scopes]
 			// Enter token 
+// Check the code at remote side
+	// Code is pushed in the master branch
+
+// ----   Next steps --------
+// Update/ Create something in the project
+// Open terminal
+	// Go to project's present working directory
+		// cd /Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework
+	// Check status of local/ working copy (how many files are pending/ pushed/ committed)
+		// git status
+	// Add all the untracked files to git stage
+		// git add ::updated/ Created file names present in "git status"::
+			// Only add the updated/ created files
+	// Commit
+		// git commit -m "Commit"
+			// -m is the commit message
+	// Push
+		// git push origin master OR git push origin main
+			// master/ main is the name of root directory
+
+	
+	
 
 
 
