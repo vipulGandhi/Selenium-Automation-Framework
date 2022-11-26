@@ -1,3 +1,4 @@
+// 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
 // Login to git, create a repo
 // Install git on local machine
 	// brew install git
@@ -41,7 +42,10 @@
 			// 1st commit goes to master branch
 		// Enter username: vipulgandhi10@gmail.com
 		// Enter password/ passphrase
-			// 
+			// Go to git dashboard
+			// Click on Avatar -> Click settings -> Click Developer Settings
+			// Generate a new classic token [Select all scopes]
+			// Enter token 
 
 
 
