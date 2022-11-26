@@ -71,7 +71,7 @@ public class DriverFactory
 		getDriver().manage().deleteAllCookies();
 		
 		// Launch the browser
-		getDriver().get(pageURLString);
+		getPageUrl(pageURLString);
 		
 		return getDriver();
 	}
