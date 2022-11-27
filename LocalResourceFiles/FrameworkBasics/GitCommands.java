@@ -90,7 +90,7 @@
 		// Get all the branches present in local
 			// git branch
 		// Switch the branch to branch_vipul_gandhi branch
-			// git checkout branch_vipul_gandhi
+			// git checkout branch_vipul_gandhi OR git switch branch_vipul_gandhi
 		// Get all the branches present in local
 			// git branch
 		// Make some changes in the project
@@ -105,16 +105,51 @@
 				// -m is the commit message
 		// Push
 			// git push origin branch_vipul_gandhi
-				// Git will reate branch_vipul_gandhi branch on remote
+				// Git will create branch_vipul_gandhi branch on remote
 		// A PR(Pull Request) flag will be generated on repository web page
 			// Creare a PR for a merge from branch_vipul_gandhi -> main
 		// On web repository, Click on "Pull Requests"
 			// Go to "Files Changed" to comment on the PR (if any)
 			// Go to "Conversation", Merge the pull request
 		// Go to the local main branch
-			// git checkout main
+			// git checkout main OR git switch main
 				// The changes made in local branch_vipul_gandhi is not reflected in local main branch
+		// Get updates from remote main branch in local main branch
+			// git pull origin main
 		
+
+// --- Git Branching Process -----
+	// Developer1 create a folder structure on local machine
+	// Developer1 push the code to local stage [git add .]
+	// Developer1 commit the code to local repo [git commit -m "message"]
+	// Developer1 push the code to master branch
+	
+	// Developer2 clone the project in their local
+		// Cloning process:
+			// Create a folder <myfolder> in local
+			// Open terminal
+			// cd to the created folder
+				// Let the present working directory be the created folder
+			// git clone <repo url>
+		// Import the project in eclipse
+	// Developer2 cut the local main branch (Eg. Developer2_branch)
+		// Eclipse working copy points to Developer2_branch
+	// Developer2 make some changes in the project
+	// Developer2 push the code to local stage [git add <filename>]
+	// Developer2 commit the code to local repo [git commit -m "message"]
+	// Developer2 push the code to Developer2_branch remote branch
+		// Raise a PR
+	
+	// Merge main <- Developer2_branch
+		// Remote main branch is updated
+
+	// Developer1 takes the pull from remote main branch to it's Developer1 local branch 
+
+// Delete remote branch
+	// git push -D origin <branchname>
+
+
+
 
 
 	
