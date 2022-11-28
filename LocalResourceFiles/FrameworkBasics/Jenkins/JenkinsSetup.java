@@ -154,7 +154,11 @@
 				// Observe "POST /github-webhook/          200 OK " is added in NGROK terminal window
 					// If not, go to:
 						// https://medium.com/@developerwakeling/setting-up-github-webhooks-jenkins-and-ngrok-for-local-development-f4b2c1ab5b6
-				// Test
+	// Setup Jenkins to read NGROK commands/ inputs
+		// Go to Jenkins Job -> Configure -> Build Triggers
+			// Check "GitHub hook trigger for GITScm polling"
+
+	// Push some changes to git, observe that the test cases are triggered
 
 
 
