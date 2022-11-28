@@ -90,6 +90,77 @@
 		// Apply, Save
 			// Go to Dashboard, observe that the Job has been created
 
+// Trigger the build
+	// Go to the dashboard
+	// Select the jenkins job
+	// Trigger the job
+		// Click "Build Now"
+			// In the console output, observe:
+				// Jenkins will clone the project from git
+				// Jenkins will read the pom.xml file
+				// Compile the entire code with Maven Compiler plugin
+				// Execute with Maven Surefire plugin
+
+// Reports
+	// After sucessful builds, reports will be generated
+	// Extent HTML report
+		// Extent HTML report will be a broken report [broken image links, no proper alignment etc.]
+			// This is because of the security policy of jenkins
+				// The report contains external images, css
+			// Ask the devops team to setup jenkins scp policy OR
+			// Download Disable Content-Security-Policy plugin in chrome
+				// https://chrome.google.com/webstore/detail/disable-content-security/ieelmcmcagommplceebfedjlakkhpden?hl=en
+
+	// Allure reports will be proper
+		// They generate the report from a dedicared server and have a jenkins plugin as well
+
+// To check Jenkins Job workspace [Project code cloned by jenkins from git]
+	// Dashboard -> <Job name> -> Workspace
+
+// Autotrigger the test cases
+	// The moment we push our code to git, the execution should be triggered from jenkins
+	// Setup NGROK proxy [To navigate the events from git repo to jenkins]
+		// Create a webhook in the git repository
+			// Webhook is a git feature
+			// It helps to read git events
+			// The webhook will read the git push event and update NGROK proxy
+			// NGROK proxy will give the event to Jenkins to trigger the test case
+				// NGROK proxy will sit on the same machine on which jenkins is installed
+				// It will have same port number which jenkins has [8080 in this case] to communicate with jenkins
+	// Setup NGROK proxy [https://www.youtube.com/watch?v=7XgQpb1h9ws]
+		// Go to NGROK [https://ngrok.com/download]
+			// Sign up
+				// On the dashboard page
+					// Copy the authentication token [Eg. 7a6fNu36byHoquFRomYLz_4TPkJkSxr6UGDuKGRemt8]
+			// Open Terminal
+				// Go to the folder where the binary is located
+					// cd /Users/vipulgandhi/Documents/Vipul/Softwares
+				// Install ngrok
+					// brew install --cask ngrok
+				// Copy auth token to configuration yml file
+					// ngrok authtoken <auth token>
+				// Run command
+					// ngrok http 8080
+						// ngrok window will open in terminal
+							// Copy ngrok url value for "forwarding" key
+								// [Eg. https://e058-2401-4900-1c8f-e709-5c50-908a-917-4136.in.ngrok.io]
+			// NGROK is connected with jenkins through same port number
+	// Create Webhook in git repo
+		// Go to repository webpage -> Settings -> Webhook -> "Add Webhook"
+			// Enter Payload url:
+				// <ngrok url value>/github-webhook
+					// Eg. https://ff43-2401-4900-1c8f-e709-5c50-908a-917-4136.in.ngrok.io/github-webhook/
+			//Click "Add Webhook"
+				// Observe "POST /github-webhook/          200 OK " is added in NGROK terminal window
+					// If not, go to:
+						// https://medium.com/@developerwakeling/setting-up-github-webhooks-jenkins-and-ngrok-for-local-development-f4b2c1ab5b6
+				
+
+
+
+
+
+
 
 
 							
