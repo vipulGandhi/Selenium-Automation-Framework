@@ -8,7 +8,7 @@ pipeline
 
     stages 
     {
-        stage('Test')
+        stage('QATest')
         {
             steps
             {
