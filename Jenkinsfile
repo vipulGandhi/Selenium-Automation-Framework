@@ -9,8 +9,6 @@ pipeline
             steps
             {
                 echo 'Build the project'
-                sh "mvn -Dmaven.test.failure.ignore=true clean package" [for mac]
-                bat "mvn -Dmaven.test.failure.ignore=true clean package" [for windows]
             }
         }
         
