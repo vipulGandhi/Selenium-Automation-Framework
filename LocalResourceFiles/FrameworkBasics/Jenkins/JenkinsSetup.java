@@ -193,6 +193,38 @@
 				// Select the environment
 				// Click "Build"
 
+// -----------------------------------------------------------------------------------------------------------------
+// Create Jenkins Pipeline (CI/CD pipeline)
+	// A pipeline has multiple components
+		// 1. Git Repo (Source code management)
+		// 2. Build the project [Create jar file]
+		// 3. Deploy on Dev environment
+		// 4. Trigger unit test cases
+		// 5. Deploy on QA environment
+		// 6. Trigger regression test cases
+		// 7. Deploy to Staging environment
+		// 8. Trigger UAT test cases
+		// 9. Deploy on production environment
+ 	// Setup
+		// Download blue ocean pipeline plugin
+			// Dashboard -> Manage Jenkins -> Manage Plugins
+				// Download "Blue Ocean"
+				// Install without restart
+		// Create declarative pipeline script
+			// Go to project -> New -> File
+			// Strictly name the file: Jenkinsfile 
+
+
+
+
+
+		// Dashboard -> New Item
+			// Enter an item name (Eg. LensKartQA_Pipeline)
+			// Select Pipeline, Click OK
+				// Enter description (Eg. This pipeline is used to trigger LensKart test cases)
+				// Enter all the required details
+				// Write pipeline script
+
 
 
 
