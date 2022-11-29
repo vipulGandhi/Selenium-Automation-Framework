@@ -12,7 +12,7 @@ pipeline
         {
             steps
             {
-                git 'https://github.com/vipulGandhi/Automation_Framework.git'
+                git 'https://github.com/vipulGandhi/Automation_Framework11.git'
                 sh "mvn clean install"
             }
         }
