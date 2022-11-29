@@ -1,70 +1,65 @@
-pipeline
+pipeline 
 {
     agent any
+    tools {
+        maven 'maven'
+    }
 
-    stages
+    stages 
     {
-        stage('Build the project')
+        stage('Build') 
         {
-            steps
+            steps 
             {
-                echo 'Build the project'
+                 git 'https://github.com/vipulGandhi/Maven-Project-With-Test.git'
+                 sh "mvn -Dmaven.test.failure.ignore=true clean package"
+            }
+            post 
+            {
+                success 
+                {
+                    junit '**/target/surefire-reports/TEST-*.xml'
+                    archiveArtifacts 'target/*.jar'
+                }
             }
         }
         
-        stage('Deploy on dev environment')
-        {
-            steps
-            {
-                echo 'Deploy on dev environment'
+        
+        
+        stage('Test') {
+            steps {
+                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                    git 'https://github.com/vipulGandhi/Automation_Framework.git'
+                    sh "mvn clean install"
+                }
+            }
+        }
+                
+     
+        stage('Publish Allure Reports') {
+           steps {
+                script {
+                    allure([
+                        includeProperties: false,
+                        jdk: '',
+                        properties: [],
+                        reportBuildPolicy: 'ALWAYS',
+                        results: [[path: '/allure-results']]
+                    ])
+                }
             }
         }
         
-        stage('Trigger unit test cases')
-        {
-            steps
-            {
-                echo 'Trigger unit test cases'
-            }
-        }
         
-        stage('Deploy on QA environment')
-        {
-            steps
-            {
-                echo 'Deploy on QA environment'
-            }
-        }
-                
-        stage('Trigger regression test cases')
-        {
-            steps
-            {
-                echo 'Trigger regression test cases'
-            }
-        }
-                
-        stage('Deploy to Staging environment')
-        {
-            steps
-            {
-                echo 'Deploy to Staging environment'
-            }
-        }
-                
-        stage('Trigger UAT test cases')
-        {
-            steps
-            {
-                echo 'Trigger UAT test cases'
-            }
-        }
-                
-        stage('Deploy on production environment')
-        {
-            steps
-            {
-                echo 'Deploy on production environment'
+        stage('Publish Extent Report'){
+            steps{
+                     publishHTML([allowMissing: false,
+                                  alwaysLinkToLastBuild: false, 
+                                  keepAll: false, 
+                                  reportDir: 'build', 
+                                  reportFiles: 'TestExecutionReport.html', 
+                                  reportName: 'HTML Extent Report', 
+                                  reportTitles: ''])
             }
         }
     }
