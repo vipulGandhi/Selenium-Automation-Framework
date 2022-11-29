@@ -4,12 +4,12 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
-public class ExcelUtil {
+public class ExcelUtil
+{
 
 	private static String TEST_DATA_SHEET_QA = "./src/test/resources/testdata/LensKartTestDataSheet_qa.xlsx";
 	private static String TEST_DATA_SHEET_DEV = "./src/test/resources/testdata/LensKartTestDataSheet_dev.xlsx";
@@ -46,6 +46,9 @@ public class ExcelUtil {
 					break;
 				case "staging":
 					fileInputStream = new FileInputStream(TEST_DATA_SHEET_STAGING);
+					break;
+				case "production":
+					fileInputStream = new FileInputStream(TEST_DATA_SHEET_PRODUCTION);
 					break;
 
 				default:

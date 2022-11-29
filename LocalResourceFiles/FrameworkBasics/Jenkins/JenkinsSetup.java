@@ -166,29 +166,32 @@
 
 // Parameterization in jenkins
 	// Let jenkins run the project based on different configuration files present in the project
-	// (From Terminal) OR (From Jenkins -> Dashboard -> Select job -> Configure -> Builds -> Goals and options)
-		// clean install -Denvironment="qa"  :  Run the project with the configurations present in "qa.config.properties" file
-		// clean install -Denvironment="dev"  :  Run the project with the configurations present in "dev.config.properties" file
-		// clean install -Denvironment="staging"  :  Run the project with the configurations present in "staging.config.properties" file
-		// clean install -Denvironment="production"  :  Run the project with the configurations present in "production.config.properties" file
-	// Go to Dashboard -> Select job -> Configure -> General
-		// Select "This project is parameterized"
-			// Click "Add Parameters" -> "Choice Parameter"
-				// Enter a key in the "Name" input field (Eg. env)
-				// Enter all the values in "Choices" input field
-					// Example:
-						/*
-						 qa
-						 dev
-						 staging
-						 production
-						 */
-				// Enter something in the description (Eg. Please select an environment.)
-	// Go to Dashboard -> Select job -> Configure -> Build -> Goals and options
-		// Set the command: clean install -Denvironment=${env} [env = Key present in name input field]
-	// Apply, Save
-	// Go to Dashboard -> Select job -> Job dashboard
-		// Observe that "Build with Parameters" option is enabled
+		// (From Terminal) OR (From Jenkins -> Dashboard -> Select job -> Configure -> Builds -> Goals and options)
+			// clean install -Denvironment="qa"  :  Run the project with the configurations present in "qa.config.properties" file
+			// clean install -Denvironment="dev"  :  Run the project with the configurations present in "dev.config.properties" file
+			// clean install -Denvironment="staging"  :  Run the project with the configurations present in "staging.config.properties" file
+			// clean install -Denvironment="production"  :  Run the project with the configurations present in "production.config.properties" file
+		// Go to Dashboard -> Select job -> Configure -> General
+			// Select "This project is parameterized"
+				// Click "Add Parameters" -> "Choice Parameter"
+					// Enter a key in the "Name" input field (Eg. env)
+					// Enter all the values in "Choices" input field
+						// Example:
+							/*
+							 	qa
+							 	dev
+							 	staging
+							 	production
+							 */
+					// Enter something in the description (Eg. Please select an environment.)
+		// Go to Dashboard -> Select job -> Configure -> Build -> Goals and options
+			// Set the command: clean install -Denvironment=${env} [env = Key present in name input field]
+		// Apply, Save
+		// Go to Dashboard -> Select job -> Job dashboard
+			// Observe that "Build with Parameters" option is enabled
+			// Select "Build with Parameters"
+				// Select the environment
+				// Click "Build"
 
 
 
