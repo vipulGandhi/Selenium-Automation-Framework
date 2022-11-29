@@ -233,6 +233,10 @@
 			// Build the pipeline
 				// View output in Blue Ocean 
 
+// -----------------------------------------------------------------------------------------------
+// Configure email notifications in jenkins
+	// https://naveenautomationlabs.com/configuring-email-notification-in-jenkins/
+
 
 
 
