@@ -232,6 +232,7 @@
 					// Confirm the Script Path
 					// Apply, Save
 			// Build the pipeline
+				// View output in Blue Ocean 
 
 
 
