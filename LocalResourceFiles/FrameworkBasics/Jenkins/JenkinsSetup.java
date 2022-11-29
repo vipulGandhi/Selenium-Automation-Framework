@@ -6,6 +6,7 @@
 			// Go to the directory where jenkins.war file is located
 				// cd /Users/vipulgandhi/Documents/Vipul/Softwares
 			// Execute: java -jar jenkins.war
+				// java -jar jenkins.war -httpPort=8081 [If installing on port 8081]
 			// Copy the password displayed in the terminal
 				// The password is also stored at /Users/vipulgandhi/.jenkins/secrets/initialAdminPassword
 			// Open a new tab in any browser
@@ -159,6 +160,38 @@
 			// Check "GitHub hook trigger for GITScm polling"
 
 	// Push some changes to git, observe that the test cases are triggered
+
+// Schedule jenkins jobs
+	// https://stackoverflow.com/questions/12472645/how-do-i-schedule-jobs-in-jenkins
+
+// Parameterization in jenkins
+	// Let jenkins run the project based on different configuration files present in the project
+	// (From Terminal) OR (From Jenkins -> Dashboard -> Select job -> Configure -> Builds -> Goals and options)
+		// clean install -Denvironment="qa"  :  Run the project with the configurations present in "qa.config.properties" file
+		// clean install -Denvironment="dev"  :  Run the project with the configurations present in "dev.config.properties" file
+		// clean install -Denvironment="staging"  :  Run the project with the configurations present in "staging.config.properties" file
+		// clean install -Denvironment="production"  :  Run the project with the configurations present in "production.config.properties" file
+	// Go to Dashboard -> Select job -> Configure -> General
+		// Select "This project is parameterized"
+			// Click "Add Parameters" -> "Choice Parameter"
+				// Enter a key in the "Name" input field (Eg. env)
+				// Enter all the values in "Choices" input field
+					// Example:
+						/*
+						 qa
+						 dev
+						 staging
+						 production
+						 */
+				// Enter something in the description (Eg. Please select an environment.)
+	// Go to Dashboard -> Select job -> Configure -> Build -> Goals and options
+		// Set the command: clean install -Denvironment=${env} [env = Key present in name input field]
+	// Apply, Save
+	// Go to Dashboard -> Select job -> Job dashboard
+		// Observe that "Build with Parameters" option is enabled
+
+
+
 
 
 

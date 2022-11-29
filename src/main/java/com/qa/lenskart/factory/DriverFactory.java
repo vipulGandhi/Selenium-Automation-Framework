@@ -111,6 +111,9 @@ public class DriverFactory
 				case "staging":
 					fileInputStream = new FileInputStream("./src/test/resources/configurations/staging.config.properties");
 					break;
+				case "production":
+					fileInputStream = new FileInputStream("./src/test/resources/configurations/production.config.properties");
+					break;
 
 				default:
 					System.out.println("No ENV found.....");
