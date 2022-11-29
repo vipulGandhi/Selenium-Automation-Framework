@@ -8,13 +8,15 @@ pipeline
 
     stages 
     {
-        stage('Build') 
+        stage('Test')
         {
-            steps 
+            steps
             {
-                 git 'https://github.com/vipulGandhi/Maven-Project-With-Test.git'
-                 sh "mvn -Dmaven.test.failure.ignore=true clean package"
+                git 'https://github.com/vipulGandhi/Automation_Framework.git'
+                sh "mvn clean install"
             }
         }
+        
+        
     }
 }
