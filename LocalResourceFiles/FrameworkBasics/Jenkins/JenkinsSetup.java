@@ -212,18 +212,26 @@
 				// Install without restart
 		// Create declarative pipeline script
 			// Go to project -> New -> File
-			// Strictly name the file: Jenkinsfile 
-
-
-
-
-
+			// Strictly name the file: Jenkinsfile
+				// Add the code
+				// Push the file to git
 		// Dashboard -> New Item
 			// Enter an item name (Eg. LensKartQA_Pipeline)
 			// Select Pipeline, Click OK
 				// Enter description (Eg. This pipeline is used to trigger LensKart test cases)
 				// Enter all the required details
-				// Write pipeline script
+				// Pipeline -> Select "Pipeline script from SCM"
+				// A popup window will open
+					// SCM
+						// Select GIT
+					// Repository Url
+						// Enter web url of repository
+					// As we have a public repo, we do not have to add credentials
+					// Branches to build -> Branch Specifier (blank for 'any')
+						// */main
+					// Confirm the Script Path
+					// Apply, Save
+			// Build the pipeline
 
 
 
