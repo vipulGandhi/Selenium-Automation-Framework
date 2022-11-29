@@ -1,7 +1,8 @@
 pipeline 
 {
     agent any
-    tools {
+    tools
+    {
         maven 'maven'
     }
 
@@ -14,21 +15,16 @@ pipeline
                  git 'https://github.com/vipulGandhi/Maven-Project-With-Test.git'
                  sh "mvn -Dmaven.test.failure.ignore=true clean package"
             }
-            post 
-            {
-                success 
-                {
-                    junit '**/target/surefire-reports/TEST-*.xml'
-                    archiveArtifacts 'target/*.jar'
-                }
-            }
         }
         
         
         
-        stage('Test') {
-            steps {
-                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+        stage('Test')
+        {
+            steps
+            {
+                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE')
+                {
                     git 'https://github.com/vipulGandhi/Automation_Framework.git'
                     sh "mvn clean install"
                 }
@@ -36,9 +32,12 @@ pipeline
         }
                 
      
-        stage('Publish Allure Reports') {
-           steps {
-                script {
+        stage('Publish Allure Reports')
+        {
+           steps
+           {
+                script
+                {
                     allure([
                         includeProperties: false,
                         jdk: '',
@@ -47,19 +46,6 @@ pipeline
                         results: [[path: '/allure-results']]
                     ])
                 }
-            }
-        }
-        
-        
-        stage('Publish Extent Report'){
-            steps{
-                     publishHTML([allowMissing: false,
-                                  alwaysLinkToLastBuild: false, 
-                                  keepAll: false, 
-                                  reportDir: 'build', 
-                                  reportFiles: 'TestExecutionReport.html', 
-                                  reportName: 'HTML Extent Report', 
-                                  reportTitles: ''])
             }
         }
     }
