@@ -1,3 +1,4 @@
+package FrameworkBasics;
 // High level overview of framework - [Reference image attached in "Local Resource Files" folder]
 	// 1. Create a page layer - Page layer is responsible to perform the actions on the web page
 		// Follow SRP - Single responsibility principle

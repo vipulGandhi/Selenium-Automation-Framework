@@ -1,3 +1,4 @@
+package FrameworkBasics;
 // Hybrid Framework with POM design pattern -
 	// Page Object Model
 		// POM is a design pattern

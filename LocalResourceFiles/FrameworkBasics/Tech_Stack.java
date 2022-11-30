@@ -1,3 +1,4 @@
+package FrameworkBasics;
 // Tech Stack: Tools and technologies
 
 	// 1. Selenium Web driver with Java language binding

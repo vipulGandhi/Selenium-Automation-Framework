@@ -1,3 +1,4 @@
+package FrameworkBasics;
 // Run project from terminal
 	// 1. Right Click Project -> Properties -> Copy project location
 	// 2. Check if java is installed

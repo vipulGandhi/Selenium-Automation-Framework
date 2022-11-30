@@ -1,3 +1,4 @@
+package FrameworkBasics;
 
 // Framework Design/ Architecture
 	// To segregate the code into multiple separate components. The components then integrate with each other to create a framework

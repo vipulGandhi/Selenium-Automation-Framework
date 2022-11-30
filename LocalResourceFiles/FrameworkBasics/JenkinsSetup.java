@@ -1,3 +1,4 @@
+package FrameworkBasics;
 // Setup Jenkins server on your machine [To trigger the execution on a different machine/ cloud]
 	// Download LTS jenkins war file
 		// https://get.jenkins.io/war-stable/
