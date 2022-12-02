@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Test Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Nov 29, 2022 05:53:27 pm</span></a>
+<a href="#"><span class="badge badge-primary">Dec 2, 2022 09:14:19 am</span></a>
 </li>
 </ul>
 </div>
@@ -86,98 +86,20 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">LandingPageTest</a><a class="dropdown-item" href="#">LandingPageNegativeTest</a><a class="dropdown-item" href="#">ProductInfoTest</a><a class="dropdown-item" href="#">LensKartTestSuite</a><a class="dropdown-item" href="#">HomePageTest</a>
+<a class="dropdown-item" href="#">LandingPageTest</a><a class="dropdown-item" href="#">LandingPageNegativeTest</a><a class="dropdown-item" href="#">ProductInfoTest</a><a class="dropdown-item" href="#">HomePageTest</a><a class="dropdown-item" href="#">LensKartTestSuite</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="skip" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
-          tag="LandingPageTest LensKartTestSuite"
+          tag="HomePageTest LensKartTestSuite"
           device="">
           <div class="test-detail">
-            <p class="name">titleTest</p>
+            <p class="name">userNameTest</p>
             <p class="text-sm">
-              <span>5:54:06 pm</span> / <span>00:00:15:286</span>
-              <span class="badge skip-bg log float-right">Skip</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-skip">titleTest</h5>
-<span class='badge badge-success'>11.29.2022 5:54:06 pm</span>
-<span class='badge badge-danger'>11.29.2022 5:54:21 pm</span>
-<span class='badge badge-default'>00:00:15:286</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">LandingPageTest</span>
-<span class="badge badge-pill badge-default">LensKartTestSuite</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>5:54:22 pm</td>
-        <td>
-          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain "Lenskart1.com". Current title: "Lenskart.com® - Sunglasses, Contact Lens, Eyeglasses, Frames, Buy 1 Get 1 Offer for Gold Members" (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6.1', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/5l/cnx21f9j4yx...}, goog:chromeOptions: {debuggerAddress: localhost:55100}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55100/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 894584e9f454fc4b3c17674842bc3032
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.qa.lenskart.utils.WaitUtils.ifTitleContainsText(WaitUtils.java:113)
-	at com.qa.lenskart.pages.LandingPage.isTitlePresent(LandingPage.java:51)
-	at com.qa.lenskart.tests.LandingPageTest.titleTest(LandingPageTest.java:22)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</textarea>
-          
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669724662215.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669724662215.png">
-    
-    </div></div>
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="2"
-          author=""
-          tag="LensKartTestSuite LandingPageNegativeTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">loginNegativeTest</p>
-            <p class="text-sm">
-              <span>5:54:06 pm</span> / <span>00:00:02:853</span>
+              <span>9:14:40 am</span> / <span>00:00:00:576</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -185,16 +107,16 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">loginNegativeTest</h5>
-<span class='badge badge-success'>11.29.2022 5:54:06 pm</span>
-<span class='badge badge-danger'>11.29.2022 5:54:09 pm</span>
-<span class='badge badge-default'>00:00:02:853</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<h5 class="test-status text-pass">userNameTest</h5>
+<span class='badge badge-success'>12.02.2022 9:14:40 am</span>
+<span class='badge badge-danger'>12.02.2022 9:14:40 am</span>
+<span class='badge badge-default'>00:00:00:576</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">LensKartTestSuite</span>
-<span class="badge badge-pill badge-default">LandingPageNegativeTest</span></div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
+<span class="badge badge-pill badge-default">LensKartTestSuite</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -202,7 +124,7 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:54:09 pm</td>
+        <td>9:14:40 am</td>
         <td>
           Test passed
         </td>
@@ -212,30 +134,30 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="3"
+        <li class="test-item"  status="pass" test-id="2"
           author=""
-          tag="ProductInfoTest LensKartTestSuite"
+          tag="HomePageTest LensKartTestSuite"
           device="">
           <div class="test-detail">
-            <p class="name">productimageCount</p>
+            <p class="name">searchTest</p>
             <p class="text-sm">
-              <span>5:54:07 pm</span> / <span>00:00:34:907</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>9:14:41 am</span> / <span>00:00:03:249</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">productimageCount</h5>
-<span class='badge badge-success'>11.29.2022 5:54:07 pm</span>
-<span class='badge badge-danger'>11.29.2022 5:54:42 pm</span>
-<span class='badge badge-default'>00:00:34:907</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<h5 class="test-status text-pass">searchTest</h5>
+<span class='badge badge-success'>12.02.2022 9:14:41 am</span>
+<span class='badge badge-danger'>12.02.2022 9:14:44 am</span>
+<span class='badge badge-default'>00:00:03:249</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">ProductInfoTest</span>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
 <span class="badge badge-pill badge-default">LensKartTestSuite</span></div>
 </div>
 </div><div class="detail-body mt-4">
@@ -243,40 +165,52 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>5:54:43 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:14:44 am</td>
         <td>
-          <textarea readonly class="code-block">java.lang.AssertionError: Image count should be greater than 0 expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:50)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</textarea>
-          
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669724683271.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669724683271.png">
-    
-    </div></div>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag="HomePageTest LensKartTestSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">searchTest</p>
+            <p class="text-sm">
+              <span>9:14:44 am</span> / <span>00:00:03:879</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">searchTest</h5>
+<span class='badge badge-success'>12.02.2022 9:14:44 am</span>
+<span class='badge badge-danger'>12.02.2022 9:14:48 am</span>
+<span class='badge badge-default'>00:00:03:879</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
+<span class="badge badge-pill badge-default">LensKartTestSuite</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:14:48 am</td>
+        <td>
+          Test passed
         </td>
       </tr>
   </tbody>
@@ -289,9 +223,9 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
           tag="HomePageTest LensKartTestSuite"
           device="">
           <div class="test-detail">
-            <p class="name">userNameTest</p>
+            <p class="name">searchTest</p>
             <p class="text-sm">
-              <span>5:54:08 pm</span> / <span>00:00:00:551</span>
+              <span>9:14:48 am</span> / <span>00:00:03:710</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -299,10 +233,10 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">userNameTest</h5>
-<span class='badge badge-success'>11.29.2022 5:54:08 pm</span>
-<span class='badge badge-danger'>11.29.2022 5:54:08 pm</span>
-<span class='badge badge-default'>00:00:00:551</span>
+<h5 class="test-status text-pass">searchTest</h5>
+<span class='badge badge-success'>12.02.2022 9:14:48 am</span>
+<span class='badge badge-danger'>12.02.2022 9:14:52 am</span>
+<span class='badge badge-default'>00:00:03:710</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -316,7 +250,7 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:54:08 pm</td>
+        <td>9:14:52 am</td>
         <td>
           Test passed
         </td>
@@ -333,7 +267,7 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
           <div class="test-detail">
             <p class="name">loginNegativeTest</p>
             <p class="text-sm">
-              <span>5:54:09 pm</span> / <span>00:00:02:132</span>
+              <span>9:14:58 am</span> / <span>00:00:03:361</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -342,9 +276,9 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">loginNegativeTest</h5>
-<span class='badge badge-success'>11.29.2022 5:54:09 pm</span>
-<span class='badge badge-danger'>11.29.2022 5:54:11 pm</span>
-<span class='badge badge-default'>00:00:02:132</span>
+<span class='badge badge-success'>12.02.2022 9:14:58 am</span>
+<span class='badge badge-danger'>12.02.2022 9:15:01 am</span>
+<span class='badge badge-default'>00:00:03:361</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -358,7 +292,7 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:54:11 pm</td>
+        <td>9:15:01 am</td>
         <td>
           Test passed
         </td>
@@ -370,12 +304,12 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
         </li>
         <li class="test-item"  status="pass" test-id="6"
           author=""
-          tag="HomePageTest LensKartTestSuite"
+          tag="LensKartTestSuite LandingPageNegativeTest"
           device="">
           <div class="test-detail">
-            <p class="name">searchTest</p>
+            <p class="name">loginNegativeTest</p>
             <p class="text-sm">
-              <span>5:54:09 pm</span> / <span>00:00:03:434</span>
+              <span>9:15:01 am</span> / <span>00:00:01:696</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -383,16 +317,16 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">searchTest</h5>
-<span class='badge badge-success'>11.29.2022 5:54:09 pm</span>
-<span class='badge badge-danger'>11.29.2022 5:54:13 pm</span>
-<span class='badge badge-default'>00:00:03:434</span>
+<h5 class="test-status text-pass">loginNegativeTest</h5>
+<span class='badge badge-success'>12.02.2022 9:15:01 am</span>
+<span class='badge badge-danger'>12.02.2022 9:15:03 am</span>
+<span class='badge badge-default'>00:00:01:696</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
-<span class="badge badge-pill badge-default">LensKartTestSuite</span></div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">LensKartTestSuite</span>
+<span class="badge badge-pill badge-default">LandingPageNegativeTest</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -400,7 +334,7 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:54:13 pm</td>
+        <td>9:15:03 am</td>
         <td>
           Test passed
         </td>
@@ -410,30 +344,30 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="7"
+        <li class="test-item"  status="skip" test-id="7"
           author=""
-          tag="HomePageTest LensKartTestSuite"
+          tag="LandingPageTest LensKartTestSuite"
           device="">
           <div class="test-detail">
-            <p class="name">searchTest</p>
+            <p class="name">titleTest</p>
             <p class="text-sm">
-              <span>5:54:13 pm</span> / <span>00:00:03:026</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>9:15:02 am</span> / <span>00:00:15:222</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">searchTest</h5>
-<span class='badge badge-success'>11.29.2022 5:54:13 pm</span>
-<span class='badge badge-danger'>11.29.2022 5:54:16 pm</span>
-<span class='badge badge-default'>00:00:03:026</span>
+<h5 class="test-status text-skip">titleTest</h5>
+<span class='badge badge-success'>12.02.2022 9:15:02 am</span>
+<span class='badge badge-danger'>12.02.2022 9:15:17 am</span>
+<span class='badge badge-default'>00:00:15:222</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
+<div class="m-t-15"><span class="badge badge-pill badge-default">LandingPageTest</span>
 <span class="badge badge-pill badge-default">LensKartTestSuite</span></div>
 </div>
 </div><div class="detail-body mt-4">
@@ -441,10 +375,46 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:54:16 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>9:15:18 am</td>
         <td>
-          Test passed
+          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain "Lenskart1.com". Current title: "Lenskart.com® - Sunglasses, Contact Lens, Eyeglasses, Frames, Buy 1 Get 1 Offer for Gold Members" (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6.1', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.71, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5l/cnx21f9j4yx...}, goog:chromeOptions: {debuggerAddress: localhost:57184}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57184/devtoo..., se:cdpVersion: 108.0.5359.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bd216ad546611a07ef8a21e613418681
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.qa.lenskart.utils.WaitUtils.ifTitleContainsText(WaitUtils.java:113)
+	at com.qa.lenskart.pages.LandingPage.isTitlePresent(LandingPage.java:51)
+	at com.qa.lenskart.tests.LandingPageTest.titleTest(LandingPageTest.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</textarea>
+          
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669952718607.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669952718607.png">
+    
+    </div></div>
         </td>
       </tr>
   </tbody>
@@ -452,30 +422,30 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="8"
+        <li class="test-item"  status="skip" test-id="8"
           author=""
-          tag="HomePageTest LensKartTestSuite"
+          tag="ProductInfoTest LensKartTestSuite"
           device="">
           <div class="test-detail">
-            <p class="name">searchTest</p>
+            <p class="name">productimageCount</p>
             <p class="text-sm">
-              <span>5:54:16 pm</span> / <span>00:00:03:094</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>9:15:02 am</span> / <span>00:00:10:351</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">searchTest</h5>
-<span class='badge badge-success'>11.29.2022 5:54:16 pm</span>
-<span class='badge badge-danger'>11.29.2022 5:54:19 pm</span>
-<span class='badge badge-default'>00:00:03:094</span>
+<h5 class="test-status text-skip">productimageCount</h5>
+<span class='badge badge-success'>12.02.2022 9:15:02 am</span>
+<span class='badge badge-danger'>12.02.2022 9:15:13 am</span>
+<span class='badge badge-default'>00:00:10:351</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ProductInfoTest</span>
 <span class="badge badge-pill badge-default">LensKartTestSuite</span></div>
 </div>
 </div><div class="detail-body mt-4">
@@ -483,10 +453,40 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:54:19 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>9:15:13 am</td>
         <td>
-          Test passed
+          <textarea readonly class="code-block">java.lang.AssertionError: Image count should be greater than 0 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</textarea>
+          
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669952713712.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669952713712.png">
+    
+    </div></div>
         </td>
       </tr>
   </tbody>
@@ -496,12 +496,12 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
         </li>
         <li class="test-item"  status="skip" test-id="9"
           author=""
-          tag="LandingPageTest LensKartTestSuite"
+          tag="ProductInfoTest LensKartTestSuite"
           device="">
           <div class="test-detail">
-            <p class="name">titleTest</p>
+            <p class="name">productimageCount</p>
             <p class="text-sm">
-              <span>5:54:22 pm</span> / <span>00:00:15:304</span>
+              <span>9:15:13 am</span> / <span>00:00:10:937</span>
               <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
@@ -509,170 +509,14 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">titleTest</h5>
-<span class='badge badge-success'>11.29.2022 5:54:22 pm</span>
-<span class='badge badge-danger'>11.29.2022 5:54:37 pm</span>
-<span class='badge badge-default'>00:00:15:304</span>
+<h5 class="test-status text-skip">productimageCount</h5>
+<span class='badge badge-success'>12.02.2022 9:15:13 am</span>
+<span class='badge badge-danger'>12.02.2022 9:15:24 am</span>
+<span class='badge badge-default'>00:00:10:937</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">LandingPageTest</span>
-<span class="badge badge-pill badge-default">LensKartTestSuite</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>5:54:38 pm</td>
-        <td>
-          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain "Lenskart1.com". Current title: "Lenskart.com® - Sunglasses, Contact Lens, Eyeglasses, Frames, Buy 1 Get 1 Offer for Gold Members" (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6.1', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/5l/cnx21f9j4yx...}, goog:chromeOptions: {debuggerAddress: localhost:55100}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55100/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 894584e9f454fc4b3c17674842bc3032
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.qa.lenskart.utils.WaitUtils.ifTitleContainsText(WaitUtils.java:113)
-	at com.qa.lenskart.pages.LandingPage.isTitlePresent(LandingPage.java:51)
-	at com.qa.lenskart.tests.LandingPageTest.titleTest(LandingPageTest.java:22)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</textarea>
-          
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669724678374.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669724678374.png">
-    
-    </div></div>
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="skip" test-id="10"
-          author=""
-          tag="LandingPageTest LensKartTestSuite"
-          device="">
-          <div class="test-detail">
-            <p class="name">titleTest</p>
-            <p class="text-sm">
-              <span>5:54:38 pm</span> / <span>00:00:15:223</span>
-              <span class="badge skip-bg log float-right">Skip</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-skip">titleTest</h5>
-<span class='badge badge-success'>11.29.2022 5:54:38 pm</span>
-<span class='badge badge-danger'>11.29.2022 5:54:53 pm</span>
-<span class='badge badge-default'>00:00:15:223</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">LandingPageTest</span>
-<span class="badge badge-pill badge-default">LensKartTestSuite</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>5:54:54 pm</td>
-        <td>
-          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain "Lenskart1.com". Current title: "Lenskart.com® - Sunglasses, Contact Lens, Eyeglasses, Frames, Buy 1 Get 1 Offer for Gold Members" (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6.1', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/5l/cnx21f9j4yx...}, goog:chromeOptions: {debuggerAddress: localhost:55100}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55100/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 894584e9f454fc4b3c17674842bc3032
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.qa.lenskart.utils.WaitUtils.ifTitleContainsText(WaitUtils.java:113)
-	at com.qa.lenskart.pages.LandingPage.isTitlePresent(LandingPage.java:51)
-	at com.qa.lenskart.tests.LandingPageTest.titleTest(LandingPageTest.java:22)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</textarea>
-          
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669724694150.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669724694150.png">
-    
-    </div></div>
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="skip" test-id="11"
-          author=""
-          tag="ProductInfoTest LensKartTestSuite"
-          device="">
-          <div class="test-detail">
-            <p class="name">productimageCount</p>
-            <p class="text-sm">
-              <span>5:54:43 pm</span> / <span>00:00:02:497</span>
-              <span class="badge skip-bg log float-right">Skip</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-skip">productimageCount</h5>
-<span class='badge badge-success'>11.29.2022 5:54:43 pm</span>
-<span class='badge badge-danger'>11.29.2022 5:54:45 pm</span>
-<span class='badge badge-default'>00:00:02:497</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">ProductInfoTest</span>
 <span class="badge badge-pill badge-default">LensKartTestSuite</span></div>
 </div>
@@ -682,195 +526,7 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
   <tbody>
       <tr class="event-row">
         <td><span class="badge log skip-bg">Skip</span></td>
-        <td>5:54:46 pm</td>
-        <td>
-          <textarea readonly class="code-block">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=107.0.5304.121)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6.1', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [efbf2e818dd4c6b9007b0afe81b7b786, clickElement {id=b9991226-45a3-4f7a-995c-37dfa156c5f0}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/5l/cnx21f9j4yx...}, goog:chromeOptions: {debuggerAddress: localhost:55107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55107/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (efbf2e818dd4c6b9007b0afe81b7b786)] -> xpath: //div[text()='Vincent Chase']]
-Session ID: efbf2e818dd4c6b9007b0afe81b7b786
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at com.qa.lenskart.utils.ElementUtil.doClick(ElementUtil.java:155)
-	at com.qa.lenskart.pages.SearchPage.selectProduct(SearchPage.java:53)
-	at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:49)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</textarea>
-          
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669724686066.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669724686066.png">
-    
-    </div></div>
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="skip" test-id="12"
-          author=""
-          tag="ProductInfoTest LensKartTestSuite"
-          device="">
-          <div class="test-detail">
-            <p class="name">productimageCount</p>
-            <p class="text-sm">
-              <span>5:54:46 pm</span> / <span>00:00:02:418</span>
-              <span class="badge skip-bg log float-right">Skip</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-skip">productimageCount</h5>
-<span class='badge badge-success'>11.29.2022 5:54:46 pm</span>
-<span class='badge badge-danger'>11.29.2022 5:54:48 pm</span>
-<span class='badge badge-default'>00:00:02:418</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">ProductInfoTest</span>
-<span class="badge badge-pill badge-default">LensKartTestSuite</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>5:54:48 pm</td>
-        <td>
-          <textarea readonly class="code-block">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=107.0.5304.121)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6.1', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [efbf2e818dd4c6b9007b0afe81b7b786, clickElement {id=3227b44a-de39-41a6-806c-aadfe2e2dbfe}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/5l/cnx21f9j4yx...}, goog:chromeOptions: {debuggerAddress: localhost:55107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55107/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (efbf2e818dd4c6b9007b0afe81b7b786)] -> xpath: //div[text()='Vincent Chase']]
-Session ID: efbf2e818dd4c6b9007b0afe81b7b786
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at com.qa.lenskart.utils.ElementUtil.doClick(ElementUtil.java:155)
-	at com.qa.lenskart.pages.SearchPage.selectProduct(SearchPage.java:53)
-	at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:49)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</textarea>
-          
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669724688759.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669724688759.png">
-    
-    </div></div>
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="13"
-          author=""
-          tag="ProductInfoTest LensKartTestSuite"
-          device="">
-          <div class="test-detail">
-            <p class="name">productimageCount</p>
-            <p class="text-sm">
-              <span>5:54:48 pm</span> / <span>00:00:33:359</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">productimageCount</h5>
-<span class='badge badge-success'>11.29.2022 5:54:48 pm</span>
-<span class='badge badge-danger'>11.29.2022 5:55:22 pm</span>
-<span class='badge badge-default'>00:00:33:359</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">ProductInfoTest</span>
-<span class="badge badge-pill badge-default">LensKartTestSuite</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:55:22 pm</td>
+        <td>9:15:25 am</td>
         <td>
           <textarea readonly class="code-block">java.lang.AssertionError: Image count should be greater than 0 expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
@@ -900,7 +556,7 @@ Session ID: efbf2e818dd4c6b9007b0afe81b7b786
 </textarea>
           
     <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669724722729.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669724722729.png">
+<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669952725013.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669952725013.png">
     
     </div></div>
         </td>
@@ -910,26 +566,26 @@ Session ID: efbf2e818dd4c6b9007b0afe81b7b786
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="14"
+        <li class="test-item"  status="skip" test-id="10"
           author=""
           tag="LandingPageTest LensKartTestSuite"
           device="">
           <div class="test-detail">
             <p class="name">titleTest</p>
             <p class="text-sm">
-              <span>5:54:54 pm</span> / <span>00:00:15:265</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>9:15:18 am</span> / <span>00:00:15:230</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">titleTest</h5>
-<span class='badge badge-success'>11.29.2022 5:54:54 pm</span>
-<span class='badge badge-danger'>11.29.2022 5:55:09 pm</span>
-<span class='badge badge-default'>00:00:15:265</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<h5 class="test-status text-skip">titleTest</h5>
+<span class='badge badge-success'>12.02.2022 9:15:18 am</span>
+<span class='badge badge-danger'>12.02.2022 9:15:33 am</span>
+<span class='badge badge-default'>00:00:15:230</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
@@ -941,15 +597,15 @@ Session ID: efbf2e818dd4c6b9007b0afe81b7b786
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:55:10 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>9:15:34 am</td>
         <td>
           <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain "Lenskart1.com". Current title: "Lenskart.com® - Sunglasses, Contact Lens, Eyeglasses, Frames, Buy 1 Get 1 Offer for Gold Members" (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6.1', java.version: '17.0.5'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6.1', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/5l/cnx21f9j4yx...}, goog:chromeOptions: {debuggerAddress: localhost:55100}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55100/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 894584e9f454fc4b3c17674842bc3032
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.71, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5l/cnx21f9j4yx...}, goog:chromeOptions: {debuggerAddress: localhost:57184}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57184/devtoo..., se:cdpVersion: 108.0.5359.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bd216ad546611a07ef8a21e613418681
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
 	at com.qa.lenskart.utils.WaitUtils.ifTitleContainsText(WaitUtils.java:113)
@@ -978,7 +634,307 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
 </textarea>
           
     <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669724710267.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669724710267.png">
+<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669952734784.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669952734784.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="11"
+          author=""
+          tag="ProductInfoTest LensKartTestSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">productimageCount</p>
+            <p class="text-sm">
+              <span>9:15:25 am</span> / <span>00:00:20:028</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">productimageCount</h5>
+<span class='badge badge-success'>12.02.2022 9:15:25 am</span>
+<span class='badge badge-danger'>12.02.2022 9:15:45 am</span>
+<span class='badge badge-default'>00:00:20:028</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ProductInfoTest</span>
+<span class="badge badge-pill badge-default">LensKartTestSuite</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>9:15:45 am</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: Image count should be greater than 0 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</textarea>
+          
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669952745455.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669952745455.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="12"
+          author=""
+          tag="LandingPageTest LensKartTestSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">titleTest</p>
+            <p class="text-sm">
+              <span>9:15:34 am</span> / <span>00:00:15:239</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">titleTest</h5>
+<span class='badge badge-success'>12.02.2022 9:15:34 am</span>
+<span class='badge badge-danger'>12.02.2022 9:15:50 am</span>
+<span class='badge badge-default'>00:00:15:239</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">LandingPageTest</span>
+<span class="badge badge-pill badge-default">LensKartTestSuite</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>9:15:51 am</td>
+        <td>
+          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain "Lenskart1.com". Current title: "Lenskart.com® - Sunglasses, Contact Lens, Eyeglasses, Frames, Buy 1 Get 1 Offer for Gold Members" (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6.1', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.71, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5l/cnx21f9j4yx...}, goog:chromeOptions: {debuggerAddress: localhost:57184}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57184/devtoo..., se:cdpVersion: 108.0.5359.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bd216ad546611a07ef8a21e613418681
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.qa.lenskart.utils.WaitUtils.ifTitleContainsText(WaitUtils.java:113)
+	at com.qa.lenskart.pages.LandingPage.isTitlePresent(LandingPage.java:51)
+	at com.qa.lenskart.tests.LandingPageTest.titleTest(LandingPageTest.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</textarea>
+          
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669952751484.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669952751484.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="13"
+          author=""
+          tag="ProductInfoTest LensKartTestSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">productimageCount</p>
+            <p class="text-sm">
+              <span>9:15:45 am</span> / <span>00:00:33:575</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">productimageCount</h5>
+<span class='badge badge-success'>12.02.2022 9:15:45 am</span>
+<span class='badge badge-danger'>12.02.2022 9:16:19 am</span>
+<span class='badge badge-default'>00:00:33:575</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ProductInfoTest</span>
+<span class="badge badge-pill badge-default">LensKartTestSuite</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>9:16:19 am</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: Image count should be greater than 0 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</textarea>
+          
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669952779733.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669952779733.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="14"
+          author=""
+          tag="LandingPageTest LensKartTestSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">titleTest</p>
+            <p class="text-sm">
+              <span>9:15:51 am</span> / <span>00:00:15:261</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">titleTest</h5>
+<span class='badge badge-success'>12.02.2022 9:15:51 am</span>
+<span class='badge badge-danger'>12.02.2022 9:16:06 am</span>
+<span class='badge badge-default'>00:00:15:261</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">LandingPageTest</span>
+<span class="badge badge-pill badge-default">LensKartTestSuite</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>9:16:09 am</td>
+        <td>
+          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain "Lenskart1.com". Current title: "Lenskart.com® - Sunglasses, Contact Lens, Eyeglasses, Frames, Buy 1 Get 1 Offer for Gold Members" (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6.1', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.71, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5l/cnx21f9j4yx...}, goog:chromeOptions: {debuggerAddress: localhost:57184}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57184/devtoo..., se:cdpVersion: 108.0.5359.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bd216ad546611a07ef8a21e613418681
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.qa.lenskart.utils.WaitUtils.ifTitleContainsText(WaitUtils.java:113)
+	at com.qa.lenskart.pages.LandingPage.isTitlePresent(LandingPage.java:51)
+	at com.qa.lenskart.tests.LandingPageTest.titleTest(LandingPageTest.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</textarea>
+          
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669952769124.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1669952769124.png">
     
     </div></div>
         </td>
@@ -995,7 +951,7 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
           <div class="test-detail">
             <p class="name">urlTest</p>
             <p class="text-sm">
-              <span>5:55:10 pm</span> / <span>00:00:00:007</span>
+              <span>9:16:09 am</span> / <span>00:00:00:010</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1004,9 +960,9 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">urlTest</h5>
-<span class='badge badge-success'>11.29.2022 5:55:10 pm</span>
-<span class='badge badge-danger'>11.29.2022 5:55:10 pm</span>
-<span class='badge badge-default'>00:00:00:007</span>
+<span class='badge badge-success'>12.02.2022 9:16:09 am</span>
+<span class='badge badge-danger'>12.02.2022 9:16:09 am</span>
+<span class='badge badge-default'>00:00:00:010</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -1020,7 +976,7 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:55:10 pm</td>
+        <td>9:16:09 am</td>
         <td>
           Test passed
         </td>
@@ -1037,7 +993,7 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
           <div class="test-detail">
             <p class="name">logoTest</p>
             <p class="text-sm">
-              <span>5:55:10 pm</span> / <span>00:00:00:471</span>
+              <span>9:16:09 am</span> / <span>00:00:00:484</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1046,9 +1002,9 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">logoTest</h5>
-<span class='badge badge-success'>11.29.2022 5:55:10 pm</span>
-<span class='badge badge-danger'>11.29.2022 5:55:10 pm</span>
-<span class='badge badge-default'>00:00:00:471</span>
+<span class='badge badge-success'>12.02.2022 9:16:09 am</span>
+<span class='badge badge-danger'>12.02.2022 9:16:09 am</span>
+<span class='badge badge-default'>00:00:00:484</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -1062,7 +1018,7 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:55:10 pm</td>
+        <td>9:16:09 am</td>
         <td>
           Test passed
         </td>
@@ -1079,7 +1035,7 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
           <div class="test-detail">
             <p class="name">signInTest</p>
             <p class="text-sm">
-              <span>5:55:10 pm</span> / <span>00:00:03:924</span>
+              <span>9:16:09 am</span> / <span>00:00:03:549</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1088,9 +1044,9 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">signInTest</h5>
-<span class='badge badge-success'>11.29.2022 5:55:10 pm</span>
-<span class='badge badge-danger'>11.29.2022 5:55:14 pm</span>
-<span class='badge badge-default'>00:00:03:924</span>
+<span class='badge badge-success'>12.02.2022 9:16:09 am</span>
+<span class='badge badge-danger'>12.02.2022 9:16:13 am</span>
+<span class='badge badge-default'>00:00:03:549</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -1104,7 +1060,7 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:55:14 pm</td>
+        <td>9:16:13 am</td>
         <td>
           Test passed
         </td>
@@ -1127,50 +1083,10 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-skip'>2</span>
-</span>
-<p class="name">org.openqa.selenium.StaleElementReferenceException</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>org.openqa.selenium.StaleElementReferenceException</h4>
-<span status="skip" class='badge log badge-skip'>2 skipped</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>17:54:43 pm</td>
-<td>
-<a href="#" class="linked" test-id='11' id='11'>productimageCount</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>17:54:46 pm</td>
-<td>
-<a href="#" class="linked" test-id='12' id='12'>productimageCount</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
@@ -1197,28 +1113,28 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
 <tbody>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>17:54:06 pm</td>
+<td>09:15:02 am</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>titleTest</a>
+<a href="#" class="linked" test-id='7' id='7'>titleTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>17:54:22 pm</td>
-<td>
-<a href="#" class="linked" test-id='9' id='9'>titleTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>17:54:38 pm</td>
+<td>09:15:18 am</td>
 <td>
 <a href="#" class="linked" test-id='10' id='10'>titleTest</a>
 </td>
 </tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>09:15:34 am</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>titleTest</a>
+</td>
+</tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:54:54 pm</td>
+<td>09:15:51 am</td>
 <td>
 <a href="#" class="linked" test-id='14' id='14'>titleTest</a>
 </td>
@@ -1231,16 +1147,16 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
 <div class="test-detail">
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
-<span class='badge log badge-skip'>1</span>
+<span class='badge log badge-skip'>3</span>
 </span>
 <p class="name">java.lang.AssertionError</p>
-<p class="duration text-sm">2 tests</p>
+<p class="duration text-sm">4 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>java.lang.AssertionError</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
-<span status="skip" class='badge log badge-skip'>1 skipped</span>
+<span status="skip" class='badge log badge-skip'>3 skipped</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1253,14 +1169,28 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
 <tbody>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>17:54:07 pm</td>
+<td>09:15:02 am</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>productimageCount</a>
+<a href="#" class="linked" test-id='8' id='8'>productimageCount</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>09:15:13 am</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>productimageCount</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>09:15:25 am</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>productimageCount</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:54:48 pm</td>
+<td>09:15:45 am</td>
 <td>
 <a href="#" class="linked" test-id='13' id='13'>productimageCount</a>
 </td>
@@ -1313,49 +1243,49 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
 <tbody>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>17:54:06 pm</td>
+<td>09:15:02 am</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>titleTest</a>
+<a href="#" class="linked" test-id='7' id='7'>titleTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>17:54:22 pm</td>
-<td>
-<a href="#" class="linked" test-id='9' id='9'>titleTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>17:54:38 pm</td>
+<td>09:15:18 am</td>
 <td>
 <a href="#" class="linked" test-id='10' id='10'>titleTest</a>
 </td>
 </tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>09:15:34 am</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>titleTest</a>
+</td>
+</tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:54:54 pm</td>
+<td>09:15:51 am</td>
 <td>
 <a href="#" class="linked" test-id='14' id='14'>titleTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:55:10 pm</td>
+<td>09:16:09 am</td>
 <td>
 <a href="#" class="linked" test-id='15' id='15'>urlTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:55:10 pm</td>
+<td>09:16:09 am</td>
 <td>
 <a href="#" class="linked" test-id='16' id='16'>logoTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:55:10 pm</td>
+<td>09:16:09 am</td>
 <td>
 <a href="#" class="linked" test-id='17' id='17'>signInTest</a>
 </td>
@@ -1388,16 +1318,16 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:54:06 pm</td>
+<td>09:14:58 am</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>loginNegativeTest</a>
+<a href="#" class="linked" test-id='5' id='5'>loginNegativeTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:54:09 pm</td>
+<td>09:15:01 am</td>
 <td>
-<a href="#" class="linked" test-id='5' id='5'>loginNegativeTest</a>
+<a href="#" class="linked" test-id='6' id='6'>loginNegativeTest</a>
 </td>
 </tr>
 </tbody>
@@ -1430,30 +1360,84 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
 <tbody>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>17:54:07 pm</td>
+<td>09:15:02 am</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>productimageCount</a>
+<a href="#" class="linked" test-id='8' id='8'>productimageCount</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>17:54:43 pm</td>
+<td>09:15:13 am</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>productimageCount</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>09:15:25 am</td>
 <td>
 <a href="#" class="linked" test-id='11' id='11'>productimageCount</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>17:54:46 pm</td>
-<td>
-<a href="#" class="linked" test-id='12' id='12'>productimageCount</a>
-</td>
-</tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:54:48 pm</td>
+<td>09:15:45 am</td>
 <td>
 <a href="#" class="linked" test-id='13' id='13'>productimageCount</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">HomePageTest</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>HomePageTest</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:14:40 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>userNameTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:14:41 am</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>searchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:14:44 am</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>searchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:14:48 am</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>searchTest</a>
 </td>
 </tr>
 </tbody>
@@ -1486,177 +1470,123 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>17:54:06 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:14:40 am</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>titleTest</a>
+<a href="#" class="linked" test-id='1' id='1'>userNameTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:54:06 pm</td>
+<td>09:14:41 am</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>loginNegativeTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>17:54:07 pm</td>
-<td>
-<a href="#" class="linked" test-id='3' id='3'>productimageCount</a>
+<a href="#" class="linked" test-id='2' id='2'>searchTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:54:08 pm</td>
+<td>09:14:44 am</td>
 <td>
-<a href="#" class="linked" test-id='4' id='4'>userNameTest</a>
+<a href="#" class="linked" test-id='3' id='3'>searchTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:54:09 pm</td>
+<td>09:14:48 am</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>searchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:14:58 am</td>
 <td>
 <a href="#" class="linked" test-id='5' id='5'>loginNegativeTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:54:09 pm</td>
+<td>09:15:01 am</td>
 <td>
-<a href="#" class="linked" test-id='6' id='6'>searchTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:54:13 pm</td>
-<td>
-<a href="#" class="linked" test-id='7' id='7'>searchTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:54:16 pm</td>
-<td>
-<a href="#" class="linked" test-id='8' id='8'>searchTest</a>
+<a href="#" class="linked" test-id='6' id='6'>loginNegativeTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>17:54:22 pm</td>
+<td>09:15:02 am</td>
 <td>
-<a href="#" class="linked" test-id='9' id='9'>titleTest</a>
+<a href="#" class="linked" test-id='7' id='7'>titleTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>17:54:38 pm</td>
+<td>09:15:02 am</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>productimageCount</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>09:15:13 am</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>productimageCount</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>09:15:18 am</td>
 <td>
 <a href="#" class="linked" test-id='10' id='10'>titleTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>17:54:43 pm</td>
+<td>09:15:25 am</td>
 <td>
 <a href="#" class="linked" test-id='11' id='11'>productimageCount</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>17:54:46 pm</td>
+<td>09:15:34 am</td>
 <td>
-<a href="#" class="linked" test-id='12' id='12'>productimageCount</a>
+<a href="#" class="linked" test-id='12' id='12'>titleTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:54:48 pm</td>
+<td>09:15:45 am</td>
 <td>
 <a href="#" class="linked" test-id='13' id='13'>productimageCount</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:54:54 pm</td>
+<td>09:15:51 am</td>
 <td>
 <a href="#" class="linked" test-id='14' id='14'>titleTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:55:10 pm</td>
+<td>09:16:09 am</td>
 <td>
 <a href="#" class="linked" test-id='15' id='15'>urlTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:55:10 pm</td>
+<td>09:16:09 am</td>
 <td>
 <a href="#" class="linked" test-id='16' id='16'>logoTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:55:10 pm</td>
+<td>09:16:09 am</td>
 <td>
 <a href="#" class="linked" test-id='17' id='17'>signInTest</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>4</span>
-</span>
-<p class="name">HomePageTest</p>
-<p class="duration text-sm">4 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>HomePageTest</h4>
-<span status="pass" class='badge log pass-bg'>4 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:54:08 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='4'>userNameTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:54:09 pm</td>
-<td>
-<a href="#" class="linked" test-id='6' id='6'>searchTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:54:13 pm</td>
-<td>
-<a href="#" class="linked" test-id='7' id='7'>searchTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:54:16 pm</td>
-<td>
-<a href="#" class="linked" test-id='8' id='8'>searchTest</a>
 </td>
 </tr>
 </tbody>
@@ -1676,13 +1606,13 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Nov 29, 2022 05:53:27 pm</h3>
+<h3>Dec 2, 2022 09:14:19 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Nov 29, 2022 05:55:22 pm</h3>
+<h3>Dec 2, 2022 09:16:20 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -1752,7 +1682,7 @@ Session ID: 894584e9f454fc4b3c17674842bc3032
 </div></div>
 <script>
 var timeline = {
-"titleTest":15.286,"loginNegativeTest":2.853,"productimageCount":34.907,"userNameTest":0.551,"loginNegativeTest":2.132,"searchTest":3.434,"searchTest":3.026,"searchTest":3.094,"titleTest":15.304,"titleTest":15.223,"productimageCount":2.497,"productimageCount":2.418,"productimageCount":33.359,"titleTest":15.265,"urlTest":0.007,"logoTest":0.471,"signInTest":3.924
+"userNameTest":0.576,"searchTest":3.249,"searchTest":3.879,"searchTest":3.71,"loginNegativeTest":3.361,"loginNegativeTest":1.696,"titleTest":15.222,"productimageCount":10.351,"productimageCount":10.937,"titleTest":15.23,"productimageCount":20.028,"titleTest":15.239,"productimageCount":33.575,"titleTest":15.261,"urlTest":0.01,"logoTest":0.484,"signInTest":3.549
 };
 </script>
 <div class="row">
@@ -1786,20 +1716,20 @@ var timeline = {
 <td>0%</td>
 </tr>
 <tr>
-<td>LensKartTestSuite</td>
-<td>9</td>
-<td>2</td>
-<td>6</td>
-<td>0</td>
-<td>52.941%</td>
-</tr>
-<tr>
 <td>HomePageTest</td>
 <td>4</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100%</td>
+</tr>
+<tr>
+<td>LensKartTestSuite</td>
+<td>9</td>
+<td>2</td>
+<td>6</td>
+<td>0</td>
+<td>52.941%</td>
 </tr>
 </tbody>
 </table></div>

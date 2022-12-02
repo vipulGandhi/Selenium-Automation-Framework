@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite parallel="tests" name="Failed suite [LensKart Test Suite]" guice-stage="DEVELOPMENT" verbose="4">
+  <listeners>
+    <listener class-name="com.qa.lenskart.listeners.AnnotationTransformer"/>
+    <listener class-name="com.qa.lenskart.listeners.ExtentReportListener"/>
+    <listener class-name="com.qa.lenskart.listeners.AllureReportListener"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="LensKart Landing Page Test(failed)" verbose="4">
+    <classes>
+      <class name="com.qa.lenskart.tests.LandingPageTest">
+        <methods>
+          <include name="titleTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.lenskart.tests.LandingPageTest -->
+    </classes>
+  </test> <!-- LensKart Landing Page Test(failed) -->
+  <test thread-count="5" parallel="tests" name="LensKart product Info Test(failed)" verbose="4">
     <classes>
       <class name="com.qa.lenskart.tests.ProductInfoTest">
         <methods>
@@ -12,5 +28,5 @@
         </methods>
       </class> <!-- com.qa.lenskart.tests.ProductInfoTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- LensKart product Info Test(failed) -->
+</suite> <!-- Failed suite [LensKart Test Suite] -->

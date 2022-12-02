@@ -8,6 +8,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Properties;
 
@@ -16,7 +17,10 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 import com.google.common.base.Strings;
@@ -47,14 +51,44 @@ public class DriverFactory
 		if(browserName.equals("chrome"))
 		{
 			WebDriverManager.chromedriver().setup();
-			//driver = new ChromeDriver(optionsManager.getChromeOptions());
-			threadLocal.set(new ChromeDriver(optionsManager.getChromeOptions()));
+			
+			if(Boolean.parseBoolean(properties.getProperty("remote")))
+			{
+				try
+				{
+					threadLocal.set(new RemoteWebDriver(new URL(properties.getProperty("huburl")), optionsManager.getChromeOptions()));
+				}
+				catch (MalformedURLException e)
+				{
+					e.printStackTrace();
+				}
+			}
+			else
+			{
+				//driver = new ChromeDriver(optionsManager.getChromeOptions());
+				threadLocal.set(new ChromeDriver(optionsManager.getChromeOptions()));
+			}
 		}
 		else if(browserName.equals("firefox"))
 		{
 			WebDriverManager.firefoxdriver().setup();
-			//driver = new FirefoxDriver(optionsManager.getFirefoxoptions());
-			threadLocal.set(new FirefoxDriver(optionsManager.getFirefoxoptions()));
+			
+			if(Boolean.parseBoolean(properties.getProperty("remote")))
+			{
+				try
+				{
+					threadLocal.set(new RemoteWebDriver(new URL(properties.getProperty("huburl")), optionsManager.getFirefoxoptions()));
+				}
+				catch (MalformedURLException e)
+				{
+					e.printStackTrace();
+				}
+			}
+			else
+			{
+				//driver = new FirefoxDriver(optionsManager.getFirefoxoptions());
+				threadLocal.set(new FirefoxDriver(optionsManager.getFirefoxoptions()));
+			}
 		}
 		else if(browserName.equals("safari"))
 		{
@@ -75,7 +109,7 @@ public class DriverFactory
 		
 		return getDriver();
 	}
-	
+
 	// Return local copy of WebDriver
 	public static synchronized WebDriver getDriver()
 	{
