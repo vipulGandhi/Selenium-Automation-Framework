@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Test Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Dec 3, 2022 08:54:06 am</span></a>
+<a href="#"><span class="badge badge-primary">Dec 3, 2022 10:25:21 am</span></a>
 </li>
 </ul>
 </div>
@@ -76,6 +76,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
@@ -85,7 +86,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">ProductInfoTest</a><a class="dropdown-item" href="#">LensKartTestSuite</a>
+<a class="dropdown-item" href="#">LensKartTestSuite</a><a class="dropdown-item" href="#">ProductInfoTest</a><a class="dropdown-item" href="#">LandingPageNegativeTest</a><a class="dropdown-item" href="#">HomePageTest</a>
 </ul>
 </li>
 </ul>
@@ -98,7 +99,7 @@
           <div class="test-detail">
             <p class="name">productimageCount</p>
             <p class="text-sm">
-              <span>8:55:41 am</span> / <span>00:00:35:525</span>
+              <span>10:25:48 am</span> / <span>00:00:10:200</span>
               <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
@@ -107,9 +108,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-skip">productimageCount</h5>
-<span class='badge badge-success'>12.03.2022 8:55:41 am</span>
-<span class='badge badge-danger'>12.03.2022 8:56:17 am</span>
-<span class='badge badge-default'>00:00:35:525</span>
+<span class='badge badge-success'>12.03.2022 10:25:48 am</span>
+<span class='badge badge-danger'>12.03.2022 10:25:58 am</span>
+<span class='badge badge-default'>00:00:10:200</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -123,12 +124,13 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:56:19 am</td>
+        <td>10:25:58 am</td>
         <td>
-          <textarea readonly class="code-block">java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "org.openqa.selenium.JavascriptExecutor.executeScript(String, Object[])" is null
-	at com.qa.lenskart.utils.JavascriptUtil.waitForPageLoaded(JavascriptUtil.java:172)
-	at com.qa.lenskart.pages.SearchPage.selectProduct(SearchPage.java:55)
-	at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:49)
+          <textarea readonly class="code-block">java.lang.AssertionError: Image count should be greater than 0 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -152,7 +154,7 @@
 </textarea>
           
     <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1670037979029.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1670037979029.png">
+<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1670043358898.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1670043358898.png">
     
     </div></div>
         </td>
@@ -169,7 +171,7 @@
           <div class="test-detail">
             <p class="name">productimageCount</p>
             <p class="text-sm">
-              <span>8:56:19 am</span> / <span>00:00:03:021</span>
+              <span>10:25:58 am</span> / <span>00:00:15:330</span>
               <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
@@ -178,9 +180,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-skip">productimageCount</h5>
-<span class='badge badge-success'>12.03.2022 8:56:19 am</span>
-<span class='badge badge-danger'>12.03.2022 8:56:22 am</span>
-<span class='badge badge-default'>00:00:03:021</span>
+<span class='badge badge-success'>12.03.2022 10:25:58 am</span>
+<span class='badge badge-danger'>12.03.2022 10:26:14 am</span>
+<span class='badge badge-default'>00:00:15:330</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -194,10 +196,13 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:56:23 am</td>
+        <td>10:26:14 am</td>
         <td>
-          <textarea readonly class="code-block">java.lang.NullPointerException: Cannot invoke "com.qa.lenskart.pages.SearchPage.selectProduct(String)" because "this.searchPage" is null
-	at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:49)
+          <textarea readonly class="code-block">java.lang.AssertionError: Image count should be greater than 0 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -221,7 +226,7 @@
 </textarea>
           
     <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1670037983185.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1670037983185.png">
+<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1670043374554.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1670043374554.png">
     
     </div></div>
         </td>
@@ -233,12 +238,410 @@
         </li>
         <li class="test-item"  status="skip" test-id="3"
           author=""
+          tag="LensKartTestSuite LandingPageNegativeTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">loginNegativeTest</p>
+            <p class="text-sm">
+              <span>10:26:02 am</span> / <span>00:00:01:838</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">loginNegativeTest</h5>
+<span class='badge badge-success'>12.03.2022 10:26:02 am</span>
+<span class='badge badge-danger'>12.03.2022 10:26:04 am</span>
+<span class='badge badge-default'>00:00:01:838</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">LensKartTestSuite</span>
+<span class="badge badge-pill badge-default">LandingPageNegativeTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>10:26:04 am</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at com.qa.lenskart.tests.LandingPageNegativeTest.loginNegativeTest(LandingPageNegativeTest.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</textarea>
+          
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1670043364626.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1670043364626.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag="HomePageTest LensKartTestSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">userNameTest</p>
+            <p class="text-sm">
+              <span>10:26:04 am</span> / <span>00:00:00:541</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">userNameTest</h5>
+<span class='badge badge-success'>12.03.2022 10:26:04 am</span>
+<span class='badge badge-danger'>12.03.2022 10:26:04 am</span>
+<span class='badge badge-default'>00:00:00:541</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
+<span class="badge badge-pill badge-default">LensKartTestSuite</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:26:04 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag="LensKartTestSuite LandingPageNegativeTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">loginNegativeTest</p>
+            <p class="text-sm">
+              <span>10:26:04 am</span> / <span>00:00:01:552</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">loginNegativeTest</h5>
+<span class='badge badge-success'>12.03.2022 10:26:04 am</span>
+<span class='badge badge-danger'>12.03.2022 10:26:06 am</span>
+<span class='badge badge-default'>00:00:01:552</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">LensKartTestSuite</span>
+<span class="badge badge-pill badge-default">LandingPageNegativeTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:26:06 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag="HomePageTest LensKartTestSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">searchTest</p>
+            <p class="text-sm">
+              <span>10:26:05 am</span> / <span>00:00:03:523</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">searchTest</h5>
+<span class='badge badge-success'>12.03.2022 10:26:05 am</span>
+<span class='badge badge-danger'>12.03.2022 10:26:09 am</span>
+<span class='badge badge-default'>00:00:03:523</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
+<span class="badge badge-pill badge-default">LensKartTestSuite</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:26:09 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="7"
+          author=""
+          tag="LensKartTestSuite LandingPageNegativeTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">loginNegativeTest</p>
+            <p class="text-sm">
+              <span>10:26:06 am</span> / <span>00:00:01:276</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">loginNegativeTest</h5>
+<span class='badge badge-success'>12.03.2022 10:26:06 am</span>
+<span class='badge badge-danger'>12.03.2022 10:26:07 am</span>
+<span class='badge badge-default'>00:00:01:276</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">LensKartTestSuite</span>
+<span class="badge badge-pill badge-default">LandingPageNegativeTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>10:26:07 am</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at com.qa.lenskart.tests.LandingPageNegativeTest.loginNegativeTest(LandingPageNegativeTest.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</textarea>
+          
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1670043367739.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1670043367739.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag="LensKartTestSuite LandingPageNegativeTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">loginNegativeTest</p>
+            <p class="text-sm">
+              <span>10:26:07 am</span> / <span>00:00:01:355</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">loginNegativeTest</h5>
+<span class='badge badge-success'>12.03.2022 10:26:07 am</span>
+<span class='badge badge-danger'>12.03.2022 10:26:09 am</span>
+<span class='badge badge-default'>00:00:01:355</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">LensKartTestSuite</span>
+<span class="badge badge-pill badge-default">LandingPageNegativeTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:26:09 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag="HomePageTest LensKartTestSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">searchTest</p>
+            <p class="text-sm">
+              <span>10:26:09 am</span> / <span>00:00:02:609</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">searchTest</h5>
+<span class='badge badge-success'>12.03.2022 10:26:09 am</span>
+<span class='badge badge-danger'>12.03.2022 10:26:11 am</span>
+<span class='badge badge-default'>00:00:02:609</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
+<span class="badge badge-pill badge-default">LensKartTestSuite</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:26:11 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag="HomePageTest LensKartTestSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">searchTest</p>
+            <p class="text-sm">
+              <span>10:26:11 am</span> / <span>00:00:03:533</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">searchTest</h5>
+<span class='badge badge-success'>12.03.2022 10:26:11 am</span>
+<span class='badge badge-danger'>12.03.2022 10:26:15 am</span>
+<span class='badge badge-default'>00:00:03:533</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
+<span class="badge badge-pill badge-default">LensKartTestSuite</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:26:15 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="11"
+          author=""
           tag="ProductInfoTest LensKartTestSuite"
           device="">
           <div class="test-detail">
             <p class="name">productimageCount</p>
             <p class="text-sm">
-              <span>8:56:23 am</span> / <span>00:00:00:101</span>
+              <span>10:26:14 am</span> / <span>00:00:03:892</span>
               <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
@@ -247,10 +650,10 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-skip">productimageCount</h5>
-<span class='badge badge-success'>12.03.2022 8:56:23 am</span>
-<span class='badge badge-danger'>12.03.2022 8:56:23 am</span>
-<span class='badge badge-default'>00:00:00:101</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-success'>12.03.2022 10:26:14 am</span>
+<span class='badge badge-danger'>12.03.2022 10:26:18 am</span>
+<span class='badge badge-default'>00:00:03:892</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
@@ -263,10 +666,13 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:56:23 am</td>
+        <td>10:26:18 am</td>
         <td>
-          <textarea readonly class="code-block">java.lang.NullPointerException: Cannot invoke "com.qa.lenskart.pages.SearchPage.selectProduct(String)" because "this.searchPage" is null
-	at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:49)
+          <textarea readonly class="code-block">java.lang.AssertionError: Image count should be greater than 0 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -290,7 +696,7 @@
 </textarea>
           
     <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1670037983630.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1670037983630.png">
+<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1670043378687.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1670043378687.png">
     
     </div></div>
         </td>
@@ -300,14 +706,14 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="4"
+        <li class="test-item"  status="fail" test-id="12"
           author=""
           tag="ProductInfoTest LensKartTestSuite"
           device="">
           <div class="test-detail">
             <p class="name">productimageCount</p>
             <p class="text-sm">
-              <span>8:56:23 am</span> / <span>00:00:00:049</span>
+              <span>10:26:18 am</span> / <span>00:00:15:021</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -316,10 +722,10 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">productimageCount</h5>
-<span class='badge badge-success'>12.03.2022 8:56:23 am</span>
-<span class='badge badge-danger'>12.03.2022 8:56:23 am</span>
-<span class='badge badge-default'>00:00:00:049</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-success'>12.03.2022 10:26:18 am</span>
+<span class='badge badge-danger'>12.03.2022 10:26:33 am</span>
+<span class='badge badge-default'>00:00:15:021</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
@@ -332,10 +738,13 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>8:56:31 am</td>
+        <td>10:26:33 am</td>
         <td>
-          <textarea readonly class="code-block">java.lang.NullPointerException: Cannot invoke "com.qa.lenskart.pages.SearchPage.selectProduct(String)" because "this.searchPage" is null
-	at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:49)
+          <textarea readonly class="code-block">java.lang.AssertionError: Image count should be greater than 0 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -359,7 +768,7 @@
 </textarea>
           
     <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1670037991565.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1670037991565.png">
+<img data-featherlight='/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1670043393953.png' src="/Users/vipulgandhi/Documents/Vipul/Automation/Projects/Automation_Framework/FailedTestScreenshots/1670043393953.png">
     
     </div></div>
         </td>
@@ -390,16 +799,16 @@
 <div class="test-detail">
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
-<span class='badge log badge-skip'>3</span>
+<span class='badge log badge-skip'>5</span>
 </span>
-<p class="name">java.lang.NullPointerException</p>
-<p class="duration text-sm">4 tests</p>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">6 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>java.lang.NullPointerException</h4>
+<h4>java.lang.AssertionError</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
-<span status="skip" class='badge log badge-skip'>3 skipped</span>
+<span status="skip" class='badge log badge-skip'>5 skipped</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -412,30 +821,44 @@
 <tbody>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>08:55:41 am</td>
+<td>10:25:48 am</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>productimageCount</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>08:56:19 am</td>
+<td>10:26:02 am</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>loginNegativeTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>10:26:06 am</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>loginNegativeTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>10:25:58 am</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>productimageCount</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>08:56:23 am</td>
+<td>10:26:14 am</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>productimageCount</a>
+<a href="#" class="linked" test-id='11' id='11'>productimageCount</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>08:56:23 am</td>
+<td>10:26:18 am</td>
 <td>
-<a href="#" class="linked" test-id='4' id='4'>productimageCount</a>
+<a href="#" class="linked" test-id='12' id='12'>productimageCount</a>
 </td>
 </tr>
 </tbody>
@@ -454,10 +877,124 @@
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+<span class='badge log badge-danger'>1</span>
+<span class='badge log badge-skip'>5</span>
+</span>
+<p class="name">LensKartTestSuite</p>
+<p class="duration text-sm">12 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>LensKartTestSuite</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="skip" class='badge log badge-skip'>5 skipped</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>10:25:48 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>productimageCount</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>10:25:58 am</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>productimageCount</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>10:26:02 am</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>loginNegativeTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:26:04 am</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>userNameTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:26:04 am</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>loginNegativeTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:26:05 am</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>searchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>10:26:06 am</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>loginNegativeTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:26:07 am</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>loginNegativeTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:26:09 am</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>searchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:26:11 am</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>searchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>10:26:14 am</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>productimageCount</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:26:18 am</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>productimageCount</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
@@ -484,30 +1021,30 @@
 <tbody>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>08:55:41 am</td>
+<td>10:25:48 am</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>productimageCount</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>08:56:19 am</td>
+<td>10:25:58 am</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>productimageCount</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>08:56:23 am</td>
+<td>10:26:14 am</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>productimageCount</a>
+<a href="#" class="linked" test-id='11' id='11'>productimageCount</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>08:56:23 am</td>
+<td>10:26:18 am</td>
 <td>
-<a href="#" class="linked" test-id='4' id='4'>productimageCount</a>
+<a href="#" class="linked" test-id='12' id='12'>productimageCount</a>
 </td>
 </tr>
 </tbody>
@@ -517,17 +1054,17 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
-<span class='badge log badge-skip'>3</span>
+<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-skip'>2</span>
 </span>
-<p class="name">LensKartTestSuite</p>
+<p class="name">LandingPageNegativeTest</p>
 <p class="duration text-sm">4 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>LensKartTestSuite</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-<span status="skip" class='badge log badge-skip'>3 skipped</span>
+<h4>LandingPageNegativeTest</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="skip" class='badge log badge-skip'>2 skipped</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -540,30 +1077,84 @@
 <tbody>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>08:55:41 am</td>
+<td>10:26:02 am</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>productimageCount</a>
+<a href="#" class="linked" test-id='3' id='3'>loginNegativeTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:26:04 am</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>loginNegativeTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>08:56:19 am</td>
+<td>10:26:06 am</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>productimageCount</a>
+<a href="#" class="linked" test-id='7' id='7'>loginNegativeTest</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>08:56:23 am</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:26:07 am</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>productimageCount</a>
+<a href="#" class="linked" test-id='8' id='8'>loginNegativeTest</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>08:56:23 am</td>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">HomePageTest</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>HomePageTest</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:26:04 am</td>
 <td>
-<a href="#" class="linked" test-id='4' id='4'>productimageCount</a>
+<a href="#" class="linked" test-id='4' id='4'>userNameTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:26:05 am</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>searchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:26:09 am</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>searchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:26:11 am</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>searchTest</a>
 </td>
 </tr>
 </tbody>
@@ -583,19 +1174,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Dec 3, 2022 08:54:06 am</h3>
+<h3>Dec 3, 2022 10:25:21 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Dec 3, 2022 08:57:08 am</h3>
+<h3>Dec 3, 2022 10:26:34 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>0</h3>
+<h3>6</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -617,13 +1208,13 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> tests passed
+<div><small data-tooltip='50%'>
+<b>6</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='25%'><b>1</b> tests failed,
-<b>3</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='8%'><b>1</b> tests failed,
+<b>5</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -640,10 +1231,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div><small data-tooltip='50%'><b>6</b> events passed</small></div>
 <div>
-<small data-tooltip='25%'><b>1</b> events failed,
-<b data-tooltip='%'>3</b> others
+<small data-tooltip='8%'><b>1</b> events failed,
+<b data-tooltip='%'>5</b> others
 </small>
 </div>
 </div>
@@ -659,7 +1250,7 @@
 </div></div>
 <script>
 var timeline = {
-"productimageCount":35.525,"productimageCount":3.021,"productimageCount":0.101,"productimageCount":0.049
+"productimageCount":10.2,"productimageCount":15.33,"loginNegativeTest":1.838,"userNameTest":0.541,"loginNegativeTest":1.552,"searchTest":3.523,"loginNegativeTest":1.276,"loginNegativeTest":1.355,"searchTest":2.609,"searchTest":3.533,"productimageCount":3.892,"productimageCount":15.021
 };
 </script>
 <div class="row">
@@ -669,6 +1260,14 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
+<td>LensKartTestSuite</td>
+<td>6</td>
+<td>1</td>
+<td>5</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
 <td>ProductInfoTest</td>
 <td>0</td>
 <td>1</td>
@@ -677,12 +1276,20 @@ var timeline = {
 <td>0%</td>
 </tr>
 <tr>
-<td>LensKartTestSuite</td>
+<td>LandingPageNegativeTest</td>
+<td>2</td>
 <td>0</td>
-<td>1</td>
-<td>3</td>
+<td>2</td>
 <td>0</td>
-<td>0%</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>HomePageTest</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -715,10 +1322,10 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
+passParent: 6,
 failParent: 1,
 warningParent: 0,
-skipParent: 3,
+skipParent: 5,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -732,10 +1339,10 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 0,
+passEvents: 6,
 failEvents: 1,
 warningEvents: 0,
-skipEvents: 3,
+skipEvents: 5,
 infoEvents: 0
 };
 </script>        </div>

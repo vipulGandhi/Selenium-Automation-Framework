@@ -1,30 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="6" passed="0" failed="1" skipped="3">
+<testng-results ignored="4" total="16" passed="6" failed="1" skipped="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-03T03:24:06Z" name="LensKart Test Suite" finished-at="2022-12-03T03:26:39Z" duration-ms="152886">
+  <suite started-at="2022-12-03T04:55:21Z" name="LensKart Test Suite" finished-at="2022-12-03T04:56:34Z" duration-ms="72838">
     <groups>
     </groups>
-    <test started-at="2022-12-03T03:24:06Z" name="LensKart product Info Test" finished-at="2022-12-03T03:26:39Z" duration-ms="152886">
-      <class name="com.qa.lenskart.tests.ProductInfoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.lenskart.tests.ProductInfoTest@44dc7b7d]" started-at="2022-12-03T03:24:07Z" name="setUp" finished-at="2022-12-03T03:25:10Z" duration-ms="63614" status="PASS">
+    <test started-at="2022-12-03T04:55:21Z" name="LensKart Landing Page Negative Test" finished-at="2022-12-03T04:56:09Z" duration-ms="47881">
+      <class name="com.qa.lenskart.tests.LandingPageNegativeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.lenskart.tests.LandingPageNegativeTest@526e8108]" started-at="2022-12-03T04:55:21Z" name="setUp" finished-at="2022-12-03T04:56:02Z" duration-ms="40505" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="test()[pri:0, instance:com.qa.lenskart.tests.ProductInfoTest@44dc7b7d]" started-at="2022-12-03T03:25:10Z" name="test" finished-at="2022-12-03T03:25:41Z" duration-ms="30832" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method signature="productimageCount()[pri:2, instance:com.qa.lenskart.tests.ProductInfoTest@44dc7b7d]" started-at="2022-12-03T03:25:41Z" name="productimageCount" finished-at="2022-12-03T03:26:17Z" duration-ms="35525" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="loginNegativeTest(java.lang.String)[pri:1, instance:com.qa.lenskart.tests.LandingPageNegativeTest@526e8108]" started-at="2022-12-03T04:56:02Z" name="loginNegativeTest" data-provider="invalidEmailData" finished-at="2022-12-03T04:56:04Z" duration-ms="1838" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrongusername@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot invoke "Object.toString()" because the return value of "org.openqa.selenium.JavascriptExecutor.executeScript(String, Object[])" is null]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "org.openqa.selenium.JavascriptExecutor.executeScript(String, Object[])" is null
-at com.qa.lenskart.utils.JavascriptUtil.waitForPageLoaded(JavascriptUtil.java:172)
-at com.qa.lenskart.pages.SearchPage.selectProduct(SearchPage.java:55)
-at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:49)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.qa.lenskart.tests.LandingPageNegativeTest.loginNegativeTest(LandingPageNegativeTest.java:23)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -47,18 +52,194 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginNegativeTest -->
+        <test-method signature="loginNegativeTest(java.lang.String)[pri:1, instance:com.qa.lenskart.tests.LandingPageNegativeTest@526e8108]" started-at="2022-12-03T04:56:04Z" name="loginNegativeTest" data-provider="invalidEmailData" finished-at="2022-12-03T04:56:06Z" duration-ms="1552" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrongusername@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginNegativeTest -->
+        <test-method signature="loginNegativeTest(java.lang.String)[pri:1, instance:com.qa.lenskart.tests.LandingPageNegativeTest@526e8108]" started-at="2022-12-03T04:56:06Z" name="loginNegativeTest" data-provider="invalidEmailData" finished-at="2022-12-03T04:56:07Z" duration-ms="1276" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[badusername@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.qa.lenskart.tests.LandingPageNegativeTest.loginNegativeTest(LandingPageNegativeTest.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginNegativeTest -->
+        <test-method signature="loginNegativeTest(java.lang.String)[pri:1, instance:com.qa.lenskart.tests.LandingPageNegativeTest@526e8108]" started-at="2022-12-03T04:56:07Z" name="loginNegativeTest" data-provider="invalidEmailData" finished-at="2022-12-03T04:56:09Z" duration-ms="1355" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[badusername@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginNegativeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.lenskart.tests.LandingPageNegativeTest@526e8108]" started-at="2022-12-03T04:56:09Z" name="tearDown" finished-at="2022-12-03T04:56:09Z" duration-ms="691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.lenskart.tests.LandingPageNegativeTest -->
+    </test> <!-- LensKart Landing Page Negative Test -->
+    <test started-at="2022-12-03T04:55:21Z" name="LensKart Home Page Test" finished-at="2022-12-03T04:56:15Z" duration-ms="54025">
+      <class name="com.qa.lenskart.tests.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.lenskart.tests.HomePageTest@58a84a12]" started-at="2022-12-03T04:55:22Z" name="setUp" finished-at="2022-12-03T04:56:01Z" duration-ms="39562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="test()[pri:0, instance:com.qa.lenskart.tests.HomePageTest@58a84a12]" started-at="2022-12-03T04:56:01Z" name="test" finished-at="2022-12-03T04:56:04Z" duration-ms="2335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="userNameTest()[pri:1, instance:com.qa.lenskart.tests.HomePageTest@58a84a12]" started-at="2022-12-03T04:56:04Z" name="userNameTest" finished-at="2022-12-03T04:56:04Z" duration-ms="541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userNameTest -->
+        <test-method signature="searchTest(java.lang.String)[pri:3, instance:com.qa.lenskart.tests.HomePageTest@58a84a12]" started-at="2022-12-03T04:56:05Z" name="searchTest" data-provider="serchItems" finished-at="2022-12-03T04:56:09Z" duration-ms="3523" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Contact Lens]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method signature="searchTest(java.lang.String)[pri:3, instance:com.qa.lenskart.tests.HomePageTest@58a84a12]" started-at="2022-12-03T04:56:09Z" name="searchTest" data-provider="serchItems" finished-at="2022-12-03T04:56:11Z" duration-ms="2609" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Eyeglasses]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method signature="searchTest(java.lang.String)[pri:3, instance:com.qa.lenskart.tests.HomePageTest@58a84a12]" started-at="2022-12-03T04:56:11Z" name="searchTest" data-provider="serchItems" finished-at="2022-12-03T04:56:15Z" duration-ms="3533" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sunglasses]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.lenskart.tests.HomePageTest@58a84a12]" started-at="2022-12-03T04:56:15Z" name="tearDown" finished-at="2022-12-03T04:56:15Z" duration-ms="541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.lenskart.tests.HomePageTest -->
+    </test> <!-- LensKart Home Page Test -->
+    <test started-at="2022-12-03T04:55:21Z" name="LensKart product Info Test" finished-at="2022-12-03T04:56:34Z" duration-ms="72838">
+      <class name="com.qa.lenskart.tests.ProductInfoTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.lenskart.tests.ProductInfoTest@73afe2b7]" started-at="2022-12-03T04:55:22Z" name="setUp" finished-at="2022-12-03T04:55:45Z" duration-ms="23601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="test()[pri:0, instance:com.qa.lenskart.tests.ProductInfoTest@73afe2b7]" started-at="2022-12-03T04:55:45Z" name="test" finished-at="2022-12-03T04:55:48Z" duration-ms="2506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="productimageCount()[pri:2, instance:com.qa.lenskart.tests.ProductInfoTest@73afe2b7]" started-at="2022-12-03T04:55:48Z" name="productimageCount" finished-at="2022-12-03T04:55:58Z" duration-ms="10200" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Image count should be greater than 0 expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Image count should be greater than 0 expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:50)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productimageCount -->
-        <test-method signature="productimageCount()[pri:2, instance:com.qa.lenskart.tests.ProductInfoTest@44dc7b7d]" started-at="2022-12-03T03:26:19Z" name="productimageCount" finished-at="2022-12-03T03:26:22Z" duration-ms="3021" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="productimageCount()[pri:2, instance:com.qa.lenskart.tests.ProductInfoTest@73afe2b7]" started-at="2022-12-03T04:55:58Z" name="productimageCount" finished-at="2022-12-03T04:56:14Z" duration-ms="15330" status="SKIP">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot invoke "com.qa.lenskart.pages.SearchPage.selectProduct(String)" because "this.searchPage" is null]]>
+              <![CDATA[Image count should be greater than 0 expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.lenskart.pages.SearchPage.selectProduct(String)" because "this.searchPage" is null
-at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:49)
+              <![CDATA[java.lang.AssertionError: Image count should be greater than 0 expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -81,18 +262,21 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productimageCount -->
-        <test-method signature="productimageCount()[pri:2, instance:com.qa.lenskart.tests.ProductInfoTest@44dc7b7d]" started-at="2022-12-03T03:26:23Z" name="productimageCount" finished-at="2022-12-03T03:26:23Z" duration-ms="101" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="productimageCount()[pri:2, instance:com.qa.lenskart.tests.ProductInfoTest@73afe2b7]" started-at="2022-12-03T04:56:14Z" name="productimageCount" finished-at="2022-12-03T04:56:18Z" duration-ms="3892" status="SKIP">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot invoke "com.qa.lenskart.pages.SearchPage.selectProduct(String)" because "this.searchPage" is null]]>
+              <![CDATA[Image count should be greater than 0 expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.lenskart.pages.SearchPage.selectProduct(String)" because "this.searchPage" is null
-at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:49)
+              <![CDATA[java.lang.AssertionError: Image count should be greater than 0 expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -115,18 +299,21 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productimageCount -->
-        <test-method signature="productimageCount()[pri:2, instance:com.qa.lenskart.tests.ProductInfoTest@44dc7b7d]" started-at="2022-12-03T03:26:23Z" name="productimageCount" finished-at="2022-12-03T03:26:23Z" duration-ms="49" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="productimageCount()[pri:2, instance:com.qa.lenskart.tests.ProductInfoTest@73afe2b7]" started-at="2022-12-03T04:56:18Z" name="productimageCount" finished-at="2022-12-03T04:56:33Z" duration-ms="15021" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot invoke "com.qa.lenskart.pages.SearchPage.selectProduct(String)" because "this.searchPage" is null]]>
+              <![CDATA[Image count should be greater than 0 expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.lenskart.pages.SearchPage.selectProduct(String)" because "this.searchPage" is null
-at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:49)
+              <![CDATA[java.lang.AssertionError: Image count should be greater than 0 expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -149,11 +336,11 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productimageCount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.lenskart.tests.ProductInfoTest@44dc7b7d]" started-at="2022-12-03T03:26:31Z" name="tearDown" finished-at="2022-12-03T03:26:39Z" duration-ms="8020" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.lenskart.tests.ProductInfoTest@73afe2b7]" started-at="2022-12-03T04:56:34Z" name="tearDown" finished-at="2022-12-03T04:56:34Z" duration-ms="555" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

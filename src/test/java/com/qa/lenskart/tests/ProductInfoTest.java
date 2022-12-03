@@ -47,7 +47,8 @@ public class ProductInfoTest extends BaseTest
 	{
 		searchPage = homePage.doSearch("Eyeglasses");
 		productInfoPage = searchPage.selectProduct("Vincent Chase");
-		Assert.assertTrue(productInfoPage.productImagesCount() < 0, Errors.IMAGE_COUNT_ERROR_MESSAGE);
+		Assert.assertTrue(productInfoPage.productImagesCount() > 0, Errors.IMAGE_COUNT_ERROR_MESSAGE);
+		//Assert.assertTrue(productInfoPage.productImagesCount() < 0, Errors.IMAGE_COUNT_ERROR_MESSAGE);
 	}
 	
 	@Test(priority = 3, enabled = false)
