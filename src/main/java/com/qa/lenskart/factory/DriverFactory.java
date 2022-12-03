@@ -19,6 +19,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -52,11 +53,15 @@ public class DriverFactory
 		{
 			WebDriverManager.chromedriver().setup();
 			
+			DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+			desiredCapabilities.setBrowserName("chrome");
+			//desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, optionsManager.getChromeOptions());
+			
 			if(Boolean.parseBoolean(properties.getProperty("remote")))
 			{
 				try
 				{
-					threadLocal.set(new RemoteWebDriver(new URL(properties.getProperty("huburl")), optionsManager.getChromeOptions()));
+					threadLocal.set(new RemoteWebDriver(new URL(properties.getProperty("huburl")), desiredCapabilities));
 				}
 				catch (MalformedURLException e)
 				{
@@ -73,11 +78,15 @@ public class DriverFactory
 		{
 			WebDriverManager.firefoxdriver().setup();
 			
+			DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+			desiredCapabilities.setBrowserName("firefox");
+			//desiredCapabilities.setCapability(FirefoxOptions.FIREFOX_OPTIONS, optionsManager.getFirefoxoptions());
+			
 			if(Boolean.parseBoolean(properties.getProperty("remote")))
 			{
 				try
 				{
-					threadLocal.set(new RemoteWebDriver(new URL(properties.getProperty("huburl")), optionsManager.getFirefoxoptions()));
+					threadLocal.set(new RemoteWebDriver(new URL(properties.getProperty("huburl")), desiredCapabilities));
 				}
 				catch (MalformedURLException e)
 				{

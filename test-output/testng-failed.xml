@@ -6,17 +6,6 @@
     <listener class-name="com.qa.lenskart.listeners.ExtentReportListener"/>
     <listener class-name="com.qa.lenskart.listeners.AllureReportListener"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="LensKart Landing Page Test(failed)" verbose="4">
-    <classes>
-      <class name="com.qa.lenskart.tests.LandingPageTest">
-        <methods>
-          <include name="titleTest"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.qa.lenskart.tests.LandingPageTest -->
-    </classes>
-  </test> <!-- LensKart Landing Page Test(failed) -->
   <test thread-count="5" parallel="tests" name="LensKart product Info Test(failed)" verbose="4">
     <classes>
       <class name="com.qa.lenskart.tests.ProductInfoTest">
