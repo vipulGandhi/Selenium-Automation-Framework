@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>LensKart product Info Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/3</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Dec 03 10:25:21 IST 2022</td>
+<td>Started on:</td><td>Sat Dec 03 10:28:38 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>72 seconds (72838 ms)</td>
+<tr><td>Total time:</td><td>22 seconds (22399 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,158 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.lenskart.tests.ProductInfoTest.setUp()'><b>setUp</b><br>Test class: com.qa.lenskart.tests.ProductInfoTest</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed.
+  (chrome not reachable)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;4b60d3a05718&apos;, ip: &apos;172.17.0.3&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.49-linuxkit&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: driver.version: unknown
+remote stacktrace: #0 0x004000a2a8f3 &lt;unknown&gt;
+#1 0x00400050fba8 &lt;unknown&gt;
+#2 0x004000532e33 &lt;unknown&gt;
+#3 0x00400052e9ef &lt;unknown&gt;
+#4 0x004000568995 &lt;unknown&gt;
+#5 0x004000562d63 &lt;unknown&gt;
+#6 0x004000539144 &lt;unknown&gt;
+#7 0x00400053a135 &lt;unknown&gt;
+#8 0x004000a59c3e &lt;unknown&gt;
+#9 0x004000a6f6b7 &lt;unknown&gt;
+#10 0x004000a5ab95 &lt;unknown&gt;
+#11 0x004000a70b05 &lt;unknown&gt;
+#12 0x004000a4f2ab &lt;unknown&gt;
+#13 0x004000a8b248 &lt;unknown&gt;
+#14 0x004000a8b3c8 &lt;unknown&gt;
+#15 0x004000aa633d &lt;unknown&gt;
+#16 0x004002be3609 start_thread
+ 
+Host info: host: &apos;Vipuls-MacBook-Air.local&apos;, ip: &apos;2401:4900:1c8f:e709:881b:a47a:9562:3fef%en0&apos;
+Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.6.1&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome}], desiredCapabilities=Capabilities {browserName: chrome}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:139)
+	at com.qa.lenskart.factory.DriverFactory.initWebDriver(DriverFactory.java:64)
+	at com.qa.lenskart.tests.BaseTest.setUp(BaseTest.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div><a href='#' onClick='toggleBox("stack-trace815187312", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace815187312'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed.
+  (chrome not reachable)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;4b60d3a05718&apos;, ip: &apos;172.17.0.3&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.49-linuxkit&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: driver.version: unknown
+remote stacktrace: #0 0x004000a2a8f3 &lt;unknown&gt;
+#1 0x00400050fba8 &lt;unknown&gt;
+#2 0x004000532e33 &lt;unknown&gt;
+#3 0x00400052e9ef &lt;unknown&gt;
+#4 0x004000568995 &lt;unknown&gt;
+#5 0x004000562d63 &lt;unknown&gt;
+#6 0x004000539144 &lt;unknown&gt;
+#7 0x00400053a135 &lt;unknown&gt;
+#8 0x004000a59c3e &lt;unknown&gt;
+#9 0x004000a6f6b7 &lt;unknown&gt;
+#10 0x004000a5ab95 &lt;unknown&gt;
+#11 0x004000a70b05 &lt;unknown&gt;
+#12 0x004000a4f2ab &lt;unknown&gt;
+#13 0x004000a8b248 &lt;unknown&gt;
+#14 0x004000a8b3c8 &lt;unknown&gt;
+#15 0x004000aa633d &lt;unknown&gt;
+#16 0x004002be3609 start_thread
+ 
+Host info: host: &apos;Vipuls-MacBook-Air.local&apos;, ip: &apos;2401:4900:1c8f:e709:881b:a47a:9562:3fef%en0&apos;
+Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.6.1&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome}], desiredCapabilities=Capabilities {browserName: chrome}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:139)
+	at com.qa.lenskart.factory.DriverFactory.initWebDriver(DriverFactory.java:64)
+	at com.qa.lenskart.tests.BaseTest.setUp(BaseTest.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>22</td>
+<td>com.qa.lenskart.tests.ProductInfoTest@6babffb5</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.lenskart.tests.ProductInfoTest.test()'><b>test</b><br>Test class: com.qa.lenskart.tests.ProductInfoTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.lenskart.tests.ProductInfoTest@6babffb5</td></tr>
+<tr>
+<td title='com.qa.lenskart.tests.ProductInfoTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.lenskart.tests.ProductInfoTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.lenskart.tests.ProductInfoTest@6babffb5</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,19 +228,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.qa.lenskart.tests.ProductInfoTest.productimageCount()'><b>productimageCount</b><br>Test class: com.qa.lenskart.tests.ProductInfoTest</td>
-<td><div><pre>java.lang.AssertionError: Image count should be greater than 0 expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:50)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because the return value of &quot;com.qa.lenskart.factory.DriverFactory.getDriver()&quot; is null
+	at com.qa.lenskart.factory.DriverFactory.getScreenshot(DriverFactory.java:194)
+	at com.qa.lenskart.listeners.ExtentReportListener.onTestSkipped(ExtentReportListener.java:118)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:529)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -101,20 +249,16 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div><a href='#' onClick='toggleBox("stack-trace670150122", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace670150122'><pre>java.lang.AssertionError: Image count should be greater than 0 expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:50)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1911970176", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1911970176'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because the return value of &quot;com.qa.lenskart.factory.DriverFactory.getDriver()&quot; is null
+	at com.qa.lenskart.factory.DriverFactory.getScreenshot(DriverFactory.java:194)
+	at com.qa.lenskart.listeners.ExtentReportListener.onTestSkipped(ExtentReportListener.java:118)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:529)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -128,8 +272,8 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>15</td>
-<td>com.qa.lenskart.tests.ProductInfoTest@73afe2b7</td></tr>
+<td>0</td>
+<td>com.qa.lenskart.tests.ProductInfoTest@6babffb5</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -140,23 +284,58 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.qa.lenskart.tests.ProductInfoTest.productimageCount()'><b>productimageCount</b><br>Test class: com.qa.lenskart.tests.ProductInfoTest</td>
-<td><div><pre>java.lang.AssertionError: Image count should be greater than 0 expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:50)
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed.
+  (chrome not reachable)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;4b60d3a05718&apos;, ip: &apos;172.17.0.3&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.49-linuxkit&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: driver.version: unknown
+remote stacktrace: #0 0x004000a2a8f3 &lt;unknown&gt;
+#1 0x00400050fba8 &lt;unknown&gt;
+#2 0x004000532e33 &lt;unknown&gt;
+#3 0x00400052e9ef &lt;unknown&gt;
+#4 0x004000568995 &lt;unknown&gt;
+#5 0x004000562d63 &lt;unknown&gt;
+#6 0x004000539144 &lt;unknown&gt;
+#7 0x00400053a135 &lt;unknown&gt;
+#8 0x004000a59c3e &lt;unknown&gt;
+#9 0x004000a6f6b7 &lt;unknown&gt;
+#10 0x004000a5ab95 &lt;unknown&gt;
+#11 0x004000a70b05 &lt;unknown&gt;
+#12 0x004000a4f2ab &lt;unknown&gt;
+#13 0x004000a8b248 &lt;unknown&gt;
+#14 0x004000a8b3c8 &lt;unknown&gt;
+#15 0x004000aa633d &lt;unknown&gt;
+#16 0x004002be3609 start_thread
+ 
+Host info: host: &apos;Vipuls-MacBook-Air.local&apos;, ip: &apos;2401:4900:1c8f:e709:881b:a47a:9562:3fef%en0&apos;
+Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.6.1&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome}], desiredCapabilities=Capabilities {browserName: chrome}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:139)
+	at com.qa.lenskart.factory.DriverFactory.initWebDriver(DriverFactory.java:64)
+	at com.qa.lenskart.tests.BaseTest.setUp(BaseTest.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
 	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
@@ -165,136 +344,59 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div><a href='#' onClick='toggleBox("stack-trace805769531", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace805769531'><pre>java.lang.AssertionError: Image count should be greater than 0 expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:50)
+</pre></div><a href='#' onClick='toggleBox("stack-trace408927362", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace408927362'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed.
+  (chrome not reachable)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;4b60d3a05718&apos;, ip: &apos;172.17.0.3&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.49-linuxkit&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: driver.version: unknown
+remote stacktrace: #0 0x004000a2a8f3 &lt;unknown&gt;
+#1 0x00400050fba8 &lt;unknown&gt;
+#2 0x004000532e33 &lt;unknown&gt;
+#3 0x00400052e9ef &lt;unknown&gt;
+#4 0x004000568995 &lt;unknown&gt;
+#5 0x004000562d63 &lt;unknown&gt;
+#6 0x004000539144 &lt;unknown&gt;
+#7 0x00400053a135 &lt;unknown&gt;
+#8 0x004000a59c3e &lt;unknown&gt;
+#9 0x004000a6f6b7 &lt;unknown&gt;
+#10 0x004000a5ab95 &lt;unknown&gt;
+#11 0x004000a70b05 &lt;unknown&gt;
+#12 0x004000a4f2ab &lt;unknown&gt;
+#13 0x004000a8b248 &lt;unknown&gt;
+#14 0x004000a8b3c8 &lt;unknown&gt;
+#15 0x004000aa633d &lt;unknown&gt;
+#16 0x004002be3609 start_thread
+ 
+Host info: host: &apos;Vipuls-MacBook-Air.local&apos;, ip: &apos;2401:4900:1c8f:e709:881b:a47a:9562:3fef%en0&apos;
+Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.6.1&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome}], desiredCapabilities=Capabilities {browserName: chrome}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:139)
+	at com.qa.lenskart.factory.DriverFactory.initWebDriver(DriverFactory.java:64)
+	at com.qa.lenskart.tests.BaseTest.setUp(BaseTest.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div></td>
-<td>10</td>
-<td>com.qa.lenskart.tests.ProductInfoTest@73afe2b7</td></tr>
-<tr>
-<td title='com.qa.lenskart.tests.ProductInfoTest.productimageCount()'><b>productimageCount</b><br>Test class: com.qa.lenskart.tests.ProductInfoTest</td>
-<td><div><pre>java.lang.AssertionError: Image count should be greater than 0 expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:50)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div><a href='#' onClick='toggleBox("stack-trace317800142", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace317800142'><pre>java.lang.AssertionError: Image count should be greater than 0 expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:50)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div></td>
-<td>15</td>
-<td>com.qa.lenskart.tests.ProductInfoTest@73afe2b7</td></tr>
-<tr>
-<td title='com.qa.lenskart.tests.ProductInfoTest.productimageCount()'><b>productimageCount</b><br>Test class: com.qa.lenskart.tests.ProductInfoTest</td>
-<td><div><pre>java.lang.AssertionError: Image count should be greater than 0 expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:50)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div><a href='#' onClick='toggleBox("stack-trace477797343", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace477797343'><pre>java.lang.AssertionError: Image count should be greater than 0 expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.qa.lenskart.tests.ProductInfoTest.productimageCount(ProductInfoTest.java:50)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
 	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
@@ -304,8 +406,8 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>3</td>
-<td>com.qa.lenskart.tests.ProductInfoTest@73afe2b7</td></tr>
+<td>0</td>
+<td>com.qa.lenskart.tests.ProductInfoTest@6babffb5</td></tr>
 </table><p>
 </body>
 </html>

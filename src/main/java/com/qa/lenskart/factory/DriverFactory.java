@@ -56,7 +56,7 @@ public class DriverFactory
 			DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
 			desiredCapabilities.setBrowserName("chrome");
 			//desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, optionsManager.getChromeOptions());
-			
+
 			if(Boolean.parseBoolean(properties.getProperty("remote")))
 			{
 				try
