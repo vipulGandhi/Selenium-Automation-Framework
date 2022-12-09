@@ -1,4 +1,4 @@
-//Problem: Create an exection environment for parllel testing with different browsers
+//Problem: Create an exection environment for parallel testing with different browsers
 //Solution: Selenium GRID with Docker Containers/ Machine
 
 // Selenium GRID Architecture
@@ -15,7 +15,7 @@
 
 // Docker Concept
 	// Docker engine will be installed on a hardware machine
-		// On the top of the hardware machine, we will have an OS
+		// On the top of the hardware machine, we will have an OS(Windows/ OSX/ Linux)
 		// On the top of OS, we will install docker engine
 			// With the docker engine, Download "N" images on the machine [Every software provides a docker image]
 					// Eg. 1 image for selenium hub, 1 image for chrome, 1 image for firefox
@@ -39,7 +39,7 @@
 				// Terminal docker ps -a
 			// Check how many images are running in docker
 				// docker images
-		// Download software(s) images from docker hub
+		// Download software(s) images from docker hub [docker pull]
 			// Docker hub [https://hub.docker.com/] is a centralized repo which stores all the software's images
 				// Search Selenium hub [https://hub.docker.com/r/selenium/hub]
 					// Click Tags
@@ -62,7 +62,7 @@
 					// Go to Terminal
 						// Pull node-firefox-debug Image
 							// docker pull selenium/node-firefox-debug:3.141.59
-		// Create container(s) on the image
+		// Create container(s) on the image[docker run : pull the image(if not available) and create the container]
 			// Create Hub container
 				// Terminal
 					// docker run -d -p 4444:4444 --name selenium-hub -P selenium/hub:3.141.59      
@@ -76,9 +76,16 @@
 				// If we execute "docker run" without "docker pull", it will execute "docker pull" first then it will create the container
 				// Prefer downloading containers, images will be downloaded automatically
 		// Verify all the containers on Web
-			// http://localhost:4444/grid/console
-			
+			// http://localhost:4444/grid/console OR
+			// http://localhost:4444
 
+ 		// For M1 Mac
+			// https://github.com/seleniumhq-community/docker-seleniarm
+			// Create Chrome Container
+				// docker run --rm -it -p 4444:4444 -p 5900:5900 -p 7900:7900 --shm-size 2g seleniarm/standalone-chromium:latest
+			// Create Firefox Container
+				// docker run --rm -it -p 4444:4444 -p 5900:5900 -p 7900:7900 --shm-size 2g seleniarm/standalone-firefox:latest
+			
 
 
 

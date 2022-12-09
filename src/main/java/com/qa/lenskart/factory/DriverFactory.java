@@ -54,8 +54,7 @@ public class DriverFactory
 			WebDriverManager.chromedriver().setup();
 			
 			DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
-			desiredCapabilities.setBrowserName("chrome");
-			//desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, optionsManager.getChromeOptions());
+			desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, optionsManager.getChromeOptions());
 
 			if(Boolean.parseBoolean(properties.getProperty("remote")))
 			{
@@ -79,8 +78,7 @@ public class DriverFactory
 			WebDriverManager.firefoxdriver().setup();
 			
 			DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
-			desiredCapabilities.setBrowserName("firefox");
-			//desiredCapabilities.setCapability(FirefoxOptions.FIREFOX_OPTIONS, optionsManager.getFirefoxoptions());
+			desiredCapabilities.setCapability(FirefoxOptions.FIREFOX_OPTIONS, optionsManager.getFirefoxoptions());
 			
 			if(Boolean.parseBoolean(properties.getProperty("remote")))
 			{
