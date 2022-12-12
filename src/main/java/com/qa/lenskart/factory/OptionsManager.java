@@ -27,6 +27,9 @@ public class OptionsManager
 		if(Boolean.parseBoolean(properties.getProperty("incognito").trim().toLowerCase()))
 			chromeOptions.addArguments("--incognito");
 		
+		// block popups
+		chromeOptions.addArguments("disable-popup-blocking");
+		
 		return chromeOptions;
 	}
 	

@@ -58,6 +58,7 @@ public class ExtentReportListener extends DriverFactory implements ITestListener
 		extentReports.setSystemInfo("System", "MAC");
 		extentReports.setSystemInfo("Author", "Vipul Gandhi");
 		extentReports.setSystemInfo("Build#", "1.1");
+		extentReports.setSystemInfo("Environment", System.getProperty("environment"));
 
 
 		return extentReports;
