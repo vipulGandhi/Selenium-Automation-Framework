@@ -4,7 +4,7 @@
 	// https://github.com/seleniumhq-community/docker-seleniarm
 
 // Setup docker images, containers from docker-compose
-	// Get docker-compose.yml file from https://github.com/SeleniumHQ/docker-selenium
+	// Get docker-compose.yml file from https://github.com/vipulGandhi/Automation_Framework/blob/main/docker-compose.yml
 	// Open Terminal
 		// cd to the folder where file is saved
 		// Check version of docker-compose file
