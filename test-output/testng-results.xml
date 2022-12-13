@@ -1,118 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="15" passed="11" failed="0" skipped="0">
+<testng-results ignored="2" total="9" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-11T14:37:48Z" name="LensKart Test Suite" finished-at="2022-12-11T14:39:22Z" duration-ms="93570">
+  <suite started-at="2022-12-13T12:52:25Z" name="LensKart Test Suite" finished-at="2022-12-13T12:55:09Z" duration-ms="163427">
     <groups>
     </groups>
-    <test started-at="2022-12-11T14:37:48Z" name="LensKart Landing Page Test" finished-at="2022-12-11T14:38:38Z" duration-ms="50174">
+    <test started-at="2022-12-13T12:52:25Z" name="LensKart Landing Page Test" finished-at="2022-12-13T12:53:10Z" duration-ms="44720">
       <class name="com.qa.lenskart.tests.LandingPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.lenskart.tests.LandingPageTest@664632e9]" started-at="2022-12-11T14:37:48Z" name="setUp" finished-at="2022-12-11T14:38:28Z" duration-ms="40067" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.lenskart.tests.LandingPageTest@6d672bd4]" started-at="2022-12-13T12:52:25Z" name="setUp" finished-at="2022-12-13T12:53:03Z" duration-ms="37269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="titleTest()[pri:1, instance:com.qa.lenskart.tests.LandingPageTest@664632e9]" started-at="2022-12-11T14:38:28Z" name="titleTest" finished-at="2022-12-11T14:38:28Z" duration-ms="151" status="PASS">
+        <test-method signature="titleTest()[pri:1, instance:com.qa.lenskart.tests.LandingPageTest@6d672bd4]" started-at="2022-12-13T12:53:03Z" name="titleTest" finished-at="2022-12-13T12:53:03Z" duration-ms="112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleTest -->
-        <test-method signature="urlTest()[pri:2, instance:com.qa.lenskart.tests.LandingPageTest@664632e9]" started-at="2022-12-11T14:38:28Z" name="urlTest" finished-at="2022-12-11T14:38:28Z" duration-ms="70" status="PASS">
+        <test-method signature="urlTest()[pri:2, instance:com.qa.lenskart.tests.LandingPageTest@6d672bd4]" started-at="2022-12-13T12:53:03Z" name="urlTest" finished-at="2022-12-13T12:53:03Z" duration-ms="35" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlTest -->
-        <test-method signature="logoTest()[pri:3, instance:com.qa.lenskart.tests.LandingPageTest@664632e9]" started-at="2022-12-11T14:38:28Z" name="logoTest" finished-at="2022-12-11T14:38:29Z" duration-ms="1145" status="PASS">
+        <test-method signature="logoTest()[pri:3, instance:com.qa.lenskart.tests.LandingPageTest@6d672bd4]" started-at="2022-12-13T12:53:03Z" name="logoTest" finished-at="2022-12-13T12:53:04Z" duration-ms="963" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoTest -->
-        <test-method signature="signInTest()[pri:4, instance:com.qa.lenskart.tests.LandingPageTest@664632e9]" started-at="2022-12-11T14:38:29Z" name="signInTest" finished-at="2022-12-11T14:38:38Z" duration-ms="8155" status="PASS">
+        <test-method signature="signInTest()[pri:4, instance:com.qa.lenskart.tests.LandingPageTest@6d672bd4]" started-at="2022-12-13T12:53:04Z" name="signInTest" finished-at="2022-12-13T12:53:09Z" duration-ms="5251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.lenskart.tests.LandingPageTest@664632e9]" started-at="2022-12-11T14:38:38Z" name="tearDown" finished-at="2022-12-11T14:38:38Z" duration-ms="517" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.lenskart.tests.LandingPageTest@6d672bd4]" started-at="2022-12-13T12:53:09Z" name="tearDown" finished-at="2022-12-13T12:53:10Z" duration-ms="1026" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.lenskart.tests.LandingPageTest -->
     </test> <!-- LensKart Landing Page Test -->
-    <test started-at="2022-12-11T14:37:48Z" name="LensKart Home Page Test" finished-at="2022-12-11T14:38:55Z" duration-ms="67433">
-      <class name="com.qa.lenskart.tests.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.lenskart.tests.HomePageTest@72543547]" started-at="2022-12-11T14:37:48Z" name="setUp" finished-at="2022-12-11T14:38:27Z" duration-ms="38587" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="test()[pri:0, instance:com.qa.lenskart.tests.HomePageTest@72543547]" started-at="2022-12-11T14:38:27Z" name="test" finished-at="2022-12-11T14:38:34Z" duration-ms="7353" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method signature="userNameTest()[pri:1, instance:com.qa.lenskart.tests.HomePageTest@72543547]" started-at="2022-12-11T14:38:34Z" name="userNameTest" finished-at="2022-12-11T14:38:35Z" duration-ms="792" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userNameTest -->
-        <test-method signature="searchTest(java.lang.String)[pri:3, instance:com.qa.lenskart.tests.HomePageTest@72543547]" started-at="2022-12-11T14:38:36Z" name="searchTest" data-provider="serchItems" finished-at="2022-12-11T14:38:42Z" duration-ms="5748" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Contact Lens]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchTest -->
-        <test-method signature="searchTest(java.lang.String)[pri:3, instance:com.qa.lenskart.tests.HomePageTest@72543547]" started-at="2022-12-11T14:38:42Z" name="searchTest" data-provider="serchItems" finished-at="2022-12-11T14:38:49Z" duration-ms="7026" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Eyeglasses]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchTest -->
-        <test-method signature="searchTest(java.lang.String)[pri:3, instance:com.qa.lenskart.tests.HomePageTest@72543547]" started-at="2022-12-11T14:38:49Z" name="searchTest" data-provider="serchItems" finished-at="2022-12-11T14:38:54Z" duration-ms="5231" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sunglasses]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.lenskart.tests.HomePageTest@72543547]" started-at="2022-12-11T14:38:54Z" name="tearDown" finished-at="2022-12-11T14:38:55Z" duration-ms="947" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.lenskart.tests.HomePageTest -->
-    </test> <!-- LensKart Home Page Test -->
-    <test started-at="2022-12-11T14:37:48Z" name="LensKart product Info Test" finished-at="2022-12-11T14:39:17Z" duration-ms="88771">
-      <class name="com.qa.lenskart.tests.ProductInfoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.lenskart.tests.ProductInfoTest@7f6329cb]" started-at="2022-12-11T14:37:48Z" name="setUp" finished-at="2022-12-11T14:38:31Z" duration-ms="42699" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="test()[pri:0, instance:com.qa.lenskart.tests.ProductInfoTest@7f6329cb]" started-at="2022-12-11T14:38:31Z" name="test" finished-at="2022-12-11T14:38:39Z" duration-ms="7647" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method signature="productimageCount()[pri:2, instance:com.qa.lenskart.tests.ProductInfoTest@7f6329cb]" started-at="2022-12-11T14:38:39Z" name="productimageCount" finished-at="2022-12-11T14:39:16Z" duration-ms="37485" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productimageCount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.lenskart.tests.ProductInfoTest@7f6329cb]" started-at="2022-12-11T14:39:16Z" name="tearDown" finished-at="2022-12-11T14:39:17Z" duration-ms="670" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.lenskart.tests.ProductInfoTest -->
-    </test> <!-- LensKart product Info Test -->
-    <test started-at="2022-12-11T14:37:48Z" name="LensKart Landing Page Negative Test" finished-at="2022-12-11T14:39:22Z" duration-ms="93570">
+    <test started-at="2022-12-13T12:52:25Z" name="LensKart Landing Page Negative Test" finished-at="2022-12-13T12:53:52Z" duration-ms="86548">
       <class name="com.qa.lenskart.tests.LandingPageNegativeTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.lenskart.tests.LandingPageNegativeTest@691500ab]" started-at="2022-12-11T14:37:48Z" name="setUp" finished-at="2022-12-11T14:39:14Z" duration-ms="85650" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.lenskart.tests.LandingPageNegativeTest@9accff0]" started-at="2022-12-13T12:52:25Z" name="setUp" finished-at="2022-12-13T12:53:44Z" duration-ms="78762" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginNegativeTest(java.lang.String)[pri:1, instance:com.qa.lenskart.tests.LandingPageNegativeTest@691500ab]" started-at="2022-12-11T14:39:14Z" name="loginNegativeTest" data-provider="invalidEmailData" finished-at="2022-12-11T14:39:18Z" duration-ms="4263" status="PASS">
+        <test-method signature="loginNegativeTest(java.lang.String)[pri:1, instance:com.qa.lenskart.tests.LandingPageNegativeTest@9accff0]" started-at="2022-12-13T12:53:44Z" name="loginNegativeTest" data-provider="invalidEmailData" finished-at="2022-12-13T12:53:48Z" duration-ms="3861" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -123,7 +50,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginNegativeTest -->
-        <test-method signature="loginNegativeTest(java.lang.String)[pri:1, instance:com.qa.lenskart.tests.LandingPageNegativeTest@691500ab]" started-at="2022-12-11T14:39:18Z" name="loginNegativeTest" data-provider="invalidEmailData" finished-at="2022-12-11T14:39:21Z" duration-ms="2893" status="PASS">
+        <test-method signature="loginNegativeTest(java.lang.String)[pri:1, instance:com.qa.lenskart.tests.LandingPageNegativeTest@9accff0]" started-at="2022-12-13T12:53:48Z" name="loginNegativeTest" data-provider="invalidEmailData" finished-at="2022-12-13T12:53:51Z" duration-ms="3046" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -134,11 +61,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginNegativeTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.lenskart.tests.LandingPageNegativeTest@691500ab]" started-at="2022-12-11T14:39:21Z" name="tearDown" finished-at="2022-12-11T14:39:22Z" duration-ms="745" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.lenskart.tests.LandingPageNegativeTest@9accff0]" started-at="2022-12-13T12:53:51Z" name="tearDown" finished-at="2022-12-13T12:53:52Z" duration-ms="823" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.lenskart.tests.LandingPageNegativeTest -->
     </test> <!-- LensKart Landing Page Negative Test -->
+    <test started-at="2022-12-13T12:52:25Z" name="LensKart product Info Test" finished-at="2022-12-13T12:55:09Z" duration-ms="163427">
+      <class name="com.qa.lenskart.tests.ProductInfoTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.lenskart.tests.ProductInfoTest@4a1a256d]" started-at="2022-12-13T12:52:26Z" name="setUp" finished-at="2022-12-13T12:54:25Z" duration-ms="119772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="test()[pri:0, instance:com.qa.lenskart.tests.ProductInfoTest@4a1a256d]" started-at="2022-12-13T12:54:25Z" name="test" finished-at="2022-12-13T12:54:30Z" duration-ms="4448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="productimageCount()[pri:2, instance:com.qa.lenskart.tests.ProductInfoTest@4a1a256d]" started-at="2022-12-13T12:54:30Z" name="productimageCount" finished-at="2022-12-13T12:55:08Z" duration-ms="37738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productimageCount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.lenskart.tests.ProductInfoTest@4a1a256d]" started-at="2022-12-13T12:55:08Z" name="tearDown" finished-at="2022-12-13T12:55:09Z" duration-ms="1185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.lenskart.tests.ProductInfoTest -->
+    </test> <!-- LensKart product Info Test -->
   </suite> <!-- LensKart Test Suite -->
 </testng-results>

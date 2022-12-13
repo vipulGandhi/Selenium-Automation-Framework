@@ -65,14 +65,11 @@
 		// Create container(s) on the image[docker run : pull the image(if not available) and create the container]
 			// To create multiple containers(of chrome & firefox) for parallel testing, execute Container's :docker run: command again 
 			// Create Hub container
-				// Terminal
-					// docker run -d -p 4444:4444 --name selenium-hub -P selenium/hub:3.141.59      
+				// Terminal: docker run -d -p 4444:4444 --name selenium-hub -P selenium/hub:3.141.59      
 			// Create Chrome node container
-				// Terminal
-					// docker run -d --name selenium-node-chrome-01  --link selenium-hub:hub -P selenium/node-chrome-debug
+				// Terminal: docker run -d --name selenium-node-chrome-01  --link selenium-hub:hub -P selenium/node-chrome-debug
 			// Create Firefox node container
-				// Terminal
-					// docker run -d --name selenium-node-firefox-01  --link selenium-hub:hub -P selenium/node-firefox-debug
+				// Terminal: docker run -d --name selenium-node-firefox-01  --link selenium-hub:hub -P selenium/node-firefox-debug
 			// docker run command
 				// If we execute "docker run" without "docker pull", it will execute "docker pull" first then it will create the container
 				// Prefer downloading containers, images will be downloaded automatically
@@ -83,6 +80,13 @@
 				// If we are using any different machine
 					// Replace machine's ip address with localhost
 					// Our machine (where the code is written) and the remote machine (where the docker is set up) should be on same network
+
+
+
+
+
+
+
 		// Remove a container
 			// Get the container id from terminal
 				// docker ps -a
@@ -106,30 +110,11 @@
 			// Create Firefox Container
 				// docker run --rm -it -p 4444:4444 -p 5900:5900 -p 7900:7900 --shm-size 2g seleniarm/standalone-firefox:latest
 
-// Visualize the test cases in doker
-	// Download vnc viewer
-		// https://www.realvnc.com/en/connect/download/viewer/
-	// Suppose we are runnung the test cases on chrome container
-		// Get the local ip and port number on which chrome container is running
-			// Go to terminal
-				// Run docker ps -a
-					// Go to "PORTS" column
-					// Copy container's port number <port number>
-	// Open VNC viewer
-		// In the input column, enter localhost:<port number>
-			// Eg. localhost:55005
-		// Press enter
-		// In the Authentication popup, enter the password: secret
-	// For M1 Mac
-		// https://github.com/seleniumhq-community/docker-seleniarm
-			// visit localhost:7900 in the browser
-				// Enter password: secret
-	// Run TestNG Suite OR Terminal: mvn clean install -Denvironment="production"
-		// Enjoy the visuals in VNC page
+
 	
 // Docker Compose
 	// Copy docker-compose-v3.yml file contents from https://github.com/SeleniumHQ/docker-selenium [AMD version]
-	// Create docker-compose.yml file (is Sublime text) and paste all the contents
+	// Create docker-compose.yml file (in Sublime text) and paste all the contents
 	// Open Terminal
 		// cd to the folder where file is saved
 		// Check version of docker-compose file
