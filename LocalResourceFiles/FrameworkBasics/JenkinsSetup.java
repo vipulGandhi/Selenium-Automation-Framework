@@ -1,4 +1,3 @@
-package FrameworkBasics;
 // Setup Jenkins server on your machine [To trigger the execution on a different machine/ cloud]
 	// Download LTS jenkins war file
 		// https://get.jenkins.io/war-stable/
@@ -7,7 +6,8 @@ package FrameworkBasics;
 			// Go to the directory where jenkins.war file is located
 				// cd /Users/vipulgandhi/Documents/Vipul/Softwares
 			// Execute: java -jar jenkins.war
-				// java -jar jenkins.war -httpPort=8081 [If installing on port 8081]
+				// java -jar jenkins.war -httpPort=8081 [If installing on port 8081] OR
+				// java -jar jenkins.war --httpPort=8081
 			// Copy the password displayed in the terminal
 				// The password is also stored at /Users/vipulgandhi/.jenkins/secrets/initialAdminPassword
 			// Open a new tab in any browser
