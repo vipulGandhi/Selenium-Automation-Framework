@@ -13,3 +13,5 @@
 	// Create a browsers.json file which maintains all the browser versions we need for our test execution
 		// Selenoid will read this file and download respective browser images and create the containers
 		// Give the path of browser.json file in docker-compose file
+
+
