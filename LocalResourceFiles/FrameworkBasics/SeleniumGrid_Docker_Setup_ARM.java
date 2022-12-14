@@ -17,9 +17,6 @@
 // Scale Up Chrome Container
 	// Terminal: docker-compose up -d --scale chrome=4
 
-// Scale Up Chrome& Firefox Container
-	// Terminal: docker-compose up -d --scale firefox=2 & chrome=3
-
 // Delete all containers
 	// Terminal: docker-compose down 
 
