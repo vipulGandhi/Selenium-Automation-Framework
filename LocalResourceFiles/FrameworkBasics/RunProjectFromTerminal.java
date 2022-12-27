@@ -31,5 +31,9 @@
 		// The test will will take the data from "LensKartTestDataSheet_qa.xlsx" sheet
 			// Ref: ExcelUtil.java
 
+// Misc
+	// To run only failed test cases again
+		// https://dzone.com/articles/jenkins-testng-failed-test-cases-for-maven#:~:text=Copy%20or%20move%20the%20failed,to%20run%20the%20failed%2Dtestng.
+
 
 		
