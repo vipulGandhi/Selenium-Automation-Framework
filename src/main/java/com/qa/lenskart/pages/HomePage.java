@@ -1,3 +1,12 @@
+//Page Factory
+	// A way to define the web elements
+		// Use the @FindBy annotation
+			// @FindBy(id="userName") 
+			// WebElement username;
+		// Initialize the elements using initElements()
+			// PageFactory.initElements(WebDriver driver, java.lang.Class.pageObjectClass);
+
+
 package com.qa.lenskart.pages;
 
 import java.util.List;

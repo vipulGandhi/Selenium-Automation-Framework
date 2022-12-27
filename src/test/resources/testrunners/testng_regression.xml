@@ -16,6 +16,11 @@
 	<test name="LensKart Landing Page Test">
 		<classes>
 			<class name="com.qa.lenskart.tests.LandingPageTest"/>
+				<!-- Use of regular expressions: Exclude the @Test(s) where test name starts with "Title"
+				<methods>
+            		<exclude name= “Title.*”/>
+         		</methods> -->
+			
 		</classes>
 	</test>
   
