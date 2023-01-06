@@ -2,7 +2,7 @@
 // Maven Life Cycle
 	// 1. Develop the code
 	// 2. Compile the code (Use Maven Compiler Plugin)
-	// 3. Test the code (Use Maven Surefire Plugin)
+	// 3. Test/ Run the code (Use Maven Surefire Plugin)
 	// 4. Package the code/ Create JAR (Use Maven Assembly Plugin)
 	// 5. Deploy the code (Use Maven Deploy Plugin) (Deploy the package in Nexus Location)
 
@@ -21,14 +21,14 @@
 	// Package the code
 	// Convert the project to jar file/ Build the project
 // Why to do this
-	// Test Automation Center of Exellence (TACOE) creates a common automation framework (CAF) to be used by every team i the company
+	// Test Automation Center of Exellence (TACOE) creates a common automation framework (CAF) to be used by every team in the company
 	// Convert the CAF to the JAR file and post it on
 		// Local company network (nexus repository)
 			// Sonatype nexus repository management tool
 		// Maven Repository
 	// The JAR files never includes src/test/java by default
 
-// As we are creating a jar file of our project, our project itself depends on many 3rd party jar files(WebDriverManager, TestNG, Selenium etc.)
+// As we are creating a jar file of project, the project itself depends on many 3rd party jar files(WebDriverManager, TestNG, Selenium etc.)
 	// We create 2 type of jar files of our project
 		// Normal JAR [Not preffered]
 			// Only create the jar file of the code

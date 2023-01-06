@@ -1,4 +1,3 @@
-package FrameworkBasics;
 // Write the code in working copy
 	// Run the test cases either from the working copy(eclipse) or from terminal
 	// Browsers are launched in local with sequential/ parallel execution

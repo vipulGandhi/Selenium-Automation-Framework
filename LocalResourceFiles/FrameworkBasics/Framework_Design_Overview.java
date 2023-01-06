@@ -16,8 +16,7 @@
 				// Cross browser logic
 				// Test cases to be executed locally or remotely
 				// Desired Capabilities etc.
-
-								
+				
 	// 3. Create configuration data for every environment
 		// Create different config.property files
 			// Add functionalities for:
@@ -75,14 +74,14 @@
 	// 9. Test Runner (bunch of testng.xml files to run the test cases)
 		// Covers
 			// Thread count
-			// Test should be run in Sequential or parallel
+				// Test should be run in Sequential or parallel
 		// master.xml
 		// sanity.xml
 		// regression.xml
 		
 	// 10. Maven
 		// The overall project is build as a maven project
-		// We have to follow a complete maven 
+		// We have to follow a complete maven lifecycle
 			// Compile the code
 			// Run the code (surefire)
 			// Assembly - Generate the jar files

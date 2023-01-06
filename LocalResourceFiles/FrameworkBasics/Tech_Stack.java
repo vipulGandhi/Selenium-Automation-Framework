@@ -1,9 +1,8 @@
-package FrameworkBasics;
 // Tech Stack: Tools and technologies
 
 	// 1. Selenium Web driver with Java language binding
 	// 2. TestNG for unit testing framework to write the test cases - External library
-		// Along with TestNG, we are writing different annotations,  test runners, xml files
+		// Along with TestNG, we are writing different annotations,  test runner - xml files
 	// 3. WebdriverManager - External library
 	// 4. Jdk 1.8
 		// To write the code in Java and to use Java libraries
