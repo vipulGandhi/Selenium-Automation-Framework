@@ -1,0 +1,31 @@
+version: "3"
+services:
+  chrome:
+    image: seleniarm/node-chromium:latest
+    volumes:
+      - /dev/shm:/dev/shm
+    depends_on:
+      - seleniarm-hub
+    environment:
+      - SE_EVENT_BUS_HOST=seleniarm-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+
+  firefox:
+    image: seleniarm/node-firefox:latest
+    volumes:
+      - /dev/shm:/dev/shm
+    depends_on:
+      - seleniarm-hub
+    environment:
+      - SE_EVENT_BUS_HOST=seleniarm-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+
+  seleniarm-hub:
+    image: seleniarm/hub:latest
+    container_name: seleniarm-hub-latest
+    ports:
+      - 4442:4442
+      - 4443:4443
+      - 4444:4444

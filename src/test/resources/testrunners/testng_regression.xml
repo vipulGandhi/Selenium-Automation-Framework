@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="LensKart Test Suite" verbose = "4" thread-count = "5" parallel = "tests">
+
+
+	<listeners>
+		<listener
+			class-name="com.qa.lenskart.listeners.AnnotationTransformer"/>
+		<listener
+			class-name="com.qa.lenskart.listeners.ExtentReportListener"/>
+		<listener
+			class-name="com.qa.lenskart.listeners.AllureReportListener"/>
+	</listeners>
+
+	<test name="LensKart Landing Page Test">
+		<classes>
+			<class name="com.qa.lenskart.tests.LandingPageTest"/>
+				<!-- Use of regular expressions: Exclude the @Test(s) where test name starts with "Title"
+				<methods>
+            		<exclude name= “Title.*”/>
+         		</methods> -->
+			
+		</classes>
+	</test>
+  
+	<test name="LensKart Landing Page Negative Test">
+		<classes>
+			<class name="com.qa.lenskart.tests.LandingPageNegativeTest"/>
+		</classes>
+	</test>
+  
+  <test name="LensKart Home Page Test">
+    <classes>
+      	<class name="com.qa.lenskart.tests.HomePageTest"/>
+    </classes>
+  </test>
+  
+    <test name="LensKart product Info Test">
+    <classes>
+      	<class name="com.qa.lenskart.tests.ProductInfoTest"/>
+    </classes>
+  </test>
+  
+</suite>

@@ -1,0 +1,5 @@
+com/qa/lenskart/tests/BaseTest.class
+com/qa/lenskart/tests/LandingPageNegativeTest.class
+com/qa/lenskart/tests/HomePageTest.class
+com/qa/lenskart/tests/LandingPageTest.class
+com/qa/lenskart/tests/ProductInfoTest.class
